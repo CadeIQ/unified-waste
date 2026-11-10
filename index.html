@@ -13,8 +13,8 @@
 <style>
 /* Layout: split hero (promise left, laptop + phone portal right), service ticker, feature slider, statement band, form, pop-up. */
 :root{
-  --ink:#0B2E26;--a:#0F4A3B;--b:#2FB67C;--txt:#1C8A5A;--cta:#C8F169;--cta-h:#D6F88A;--glow:47,182,124;
-  --bg:#F7F6F2;--bg2:#EFEDE6;--line:#E4E1D8;--muted:#5E6D67;--soft:#8A9792;
+  --ink:#101010;--a:#2B2B2B;--b:#FF6B1A;--txt:#E0560B;--cta:#FF7A2E;--cta-h:#FF9455;--glow:255,107,26;
+  --bg:#F7F6F4;--bg2:#EEECE8;--line:#E4E1DB;--muted:#66625C;--soft:#98938B;
   --ok:#1C8A5A;--ok-bg:#E6F5ED;--bad:#C2412D;--bad-bg:#FBEAE6;--wait:#8F6420;--wait-bg:#F5EFE2;
   --r:22px;--max:1320px;--ease:cubic-bezier(.2,.8,.2,1);
   --sh:0 1px 2px rgba(10,20,30,.05),0 24px 50px -24px rgba(10,20,30,.32);
@@ -26,7 +26,7 @@
 :root[data-pal="copper"]{--ink:#18191D;--a:#3A3D45;--b:#D8783F;--txt:#B45F2B;--cta:#F2A65A;--cta-h:#F6BB7E;--glow:216,120,63;--bg:#F6F5F3;--bg2:#EDEBE7;--line:#E3E0DA;--muted:#6A6863;--soft:#99968F}
 :root[data-pal="gold"]{--ink:#151515;--a:#363636;--b:#C9A43A;--txt:#8E7020;--cta:#E3C35E;--cta-h:#ECD283;--glow:201,164,58;--bg:#F7F6F2;--bg2:#EEECE6;--line:#E3E0D8;--muted:#66645E;--soft:#97948C}
 :root[data-pal="coral"]{--ink:#141B2D;--a:#2B3550;--b:#FF7A59;--txt:#D9532F;--cta:#FF9B7D;--cta-h:#FFB49C;--glow:255,122,89;--bg:#F6F6F8;--bg2:#ECECF1;--line:#E1E2E9;--muted:#5E6274;--soft:#8F93A3}
-:root[data-pal="orange"]{--ink:#101010;--a:#2B2B2B;--b:#FF6B1A;--txt:#E0560B;--cta:#FF7A2E;--cta-h:#FF9455;--glow:255,107,26;--bg:#F7F6F4;--bg2:#EEECE8;--line:#E4E1DB;--muted:#66625C;--soft:#98938B}
+:root[data-pal="evergreen"]{--ink:#0B2E26;--a:#0F4A3B;--b:#2FB67C;--txt:#1C8A5A;--cta:#C8F169;--cta-h:#D6F88A;--glow:47,182,124;--bg:#F7F6F2;--bg2:#EFEDE6;--line:#E4E1D8;--muted:#5E6D67;--soft:#8A9792}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16.5px;-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background .4s}
@@ -644,7 +644,7 @@ body{background:var(--bg);color:var(--ink)}
   </div>
 </div>
 
-<div class="pal" id="pal" role="group" aria-label="Colour option"><span>Colour option</span><b class="nm" id="palName">Green</b></div>
+<div class="pal" id="pal" role="group" aria-label="Colour option"><span>Colour option</span><b class="nm" id="palName">Orange &amp; black</b></div>
 
 <script>
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -665,11 +665,11 @@ m.addEventListener('click',e=>{if(e.target===m||e.target.closest('[data-close]')
 addEventListener('keydown',e=>{if(e.key==='Escape'&&!m.hidden)close()});})();
 
 /* colour options */
-const PALS=[['evergreen','Green',['#0F4A3B','#2FB67C']],['greengold','Green & gold',['#0F4A3B','#C9A43A']],['sage','Sage & sand',['#2C5A4E','#F1D9A7']],['navy','Navy',['#1E3A66','#3B82F6']],['ocean','Ocean',['#0E4A63','#22A6C9']],['copper','Graphite',['#3A3D45','#D8783F']],['gold','Charcoal & gold',['#363636','#C9A43A']],['coral','Midnight & coral',['#2B3550','#FF7A59']],['orange','Orange & black',['#101010','#FF6B1A']]];
+const PALS=[['orange','Orange & black',['#101010','#FF6B1A']],['evergreen','Green',['#0F4A3B','#2FB67C']],['greengold','Green & gold',['#0F4A3B','#C9A43A']],['sage','Sage & sand',['#2C5A4E','#F1D9A7']],['navy','Navy',['#1E3A66','#3B82F6']],['ocean','Ocean',['#0E4A63','#22A6C9']],['copper','Graphite',['#3A3D45','#D8783F']],['gold','Charcoal & gold',['#363636','#C9A43A']],['coral','Midnight & coral',['#2B3550','#FF7A59']]];
 const pal=document.getElementById('pal'),pn=document.getElementById('palName');
 PALS.forEach(([id,name,c])=>{const b=document.createElement('button');b.style.setProperty('--c1',c[0]);b.style.setProperty('--c2',c[1]);b.setAttribute('aria-label',name);b.dataset.id=id;b.onclick=()=>{setPal(id);history.replaceState(null,'','#'+id)};pal.insertBefore(b,pn)});
 function setPal(id){if(!PALS.some(p=>p[0]===id))return false;document.documentElement.dataset.pal=id;pn.textContent=PALS.find(p=>p[0]===id)[1];[...pal.querySelectorAll('button')].forEach(b=>b.classList.toggle('on',b.dataset.id===id));return true}
-setPal(location.hash.slice(1))||setPal('evergreen');addEventListener('hashchange',()=>setPal(location.hash.slice(1)));
+setPal(location.hash.slice(1))||setPal('orange');addEventListener('hashchange',()=>setPal(location.hash.slice(1)));
 
 /* rotating promise */
 (function(){const s=[...document.querySelectorAll('#rot span')];let i=0;if(reduce)return;
