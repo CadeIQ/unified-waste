@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unified Waste Solutions | Design concept</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Unified manages your commercial waste end to end: every invoice line checked, every supplier chased, your services taken back to market every quarter, and all of it visible in your live portal.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064.0%2064.0%22%20width%3D%2264%22%20height%3D%2264%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%230B2E26%22%2F%3E%3Cg%20transform%3D%22translate(3.200000000000003%203.200000000000003)%20scale(0.48)%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22uws14c%22%3E%3Cpolygon%20points%3D%220%2C0%200%2C150%2096.94%2C147.28%2060%2C100%2047.69%2C84.24%2047.69%2C0%22%2F%3E%3C%2FclipPath%3E%3Cmask%20id%3D%22uws14m%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%22-20%22%20y%3D%22-20%22%20width%3D%22160%22%20height%3D%22170%22%3E%3Crect%20x%3D%22-20%22%20y%3D%22-20%22%20width%3D%22160%22%20height%3D%22170%22%20fill%3D%22%23fff%22%2F%3E%3Cline%20x1%3D%2250.15%22%20y1%3D%2287.39%22%20x2%3D%2269.85%22%20y2%3D%22112.61%22%20stroke%3D%22%23000%22%20stroke-width%3D%223.2%22%2F%3E%3C%2Fmask%3E%3C%2Fdefs%3E%3Cg%20mask%3D%22url(%23uws14m)%22%3E%3Cpath%20d%3D%22M30%2040V70A30%2030%200%200%200%2090%2070V22%22%20fill%3D%22none%22%20stroke%3D%22%232FB67C%22%20stroke-width%3D%2222%22%20stroke-linecap%3D%22round%22%2F%3E%3Cg%20clip-path%3D%22url(%23uws14c)%22%3E%3Cpath%20d%3D%22M30%2040V70A30%2030%200%200%200%2090%2070V22%22%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%2222%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0B2E26;--ink-2:#0F3A30;--forest:#0F4A3B;--green:#2FB67C;--green-d:#1C8A5A;--lime:#C8F169;
+  --bg:#F7F6F2;--bg-2:#EFEDE6;--white:#fff;--line:#E4E1D8;--line-2:#ECE9E1;--text:#0B2E26;--muted:#5E6D67;--soft:#8A9792;
+  --red:#C2412D;--amber:#C98A2B;
+  --r:20px;--r-sm:12px;--max:1200px;
+  --sh:0 1px 1px rgba(11,46,38,.04),0 8px 24px -12px rgba(11,46,38,.16);
+  --sh-lg:0 1px 2px rgba(11,46,38,.05),0 30px 60px -30px rgba(11,46,38,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;font-size:16.5px;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-feature-settings:"cv11","ss01"}
+h1,h2,h3,h4{font-family:"Plus Jakarta Sans",Inter,sans-serif;font-weight:800;letter-spacing:-.03em;line-height:1.05}
+a{color:inherit;text-decoration:none}
+svg{display:block}
+.p{margin-left:-.06em}
+.ap{margin:0 -.05em 0 -.03em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.eyebrow{display:inline-block;font:600 12.5px/1 Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--green-d)}
+.dark .eyebrow{color:var(--lime)}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 15.5px/1 Inter;padding:16px 24px;border-radius:999px;border:0;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s;white-space:nowrap}
+.btn .ar{width:16px;height:16px;transition:transform .2s}
+.btn:hover .ar{transform:translateX(3px)}
+.btn-lime{background:var(--lime);color:var(--ink)}.btn-lime:hover{background:#d6f88a}
+.btn-ink{background:var(--ink);color:#fff}.btn-ink:hover{background:var(--forest)}
+.btn-ghost{color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}.btn-ghost:hover{box-shadow:inset 0 0 0 1px rgba(255,255,255,.6)}
+.btn-line{color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}.btn-line:hover{box-shadow:inset 0 0 0 1px var(--ink)}
+.sec{padding:120px 0;position:relative}
+.head{max-width:760px;margin-bottom:56px}
+.head h2{font-size:clamp(36px,4.6vw,56px);margin:18px 0 18px}
+.head p{font-size:19px;color:var(--muted);line-height:1.55}
+.dark .head p{color:rgba(255,255,255,.66)}
+.center{text-align:center;margin-left:auto;margin-right:auto}
+.hl{color:var(--green-d)}.dark .hl{color:var(--lime)}
+.note{font-size:12px;color:var(--soft)}
+.dark .note{color:rgba(255,255,255,.4)}
+.dark{background:var(--ink);color:#fff}
+.tick{width:16px;height:16px;flex:none}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto;z-index:50;padding:18px 0;transition:background .3s,padding .3s,box-shadow .3s}
+.nav .wrap{display:flex;align-items:center;gap:36px}
+.nav .logo svg{height:40px;width:auto}
+.nav .rev{display:block}.nav .col{display:none}
+.nav ul{display:flex;gap:30px;list-style:none;margin-left:auto}
+.nav ul a{font:500 15px Inter;color:rgba(255,255,255,.78);transition:color .2s}
+.nav ul a:hover{color:#fff}
+.nav .login{font:500 15px Inter;color:rgba(255,255,255,.78)}
+.nav .btn{padding:12px 18px;font-size:14.5px}
+.nav.solid{background:rgba(247,246,242,.9);backdrop-filter:saturate(1.4) blur(16px);-webkit-backdrop-filter:saturate(1.4) blur(16px);box-shadow:0 1px 0 var(--line);padding:10px 0}
+.nav.solid .rev{display:none}.nav.solid .col{display:block}
+.nav.solid ul a,.nav.solid .login{color:var(--muted)}.nav.solid ul a:hover,.nav.solid .login:hover{color:var(--ink)}
+.nav.solid .btn-lime{background:var(--ink);color:#fff}
+.menu-btn{display:none;margin-left:auto;background:none;border:0;width:44px;height:44px;color:#fff;cursor:pointer}
+.nav.solid .menu-btn{color:var(--ink)}
+.menu-btn svg{width:24px;height:24px;margin:auto}
+.mm{display:none;position:fixed;inset:0;z-index:60;background:var(--ink);color:#fff;flex-direction:column;padding:20px}
+.mm .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:34px}
+.mm .top svg{height:34px;width:auto}
+.mm button{background:none;border:0;color:#fff;width:44px;height:44px;cursor:pointer}
+.mm button svg{width:24px;height:24px;margin:auto}
+.mm a.m{font:700 30px/1.25 "Plus Jakarta Sans";letter-spacing:-.02em;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.mm .btn{margin-top:auto;justify-content:center}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;padding:168px 0 0;isolation:isolate}
+.hero.dark{background:linear-gradient(180deg,var(--ink) 0,var(--ink) calc(100% - 240px),var(--bg) calc(100% - 240px))}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(900px 520px at 78% 18%,rgba(47,182,124,.28),transparent 70%),radial-gradient(700px 500px at 10% 100%,rgba(200,241,105,.08),transparent 70%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(180deg,#000 0%,transparent 70%);-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 70%)}
+.hero-copy{max-width:880px;margin:0 auto;text-align:center}
+.pilltag{display:inline-flex;align-items:center;gap:10px;font:500 13.5px Inter;color:rgba(255,255,255,.85);padding:7px 14px 7px 8px;border-radius:999px;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}
+.pilltag b{font-weight:600;background:var(--lime);color:var(--ink);padding:3px 9px;border-radius:999px;font-size:12px}
+.hero h1{font-size:clamp(48px,7.2vw,96px);letter-spacing:-.045em;line-height:.98;margin:28px 0 26px}
+.hero h1 .hl{color:var(--lime)}
+.hero .lede{font-size:20px;color:rgba(255,255,255,.72);max-width:680px;margin:0 auto;line-height:1.55}
+.hero .ctas{display:flex;gap:12px;justify-content:center;margin-top:38px;flex-wrap:wrap}
+.hero .assure{display:flex;gap:28px;justify-content:center;flex-wrap:wrap;margin-top:30px;font-size:14px;color:rgba(255,255,255,.62)}
+.hero .assure span{display:flex;gap:8px;align-items:center}
+.hero .assure .tick{color:var(--lime)}
+.stagewrap{position:relative;margin-top:72px}
+.stagewrap::after{content:"";position:absolute;left:-400px;right:-400px;bottom:0;height:34%;background:linear-gradient(180deg,rgba(247,246,242,0),var(--bg) 78%);z-index:3;pointer-events:none}
+.hero-bottom{background:var(--bg);height:1px}
+
+/* app chrome */
+.app{background:#fff;color:var(--text);border-radius:18px;box-shadow:0 0 0 1px rgba(255,255,255,.08),0 50px 120px -40px rgba(0,0,0,.65);overflow:hidden;position:relative;z-index:2}
+.app-bar{display:flex;align-items:center;gap:7px;padding:12px 16px;border-bottom:1px solid var(--line-2);background:#FBFAF7}
+.app-bar i{width:10px;height:10px;border-radius:50%;background:#E2DFD6}
+.app-bar .url{margin:0 auto;font-size:12px;color:var(--soft);background:#fff;border:1px solid var(--line-2);border-radius:8px;padding:5px 60px}
+.app-body{display:grid;grid-template-columns:210px 1fr}
+.side{background:var(--ink);color:rgba(255,255,255,.62);padding:20px 14px;font-size:13.5px;display:flex;flex-direction:column;gap:2px}
+.side .lg{padding:4px 10px 22px}
+.side .lg svg{height:26px;width:auto}
+.side a{padding:9px 12px;border-radius:9px;display:flex;justify-content:space-between}
+.side a.on{background:rgba(255,255,255,.08);color:#fff;font-weight:600}
+.side a em{font-style:normal;font-size:11px;background:var(--lime);color:var(--ink);border-radius:999px;padding:1px 7px;font-weight:700}
+.side .acct{margin-top:auto;padding:12px;border-radius:10px;background:rgba(255,255,255,.05);font-size:12px;line-height:1.4}
+.side .acct b{display:block;color:#fff;font-size:13px}
+.main{padding:24px 26px 28px}
+.mhead{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:20px;gap:14px}
+.mhead h4{font-size:22px;letter-spacing:-.02em}
+.mhead small{display:block;font:400 13px Inter;color:var(--muted);letter-spacing:0;margin-top:4px}
+.seg{display:flex;background:var(--bg);border-radius:9px;padding:3px;font-size:12.5px}
+.seg span{padding:6px 12px;border-radius:7px;color:var(--muted)}
+.seg span.on{background:#fff;color:var(--ink);font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+.kpi{border:1px solid var(--line-2);border-radius:14px;padding:14px 16px}
+.kpi small{font-size:12px;color:var(--muted)}
+.kpi b{display:block;font:700 26px/1.2 "Plus Jakarta Sans";letter-spacing:-.02em;margin-top:2px;font-variant-numeric:tabular-nums}
+.kpi em{font-style:normal;font-size:12px;font-weight:600;color:var(--green-d)}
+.kpi em.n{color:var(--muted);font-weight:500}
+.spark{height:28px;margin-top:6px}
+.grid2{display:grid;grid-template-columns:1.55fr 1fr;gap:14px}
+.panel{border:1px solid var(--line-2);border-radius:14px;padding:16px 18px}
+.panel h5{font:700 14px "Plus Jakarta Sans";letter-spacing:-.01em;display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.panel h5 span{font:500 12px Inter;color:var(--muted)}
+.rows{display:grid}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:14px;align-items:center;padding:10px 0;border-top:1px solid var(--line-2);font-size:13px;transition:opacity .4s}
+.row:first-child{border-top:0}
+.row b{font-weight:600;display:block}
+.row small{color:var(--muted);font-size:11.5px}
+.row .amt{font-variant-numeric:tabular-nums;font-weight:600;color:var(--muted)}
+.st{font:600 11px/1 Inter;padding:5px 9px;border-radius:999px;white-space:nowrap;display:inline-flex;gap:6px;align-items:center}
+.st::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.st.ok{background:#E6F5ED;color:var(--green-d)}
+.st.bad{background:#FBEAE6;color:var(--red)}
+.st.wait{background:#F5EFE2;color:#8F6420}
+.st.q{background:var(--bg);color:var(--soft)}
+.rows.anim .row{opacity:.35}
+.rows.anim .row.done{opacity:1}
+.feed{display:grid;gap:12px;font-size:12.5px}
+.feed div{display:grid;grid-template-columns:8px 1fr;gap:10px}
+.feed i{width:8px;height:8px;border-radius:50%;background:var(--green);margin-top:6px}
+.feed i.a{background:var(--amber)}
+.feed b{font-weight:600;display:block;font-size:13px}
+.feed small{color:var(--muted)}
+.floatc{position:absolute;z-index:4;background:#fff;color:var(--text);border-radius:16px;box-shadow:var(--sh-lg);padding:16px 18px;width:290px;font-size:13px}
+.floatc .t{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.floatc .t b{font:700 14px "Plus Jakarta Sans"}
+.floatc .bar{display:grid;grid-template-columns:90px 1fr 46px;gap:10px;align-items:center;margin:7px 0;font-size:12px;color:var(--muted)}
+.floatc .bar i{height:8px;border-radius:99px;background:var(--bg-2);position:relative;overflow:hidden}
+.floatc .bar i::after{content:"";position:absolute;inset:0;width:var(--w);border-radius:99px;background:#CBE7D8}
+.floatc .bar.best i::after{background:var(--green)}
+.floatc .bar.you i::after{background:#9AA7A2}
+.floatc .bar span{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink);font-weight:600}
+.fc1{right:-36px;top:120px}
+.fc2{left:-40px;bottom:120px;width:260px}
+.fc2 .big{font:800 30px/1 "Plus Jakarta Sans";letter-spacing:-.02em;color:var(--green-d);margin:4px 0 2px}
+
+/* STATEMENT */
+.statement{padding:40px 0 110px}
+.statement p.big{font:700 clamp(28px,3.4vw,42px)/1.22 "Plus Jakarta Sans";letter-spacing:-.025em;max-width:1000px;color:var(--soft)}
+.statement p.big strong{color:var(--ink);font-weight:700}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:64px;border-top:1px solid var(--line)}
+.facts div{padding:28px 24px 0 0}
+.facts b{display:block;font:800 46px/1 "Plus Jakarta Sans";letter-spacing:-.035em}
+.facts b sup{font-size:.45em;vertical-align:top;margin-left:2px;color:var(--green-d);letter-spacing:0}
+.facts span{display:block;margin-top:12px;font-size:15px;color:var(--muted);max-width:230px}
+
+/* COMPARE */
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.vcol{border-radius:var(--r);padding:36px 36px 30px}
+.vcol h3{font-size:24px;margin-bottom:6px}
+.vcol .sub{font-size:14.5px;margin-bottom:22px}
+.vcol ul{list-style:none;display:grid}
+.vcol li{display:grid;grid-template-columns:22px 1fr;gap:12px;padding:15px 0;border-top:1px solid;font-size:15.5px}
+.vcol li svg{width:18px;height:18px;margin-top:3px}
+.vcol.them{background:#fff;border:1px solid var(--line)}
+.vcol.them h3{color:var(--muted)}
+.vcol.them .sub{color:var(--soft)}
+.vcol.them li{border-color:var(--line-2);color:var(--muted)}
+.vcol.them li svg{color:#B9B3A6}
+.vcol.us{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.vcol.us::before{content:"";position:absolute;right:-120px;top:-120px;width:340px;height:340px;background:radial-gradient(closest-side,rgba(47,182,124,.35),transparent);}
+.vcol.us .sub{color:rgba(255,255,255,.6)}
+.vcol.us li{border-color:rgba(255,255,255,.1)}
+.vcol.us li svg{color:var(--lime)}
+
+/* FEATURE ROWS */
+.feat{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:center;padding:56px 0}
+.feat.rev .ftext{order:2}
+.ftext .idx{font:600 13px Inter;color:var(--soft);letter-spacing:.08em}
+.ftext h3{font-size:clamp(30px,3.4vw,44px);margin:14px 0 18px}
+.ftext p{font-size:17.5px;color:var(--muted);margin-bottom:22px}
+.ftext ul{list-style:none;display:grid;gap:12px;border-top:1px solid var(--line);padding-top:22px}
+.ftext li{display:flex;gap:12px;font-size:15.5px}
+.ftext li .tick{color:var(--green);margin-top:4px}
+.fvis{position:relative}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh-lg);padding:24px}
+.card h5{font:700 15px "Plus Jakarta Sans";display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
+.card .cs{font-size:12.5px;color:var(--muted);margin-bottom:16px}
+.tender{display:grid;gap:10px}
+.tr{display:grid;grid-template-columns:120px 1fr 70px;gap:14px;align-items:center;font-size:13px}
+.tr span:first-child{color:var(--muted)}
+.tr i{height:10px;border-radius:99px;background:var(--bg-2);position:relative;overflow:hidden}
+.tr i::after{content:"";position:absolute;inset:0;width:0;border-radius:99px;background:#CBE7D8;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.in .tr i::after{width:var(--w)}
+.tr.you i::after{background:#A3AEA9}
+.tr.best i::after{background:var(--green)}
+.tr b{text-align:right;font-variant-numeric:tabular-nums}
+.outcome{margin-top:18px;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 16px;border-radius:12px;background:var(--ink);color:#fff}
+.outcome small{color:rgba(255,255,255,.65);font-size:12px;display:block}
+.outcome b{font:800 22px "Plus Jakarta Sans";color:var(--lime);white-space:nowrap}
+.timeline{display:grid;gap:0;position:relative}
+.tl{display:grid;grid-template-columns:62px 18px 1fr;gap:12px;font-size:13.5px;padding-bottom:16px;position:relative}
+.tl .tm{font:600 12px Inter;color:var(--muted);text-align:right;padding-top:2px;font-variant-numeric:tabular-nums}
+.tl .dt{width:12px;height:12px;border-radius:50%;background:var(--green);margin:4px auto 0;box-shadow:0 0 0 4px #E6F5ED;position:relative;z-index:1}
+.tl .dt.a{background:var(--amber);box-shadow:0 0 0 4px #F5EFE2}
+.tl::before{content:"";position:absolute;left:83px;top:10px;bottom:-4px;width:2px;background:var(--line-2)}
+.tl:last-child::before{display:none}
+.tl b{font-weight:600;display:block}
+.tl small{color:var(--muted);font-size:12.5px}
+.sla{display:flex;gap:10px;margin-top:6px}
+.sla div{flex:1;background:var(--bg);border-radius:10px;padding:10px 12px}
+.sla small{font-size:11.5px;color:var(--muted);display:block}
+.sla b{font:700 16px "Plus Jakarta Sans"}
+.mini-float{position:absolute;right:-22px;bottom:-62px;background:var(--ink);color:#fff;border-radius:14px;padding:14px 16px;box-shadow:var(--sh-lg);font-size:13px;max-width:240px}
+.mini-float b{display:block;font:700 15px "Plus Jakarta Sans";color:var(--lime)}
+
+/* INCLUDED GRID */
+.inc{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.inc div{padding:34px 32px 36px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:transparent;transition:background .3s}
+.inc div:hover{background:#fff}
+.inc .n{font:600 13px Inter;color:var(--green-d);letter-spacing:.06em}
+.inc h4{font-size:21px;letter-spacing:-.02em;margin:14px 0 10px}
+.inc p{font-size:15px;color:var(--muted)}
+
+/* XRAY */
+.xr-sec{background:var(--bg-2)}
+.xray{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
+.invoice{background:#fff;border-radius:var(--r);box-shadow:var(--sh-lg);padding:30px 32px 26px;font-size:14px;position:relative}
+.inv-h{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid var(--line-2);padding-bottom:16px;margin-bottom:6px}
+.inv-h b{font:700 16px "Plus Jakarta Sans";display:block}
+.inv-h small{color:var(--muted);font-size:12.5px}
+.inv-h .tag{font:600 11px Inter;letter-spacing:.12em;color:var(--soft);text-transform:uppercase}
+.il{display:grid;grid-template-columns:1fr auto 28px;gap:12px;align-items:center;padding:11px 10px;margin:0 -10px;border-radius:10px;transition:background .2s}
+.il .v{font-variant-numeric:tabular-nums;font-weight:500}
+.il.hot{cursor:pointer}
+.il.hot:hover{background:#FBF6EA}
+.il.hot.sel{background:#F7EDD6}
+.il .k{width:24px;height:24px;border-radius:50%;background:var(--bg);color:var(--soft);font:700 12px/24px Inter;text-align:center;transition:all .2s}
+.il.hot .k{background:#F3E6C7;color:#8F6420}
+.il.hot.sel .k{background:var(--ink);color:var(--lime)}
+.inv-t{display:flex;justify-content:space-between;font-weight:700;padding:16px 0 14px;border-top:1px solid var(--line-2);margin-top:6px;font-size:15px}
+.inv-f{font-size:11.5px;color:var(--muted);line-height:1.5;padding:12px 14px;border-radius:10px;background:var(--bg);display:grid;grid-template-columns:1fr 28px;gap:12px;align-items:center}
+.inv-f.hot{cursor:pointer}.inv-f.sel{background:#F7EDD6}
+.xp{position:sticky;top:100px}
+.xp-card{background:#fff;border-radius:var(--r);border:1px solid var(--line);padding:32px;min-height:330px}
+.xp-card .lab{font:600 12.5px Inter;letter-spacing:.14em;text-transform:uppercase;color:#8F6420}
+.xp-card h3{font-size:30px;margin:12px 0 14px}
+.xp-card p{color:var(--muted);font-size:16px}
+.xp-card .fix{margin-top:24px;padding:18px;border-radius:14px;background:var(--ink);color:#fff;font-size:15px}
+.xp-card .fix b{color:var(--lime);display:block;font:700 13px Inter;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.xp-nav{display:flex;gap:8px;margin-top:16px;align-items:center}
+.xp-nav button{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#fff;font:600 14px Inter;cursor:pointer;color:var(--ink);transition:all .2s}
+.xp-nav button.on{background:var(--ink);color:var(--lime);border-color:var(--ink)}
+
+/* PLATFORM */
+.plat{overflow:hidden}
+.ptabs{display:inline-flex;gap:4px;padding:5px;border-radius:999px;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1);margin-bottom:28px;flex-wrap:wrap}
+.ptabs button{font:600 14.5px Inter;border:0;padding:11px 18px;border-radius:999px;background:transparent;color:rgba(255,255,255,.7);cursor:pointer}
+.ptabs button.on{background:#fff;color:var(--ink)}
+.pwrap{display:grid;grid-template-columns:1.4fr .6fr;gap:22px}
+.pane{display:none}.pane.on{display:block;animation:fade .4s}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}}
+.pview{background:#fff;color:var(--text);border-radius:var(--r);padding:28px;min-height:440px}
+.pview h4{font-size:21px;letter-spacing:-.02em}
+.pview .cs{font-size:13px;color:var(--muted);margin:4px 0 20px}
+table.t{width:100%;border-collapse:collapse;font-size:13.5px}
+table.t th{text-align:left;font:600 11.5px Inter;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);padding:9px 10px;border-bottom:1px solid var(--line)}
+table.t td{padding:12px 10px;border-bottom:1px solid var(--line-2)}
+table.t td:last-child,table.t th:last-child{text-align:right}
+.chart{display:flex;align-items:flex-end;gap:10px;height:170px;padding-top:10px;border-bottom:1px solid var(--line-2)}
+.chart div{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:2px;height:100%}
+.chart i{display:block;border-radius:4px 4px 0 0}
+.chart i.g{background:#CFCAC0}.chart i.r{background:var(--green)}.chart i.o{background:var(--lime)}
+.clab{display:flex;gap:10px;margin-top:8px}.clab span{flex:1;text-align:center;font-size:11px;color:var(--soft)}
+.legend{display:flex;gap:16px;font-size:12px;color:var(--muted);margin-top:14px}
+.legend span{display:flex;gap:6px;align-items:center}.legend i{width:10px;height:10px;border-radius:3px}
+.pside{display:grid;gap:22px;align-content:start}
+.pfeat{border-radius:var(--r);padding:26px;background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1)}
+.pfeat h4{font-size:19px;margin-bottom:14px}
+.pfeat ul{list-style:none;display:grid;gap:12px}
+.pfeat li{display:flex;gap:10px;font-size:14.5px;color:rgba(255,255,255,.8)}
+.pfeat li .tick{color:var(--lime);margin-top:3px}
+.pstat{border-radius:var(--r);padding:26px;background:var(--lime);color:var(--ink)}
+.pstat small{font:600 12px Inter;letter-spacing:.12em;text-transform:uppercase}
+.pstat b{display:block;font:800 52px/1 "Plus Jakarta Sans";letter-spacing:-.03em;margin:10px 0 8px;font-variant-numeric:tabular-nums}
+.pstat p{font-size:14px}
+
+/* STEPS */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:32px 30px;position:relative}
+.step .no{font:800 15px "Plus Jakarta Sans";color:var(--green-d);display:flex;align-items:center;gap:12px}
+.step .no::after{content:"";flex:1;height:1px;background:var(--line)}
+.step h3{font-size:24px;margin:22px 0 12px;letter-spacing:-.02em}
+.step p{color:var(--muted);font-size:15.5px}
+.step .when{margin-top:22px;font:600 13px Inter;color:var(--ink);display:inline-block;padding:7px 12px;border-radius:999px;background:var(--bg)}
+
+/* PROMISES */
+.prom{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.1);border-radius:var(--r);overflow:hidden}
+.prom div{background:var(--ink);padding:34px 32px}
+.prom .n{font:600 13px Inter;color:var(--lime);letter-spacing:.06em}
+.prom h4{font-size:22px;margin:14px 0 10px;letter-spacing:-.02em}
+.prom p{font-size:15px;color:rgba(255,255,255,.66)}
+
+/* COMPLIANCE */
+.comp{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.ccard{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:34px}
+.ccard h3{font-size:26px;margin:12px 0 12px;letter-spacing:-.02em}
+.ccard p{color:var(--muted);font-size:15.5px}
+.fogo{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
+.fogo div{border-radius:14px;padding:16px;background:var(--bg)}
+.fogo div.now{background:var(--ink);color:#fff}
+.fogo b{font:800 20px "Plus Jakarta Sans";display:block;letter-spacing:-.02em}
+.fogo small{font-size:12.5px;color:var(--muted);display:block;line-height:1.4;margin-top:4px}
+.fogo .now small{color:rgba(255,255,255,.7)}
+.esg{margin-top:24px;display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:center}
+.esg svg{width:120px;height:120px}
+.esg ul{list-style:none;display:grid;gap:8px;font-size:13.5px}
+.esg li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line-2);padding-bottom:8px}
+.esg li span{color:var(--muted);display:flex;gap:8px;align-items:center}
+.esg li i{width:9px;height:9px;border-radius:3px}
+
+/* COVERAGE */
+.cov{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+.states{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.states div{background:#fff;padding:26px 22px}
+.states b{font:800 28px "Plus Jakarta Sans";letter-spacing:-.02em;display:block}
+.states small{font-size:12.5px;color:var(--muted);display:block;line-height:1.4;margin-top:4px}
+.streams{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.streams span{font-size:14px;font-weight:500;padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:#fff}
+
+/* FAQ */
+.faq{display:grid;grid-template-columns:.75fr 1.25fr;gap:72px}
+details{border-bottom:1px solid var(--line);padding:24px 0}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:24px;font:700 19px/1.35 "Plus Jakarta Sans";letter-spacing:-.015em}
+summary::-webkit-details-marker{display:none}
+summary .pm{width:28px;height:28px;flex:none;position:relative;border-radius:50%;border:1px solid var(--line);transition:transform .3s,background .3s}
+summary .pm::before,summary .pm::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1.6px;background:var(--ink);transform:translate(-50%,-50%)}
+summary .pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+details[open] summary .pm{transform:rotate(45deg);background:var(--lime);border-color:var(--lime)}
+details p{color:var(--muted);margin-top:12px;font-size:16px;max-width:680px}
+
+/* CTA */
+.cta{border-radius:28px;padding:72px;display:grid;grid-template-columns:1fr 1fr;gap:64px;position:relative;overflow:hidden;isolation:isolate}
+.cta::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(600px 400px at 0% 100%,rgba(47,182,124,.3),transparent 70%)}
+.cta h2{font-size:clamp(40px,5vw,64px);margin:16px 0 18px}
+.cta p{color:rgba(255,255,255,.7);font-size:18px}
+.cta ul{list-style:none;display:grid;gap:14px;margin-top:30px}
+.cta li{display:flex;gap:12px;font-size:16px;color:rgba(255,255,255,.88)}
+.cta li .tick{color:var(--lime);margin-top:4px}
+form{background:#fff;color:var(--text);border-radius:22px;padding:32px}
+form h3{font-size:24px;letter-spacing:-.02em}
+form .fs{font-size:14px;color:var(--muted);margin:4px 0 22px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fields .full{grid-column:1/-1}
+label{display:block;font-size:13px;font-weight:600;margin-bottom:6px}
+input[type=text],input[type=email],input[type=tel]{width:100%;font:15.5px Inter;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);transition:border-color .2s,background .2s,box-shadow .2s}
+input:focus{outline:0;border-color:var(--green);background:#fff;box-shadow:0 0 0 4px rgba(47,182,124,.12)}
+.drop{display:flex;align-items:center;justify-content:space-between;gap:14px;border:1px dashed #C8C3B6;border-radius:14px;padding:16px 18px;cursor:pointer;transition:border-color .2s,background .2s}
+.drop:hover{border-color:var(--green);background:#F5FBF8}
+.drop b{display:block;font-size:14.5px}
+.drop small{font-size:12.5px;color:var(--muted)}
+.drop .bt{font:600 13px Inter;padding:8px 14px;border-radius:999px;background:var(--ink);color:#fff;white-space:nowrap}
+.drop input{display:none}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted);margin:18px 0 20px;font-weight:400}
+.consent input{width:17px;height:17px;accent-color:var(--green);margin-top:2px;flex:none}
+form .btn{width:100%;justify-content:center}
+.thanks{display:none;text-align:center;padding:48px 10px}
+.thanks .ok{width:64px;height:64px;margin:0 auto 18px;border-radius:50%;background:var(--lime);display:grid;place-items:center}
+.thanks .ok svg{width:28px;height:28px}
+.thanks h3{font-size:26px;margin-bottom:10px}
+.thanks p{color:var(--muted)}
+form.sent .fb{display:none}form.sent .thanks{display:block}
+
+/* FOOTER */
+footer{padding:90px 0 40px;color:var(--muted);font-size:14.5px}
+.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:50px;border-bottom:1px solid var(--line)}
+.foot .logo svg{height:46px;width:auto;margin-bottom:18px}
+.foot h4{font:600 12.5px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin-bottom:16px}
+.foot ul{list-style:none;display:grid;gap:10px}
+.foot a:hover{color:var(--ink)}
+.legal{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:24px;font-size:13px}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.tr i::after{width:var(--w)}}
+
+@media (max-width:1100px){
+  .nav ul,.nav .login{display:none}.nav .btn{margin-left:auto}
+  .fc1,.fc2{display:none}
+  .app-body{grid-template-columns:1fr}.side{display:none}
+  .feat,.xray,.pwrap,.cov,.faq,.cta,.comp{grid-template-columns:1fr}
+  .feat{gap:44px}.feat.rev .ftext{order:0}
+  .vs{grid-template-columns:1fr}
+  .inc{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr}
+  .prom{grid-template-columns:1fr 1fr}
+  .facts{grid-template-columns:1fr 1fr}.facts div{padding-bottom:24px}
+  .xp{position:static}
+  .mini-float{right:12px}
+}
+@media (max-width:640px){
+  body{font-size:16px}.wrap{padding:0 16px}
+  .sec{padding:84px 0}
+  .nav{padding:12px 0}.nav .logo svg{height:34px}.nav .btn{display:none}.menu-btn{display:grid}
+  .hero{padding:118px 0 0}
+  .hero h1{font-size:50px}
+  .hero .lede{font-size:17.5px}
+  .hero .ctas .btn{width:100%;justify-content:center}
+  .hero .assure{gap:10px 18px}
+  .stagewrap{margin-top:52px}
+  .app{border-radius:14px}
+  .app-bar .url{padding:5px 20px}
+  .main{padding:16px}
+  .mhead{flex-direction:column;align-items:flex-start}
+  .kpis{grid-template-columns:1fr 1fr;gap:8px}.kpi{padding:12px}.kpi b{font-size:21px}
+  .grid2{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr auto;gap:8px}.row .amt{display:none}
+  .statement{padding:20px 0 80px}
+  .facts b{font-size:38px}
+  .vcol{padding:26px 22px}
+  .tr{grid-template-columns:96px 1fr 58px;gap:10px;font-size:12px}
+  .card{padding:18px}
+  .mini-float{position:static;margin-top:14px;max-width:none}
+  .inc{grid-template-columns:1fr}.inc div{padding:26px 22px}
+  .invoice{padding:22px 18px}
+  .xp-card{padding:24px}.xp-card h3{font-size:25px}
+  .pview{padding:18px;min-height:0;overflow:hidden}
+  #pview .pane:first-child th:nth-child(4),#pview .pane:first-child td:nth-child(4){display:none}
+  table.t td:first-child{white-space:nowrap}
+  .pilltag .lg{display:none}
+  table.t{font-size:12.5px}table.t td,table.t th{padding:10px 6px}
+  .st{font-size:10.5px;padding:5px 7px}
+  .prom{grid-template-columns:1fr}
+  .ccard{padding:24px}
+  .fogo{grid-template-columns:1fr}
+  .esg{grid-template-columns:1fr}
+  .states{grid-template-columns:1fr 1fr}
+  .cta{padding:40px 20px;gap:40px;border-radius:22px}
+  form{padding:22px}.fields{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr 1fr}.foot>div:first-child{grid-column:1/-1}
+  .mm.open{display:flex}
+}
+
+/* artifact edition */
+body{background:var(--bg);color:var(--text)}
+:root{color-scheme:light}
+.wrap{padding-left:max(28px,env(safe-area-inset-left,0px));padding-right:max(28px,env(safe-area-inset-right,0px))}
+.nav{padding:env(safe-area-inset-top,0px) 0 18px}
+.nav.solid{padding:env(safe-area-inset-top,0px) 0 10px}
+.nav .concept+.wrap{margin-top:16px}
+.nav.solid .concept+.wrap{margin-top:10px}
+.concept{font:500 12px/1.4 Inter,system-ui,sans-serif;text-align:center;color:rgba(255,255,255,.75);padding:7px max(16px,env(safe-area-inset-right,0px)) 7px max(16px,env(safe-area-inset-left,0px));background:rgba(0,0,0,.28);letter-spacing:.01em}
+.concept b{color:var(--lime);font-weight:600}
+.nav.solid .concept{background:var(--ink);color:rgba(255,255,255,.8)}
+.hero{padding-top:200px}
+.mm{padding-top:calc(20px + env(safe-area-inset-top,0px))}
+.rv{opacity:1!important;transform:none!important}
+.tr i::after{width:var(--w)}
+.rows.anim .row{opacity:.6}
+@media (max-width:640px){
+  .wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  .hero{padding-top:150px}
+  .concept span{display:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="tk" viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="xx" viewBox="0 0 16 16"><path d="M4.5 4.5l7 7M11.5 4.5l-7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+<symbol id="ar" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>
+
+<header class="nav" id="nav">
+  <div class="concept"><b>Design concept</b> · Unified Waste Solutions website preview<span>. Not a live site; figures are examples and the form sends nothing.</span></div>
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Unified Waste Solutions home"><span class="rev"><svg role="img" aria-label="Unified Waste Solutions" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510.5 174.0"><g transform="translate(-16.5 -4.5) scale(1.5)"><defs><clipPath id="uws3nc"><polygon points="0,0 0,150 96.94,147.28 60,100 47.69,84.24 47.69,0"/></clipPath><mask id="uws3nm" maskUnits="userSpaceOnUse" x="-20" y="-20" width="160" height="170"><rect x="-20" y="-20" width="160" height="170" fill="#fff"/><line x1="50.15" y1="87.39" x2="69.85" y2="112.61" stroke="#000" stroke-width="3.2"/></mask></defs><g mask="url(#uws3nm)"><path d="M30 40V70A30 30 0 0 0 90 70V22" fill="none" stroke="#2FB67C" stroke-width="22" stroke-linecap="round"/><g clip-path="url(#uws3nc)"><path d="M30 40V70A30 30 0 0 0 90 70V22" fill="none" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round"/></g></g></g><path fill="#FFFFFF" transform="translate(163.3 106.16204052091472)" d="M36.2 1.2L36.2 1.2Q27.4 1.2 20.5 -2.5Q13.6 -6.2 9.65 -12.65Q5.7 -19.1 5.7 -27.3L5.7 -27.3L5.7 -74.5L21.2 -74.5L21.2 -28.3Q21.2 -23.9 23.15 -20.35Q25.1 -16.8 28.5 -14.8Q31.9 -12.8 36.2 -12.8L36.2 -12.8Q40.6 -12.8 43.95 -14.8Q47.3 -16.8 49.25 -20.35Q51.2 -23.9 51.2 -28.3L51.2 -28.3L51.2 -74.5L66.7 -74.5L66.7 -27.3Q66.7 -19.1 62.75 -12.65Q58.8 -6.2 51.9 -2.5Q45 1.2 36.2 1.2M90.9 0L75.9 0L75.9 -54.6L89.9 -54.6L89.9 -43.8L89.1 -46.2Q91 -51.1 95.25 -53.45Q99.5 -55.8 105.2 -55.8L105.2 -55.8Q111.4 -55.8 116.05 -53.2Q120.7 -50.6 123.3 -45.95Q125.9 -41.3 125.9 -35.1L125.9 -35.1L125.9 0L110.9 0L110.9 -31.9Q110.9 -35.1 109.65 -37.4Q108.4 -39.7 106.15 -41Q103.9 -42.3 100.9 -42.3L100.9 -42.3Q98 -42.3 95.7 -41Q93.4 -39.7 92.15 -37.4Q90.9 -35.1 90.9 -31.9L90.9 -31.9L90.9 0M148.8 0L133.8 0L133.8 -54.6L148.8 -54.6L148.8 0M148.8 -59.5L133.8 -59.5L133.8 -74.5L148.8 -74.5L148.8 -59.5M179.4 0L164.4 0L164.4 -41.6L155.2 -41.6L155.2 -54.6L164.4 -54.6L164.4 -55.4Q164.4 -61.9 166.95 -66.4Q169.5 -70.9 174.3 -73.3Q179.1 -75.7 185.9 -75.7L185.9 -75.7Q187.2 -75.7 188.7 -75.55Q190.2 -75.4 191.2 -75.2L191.2 -75.2L191.2 -62.4Q190.2 -62.6 189.45 -62.65Q188.7 -62.7 187.9 -62.7L187.9 -62.7Q183.7 -62.7 181.55 -60.85Q179.4 -59 179.4 -55.4L179.4 -55.4L179.4 -54.6L191.1 -54.6L191.1 -41.6L179.4 -41.6L179.4 0M210.8 0L195.8 0L195.8 -54.6L210.8 -54.6L210.8 0M210.8 -59.5L195.8 -59.5L195.8 -74.5L210.8 -74.5L210.8 -59.5M246.1 1.2L246.1 1.2Q237.4 1.2 231 -2.65Q224.6 -6.5 221.1 -13Q217.6 -19.5 217.6 -27.4L217.6 -27.4Q217.6 -35.6 221.25 -42Q224.9 -48.4 231.1 -52.1Q237.3 -55.8 245.1 -55.8L245.1 -55.8Q251.6 -55.8 256.6 -53.75Q261.6 -51.7 265.05 -48Q268.5 -44.3 270.3 -39.45Q272.1 -34.6 272.1 -28.9L272.1 -28.9Q272.1 -27.3 271.95 -25.75Q271.8 -24.2 271.4 -23.1L271.4 -23.1L230.5 -23.1L230.5 -34.1L262.9 -34.1L255.8 -28.9Q256.8 -33.2 255.7 -36.55Q254.6 -39.9 251.85 -41.85Q249.1 -43.8 245.1 -43.8L245.1 -43.8Q241.2 -43.8 238.4 -41.9Q235.6 -40 234.2 -36.3Q232.8 -32.6 233.1 -27.3L233.1 -27.3Q232.7 -22.7 234.2 -19.2Q235.7 -15.7 238.8 -13.75Q241.9 -11.8 246.3 -11.8L246.3 -11.8Q250.3 -11.8 253.15 -13.4Q256 -15 257.6 -17.8L257.6 -17.8L269.6 -12.1Q268 -8.1 264.55 -5.1Q261.1 -2.1 256.4 -0.45Q251.7 1.2 246.1 1.2M304.6 1.2L304.6 1.2Q296.6 1.2 290.3 -2.6Q284 -6.4 280.35 -12.9Q276.7 -19.4 276.7 -27.3L276.7 -27.3Q276.7 -35.3 280.4 -41.75Q284.1 -48.2 290.4 -52Q296.7 -55.8 304.5 -55.8L304.5 -55.8Q310.5 -55.8 315.15 -53.55Q319.8 -51.3 322.5 -47.2L322.5 -47.2L320.2 -44.2L320.2 -75.7L335.2 -75.7L335.2 0L321.2 0L321.2 -10L322.6 -6.9Q319.8 -2.9 315 -0.85Q310.2 1.2 304.6 1.2M306.4 -12.3L306.4 -12.3Q310.5 -12.3 313.6 -14.2Q316.7 -16.1 318.45 -19.5Q320.2 -22.9 320.2 -27.3L320.2 -27.3Q320.2 -31.7 318.45 -35.1Q316.7 -38.5 313.6 -40.4Q310.5 -42.3 306.4 -42.3L306.4 -42.3Q302.3 -42.3 299.05 -40.35Q295.8 -38.4 294 -35.05Q292.2 -31.7 292.2 -27.3L292.2 -27.3Q292.2 -22.9 294 -19.5Q295.8 -16.1 299.05 -14.2Q302.3 -12.3 306.4 -12.3"/><path fill="#C8F169" transform="translate(169 143.23525488936713) scale(0.2695386955403348)" d="M37.01 0L22.07 0L2.44 -72.75L16.46 -72.75L25.93 -34.03Q26.9 -29.83 27.76 -25.2Q28.61 -20.56 29.44 -15.87L29.44 -15.87Q29.69 -14.31 29.93 -12.7L29.93 -12.7Q30.22 -14.31 30.52 -15.87L30.52 -15.87Q31.35 -20.56 32.28 -25.2Q33.2 -29.83 34.23 -34.03L34.23 -34.03L44.09 -72.75L57.91 -72.75L67.72 -34.03Q68.8 -29.83 69.7 -25.2Q70.61 -20.56 71.48 -15.87L71.48 -15.87Q71.73 -14.36 72.02 -12.84L72.02 -12.84Q72.27 -14.36 72.56 -15.87L72.56 -15.87Q73.34 -20.56 74.22 -25.2Q75.1 -29.83 76.07 -34.03L76.07 -34.03L85.5 -72.75L99.56 -72.75L79.88 0L64.94 0L54.35 -40.19Q52.88 -45.8 51.81 -52.39L51.81 -52.39Q51.37 -54.83 50.93 -57.42L50.93 -57.42Q50.54 -55.03 50.2 -52.78L50.2 -52.78Q49.22 -46.29 47.61 -40.19L47.61 -40.19L37.01 0M136.7 0L122.44 0L147.83 -72.75L164.39 -72.75L190.36 0L176.06 0L169.9 -18.02L142.66 -18.02L136.7 0M146.13 -28.52L166.29 -28.52L163.12 -37.79Q161.21 -43.65 159.16 -51.07L159.16 -51.07Q157.7 -56.35 155.99 -62.65L155.99 -62.65Q154.38 -56.25 152.96 -50.93L152.96 -50.93Q150.96 -43.46 149.2 -37.79L149.2 -37.79L146.13 -28.52M243.62 1.12L243.62 1.12Q235.17 1.12 228.94 -1.51Q222.72 -4.15 219.2 -9.18Q215.69 -14.21 215.39 -21.39L215.39 -21.39L228.24 -21.39Q228.58 -17.58 230.63 -15.04Q232.68 -12.5 236.05 -11.25Q239.42 -10.01 243.52 -10.01L243.52 -10.01Q247.82 -10.01 251.11 -11.33Q254.41 -12.65 256.26 -15.01Q258.12 -17.38 258.12 -20.51L258.12 -20.51Q258.12 -23.34 256.48 -25.2Q254.85 -27.05 251.89 -28.34Q248.94 -29.64 244.98 -30.62L244.98 -30.62L236.73 -32.76Q227.6 -35.11 222.5 -39.84Q217.4 -44.58 217.4 -52.29L217.4 -52.29Q217.4 -58.74 220.86 -63.57Q224.33 -68.41 230.34 -71.07Q236.34 -73.73 243.96 -73.73L243.96 -73.73Q251.72 -73.73 257.58 -71.04Q263.44 -68.36 266.74 -63.62Q270.03 -58.89 270.18 -52.83L270.18 -52.83L257.53 -52.83Q257.04 -57.52 253.36 -60.08Q249.67 -62.65 243.76 -62.65L243.76 -62.65Q239.66 -62.65 236.71 -61.4Q233.75 -60.16 232.17 -58.01Q230.58 -55.86 230.58 -53.08L230.58 -53.08Q230.58 -50.05 232.46 -48.1Q234.34 -46.14 237.2 -44.97Q240.05 -43.8 242.98 -43.07L242.98 -43.07L249.77 -41.31Q253.82 -40.33 257.63 -38.72Q261.44 -37.11 264.49 -34.64Q267.54 -32.18 269.35 -28.66Q271.16 -25.15 271.16 -20.41L271.16 -20.41Q271.16 -14.01 267.88 -9.16Q264.61 -4.3 258.46 -1.59Q252.31 1.12 243.62 1.12M320.31 -61.77L297.85 -61.77L297.85 -72.75L355.76 -72.75L355.76 -61.77L333.35 -61.77L333.35 0L320.31 0L320.31 -61.77M432.6 0L385.13 0L385.13 -72.75L432.4 -72.75L432.4 -61.77L398.17 -61.77L398.17 -42.14L429.86 -42.14L429.86 -31.3L398.17 -31.3L398.17 -10.99L432.6 -10.99L432.6 0M532.41 1.12L532.41 1.12Q523.97 1.12 517.74 -1.51Q511.52 -4.15 508 -9.18Q504.48 -14.21 504.19 -21.39L504.19 -21.39L517.03 -21.39Q517.38 -17.58 519.43 -15.04Q521.48 -12.5 524.85 -11.25Q528.21 -10.01 532.32 -10.01L532.32 -10.01Q536.61 -10.01 539.91 -11.33Q543.21 -12.65 545.06 -15.01Q546.92 -17.38 546.92 -20.51L546.92 -20.51Q546.92 -23.34 545.28 -25.2Q543.64 -27.05 540.69 -28.34Q537.74 -29.64 533.78 -30.62L533.78 -30.62L525.53 -32.76Q516.4 -35.11 511.3 -39.84Q506.19 -44.58 506.19 -52.29L506.19 -52.29Q506.19 -58.74 509.66 -63.57Q513.13 -68.41 519.13 -71.07Q525.14 -73.73 532.76 -73.73L532.76 -73.73Q540.52 -73.73 546.38 -71.04Q552.24 -68.36 555.53 -63.62Q558.83 -58.89 558.98 -52.83L558.98 -52.83L546.33 -52.83Q545.84 -57.52 542.16 -60.08Q538.47 -62.65 532.56 -62.65L532.56 -62.65Q528.46 -62.65 525.5 -61.4Q522.55 -60.16 520.96 -58.01Q519.38 -55.86 519.38 -53.08L519.38 -53.08Q519.38 -50.05 521.26 -48.1Q523.14 -46.14 525.99 -44.97Q528.85 -43.8 531.78 -43.07L531.78 -43.07L538.57 -41.31Q542.62 -40.33 546.43 -38.72Q550.24 -37.11 553.29 -34.64Q556.34 -32.18 558.15 -28.66Q559.95 -25.15 559.95 -20.41L559.95 -20.41Q559.95 -14.01 556.68 -9.16Q553.41 -4.3 547.26 -1.59Q541.11 1.12 532.41 1.12M621.07 0.98L621.07 0.98Q611.5 0.98 603.93 -3.47Q596.36 -7.91 591.99 -16.26Q587.62 -24.61 587.62 -36.33L587.62 -36.33Q587.62 -48.1 591.99 -56.47Q596.36 -64.84 603.93 -69.29Q611.5 -73.73 621.07 -73.73L621.07 -73.73Q630.59 -73.73 638.13 -69.29Q645.68 -64.84 650.05 -56.47Q654.42 -48.1 654.42 -36.33L654.42 -36.33Q654.42 -24.61 650.05 -16.24Q645.68 -7.86 638.13 -3.44Q630.59 0.98 621.07 0.98M621.07 -10.69L621.07 -10.69Q626.98 -10.69 631.54 -13.65Q636.11 -16.6 638.7 -22.34Q641.28 -28.08 641.28 -36.33L641.28 -36.33Q641.28 -44.68 638.7 -50.42Q636.11 -56.15 631.54 -59.11Q626.98 -62.06 621.07 -62.06L621.07 -62.06Q615.11 -62.06 610.52 -59.08Q605.93 -56.1 603.32 -50.37Q600.71 -44.63 600.71 -36.33L600.71 -36.33Q600.71 -28.08 603.32 -22.36Q605.93 -16.65 610.52 -13.67Q615.11 -10.69 621.07 -10.69M729.94 0L684.77 0L684.77 -72.75L697.81 -72.75L697.81 -10.99L729.94 -10.99L729.94 0M788.81 1.07L788.81 1.07Q779.92 1.07 773.28 -2.27Q766.64 -5.62 762.98 -11.55Q759.31 -17.48 759.31 -25.24L759.31 -25.24L759.31 -72.75L772.35 -72.75L772.35 -26.32Q772.35 -21.78 774.38 -18.21Q776.4 -14.65 780.09 -12.62Q783.78 -10.6 788.81 -10.6L788.81 -10.6Q793.84 -10.6 797.52 -12.62Q801.21 -14.65 803.24 -18.21Q805.26 -21.78 805.26 -26.32L805.26 -26.32L805.26 -72.75L818.3 -72.75L818.3 -25.24Q818.3 -17.48 814.61 -11.55Q810.93 -5.62 804.31 -2.27Q797.69 1.07 788.81 1.07M870.09 -61.77L847.63 -61.77L847.63 -72.75L905.54 -72.75L905.54 -61.77L883.13 -61.77L883.13 0L870.09 0L870.09 -61.77M934.91 -72.75L947.95 -72.75L947.95 0L934.91 0L934.91 -72.75M1011.75 0.98L1011.75 0.98Q1002.18 0.98 994.61 -3.47Q987.04 -7.91 982.67 -16.26Q978.3 -24.61 978.3 -36.33L978.3 -36.33Q978.3 -48.1 982.67 -56.47Q987.04 -64.84 994.61 -69.29Q1002.18 -73.73 1011.75 -73.73L1011.75 -73.73Q1021.27 -73.73 1028.82 -69.29Q1036.36 -64.84 1040.73 -56.47Q1045.1 -48.1 1045.1 -36.33L1045.1 -36.33Q1045.1 -24.61 1040.73 -16.24Q1036.36 -7.86 1028.82 -3.44Q1021.27 0.98 1011.75 0.98M1011.75 -10.69L1011.75 -10.69Q1017.66 -10.69 1022.23 -13.65Q1026.79 -16.6 1029.38 -22.34Q1031.97 -28.08 1031.97 -36.33L1031.97 -36.33Q1031.97 -44.68 1029.38 -50.42Q1026.79 -56.15 1022.23 -59.11Q1017.66 -62.06 1011.75 -62.06L1011.75 -62.06Q1005.79 -62.06 1001.21 -59.08Q996.62 -56.1 994 -50.37Q991.39 -44.63 991.39 -36.33L991.39 -36.33Q991.39 -28.08 994 -22.36Q996.62 -16.65 1001.21 -13.67Q1005.79 -10.69 1011.75 -10.69M1088.74 0L1075.46 0L1075.46 -72.75L1090.2 -72.75L1115.35 -32.67Q1116.91 -30.18 1118.67 -27.03Q1120.43 -23.88 1122.33 -20.02L1122.33 -20.02Q1123.31 -17.97 1124.28 -15.77L1124.28 -15.77Q1124.14 -17.77 1124.04 -19.82L1124.04 -19.82Q1123.75 -24.12 1123.62 -28Q1123.5 -31.88 1123.5 -34.57L1123.5 -34.57L1123.5 -72.75L1136.73 -72.75L1136.73 0L1121.94 0L1099.23 -36.08Q1097.09 -39.55 1095.18 -42.92Q1093.28 -46.29 1091.08 -50.54L1091.08 -50.54Q1089.66 -53.32 1087.81 -56.79L1087.81 -56.79Q1088 -53.66 1088.15 -50.73L1088.15 -50.73Q1088.39 -45.95 1088.57 -42.19Q1088.74 -38.43 1088.74 -36.13L1088.74 -36.13L1088.74 0M1194.92 1.12L1194.92 1.12Q1186.47 1.12 1180.25 -1.51Q1174.02 -4.15 1170.51 -9.18Q1166.99 -14.21 1166.7 -21.39L1166.7 -21.39L1179.54 -21.39Q1179.88 -17.58 1181.93 -15.04Q1183.98 -12.5 1187.35 -11.25Q1190.72 -10.01 1194.82 -10.01L1194.82 -10.01Q1199.12 -10.01 1202.42 -11.33Q1205.71 -12.65 1207.57 -15.01Q1209.42 -17.38 1209.42 -20.51L1209.42 -20.51Q1209.42 -23.34 1207.79 -25.2Q1206.15 -27.05 1203.2 -28.34Q1200.24 -29.64 1196.29 -30.62L1196.29 -30.62L1188.04 -32.76Q1178.9 -35.11 1173.8 -39.84Q1168.7 -44.58 1168.7 -52.29L1168.7 -52.29Q1168.7 -58.74 1172.17 -63.57Q1175.63 -68.41 1181.64 -71.07Q1187.64 -73.73 1195.26 -73.73L1195.26 -73.73Q1203.03 -73.73 1208.88 -71.04Q1214.74 -68.36 1218.04 -63.62Q1221.34 -58.89 1221.48 -52.83L1221.48 -52.83L1208.84 -52.83Q1208.35 -57.52 1204.66 -60.08Q1200.97 -62.65 1195.07 -62.65L1195.07 -62.65Q1190.96 -62.65 1188.01 -61.4Q1185.06 -60.16 1183.47 -58.01Q1181.88 -55.86 1181.88 -53.08L1181.88 -53.08Q1181.88 -50.05 1183.76 -48.1Q1185.64 -46.14 1188.5 -44.97Q1191.36 -43.8 1194.29 -43.07L1194.29 -43.07L1201.07 -41.31Q1205.13 -40.33 1208.93 -38.72Q1212.74 -37.11 1215.79 -34.64Q1218.85 -32.18 1220.65 -28.66Q1222.46 -25.15 1222.46 -20.41L1222.46 -20.41Q1222.46 -14.01 1219.19 -9.16Q1215.92 -4.3 1209.76 -1.59Q1203.61 1.12 1194.92 1.12"/></svg></span><span class="col"><svg role="img" aria-label="Unified Waste Solutions" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510.5 174.0"><g transform="translate(-16.5 -4.5) scale(1.5)"><defs><clipPath id="uws0cc"><polygon points="0,0 0,150 96.94,147.28 60,100 47.69,84.24 47.69,0"/></clipPath><mask id="uws0cm" maskUnits="userSpaceOnUse" x="-20" y="-20" width="160" height="170"><rect x="-20" y="-20" width="160" height="170" fill="#fff"/><line x1="50.15" y1="87.39" x2="69.85" y2="112.61" stroke="#000" stroke-width="3.2"/></mask></defs><g mask="url(#uws0cm)"><path d="M30 40V70A30 30 0 0 0 90 70V22" fill="none" stroke="#2FB67C" stroke-width="22" stroke-linecap="round"/><g clip-path="url(#uws0cc)"><path d="M30 40V70A30 30 0 0 0 90 70V22" fill="none" stroke="#0F4A3B" stroke-width="22" stroke-linecap="round"/></g></g></g><path fill="#0B2E26" transform="translate(163.3 106.16204052091472)" d="M36.2 1.2L36.2 1.2Q27.4 1.2 20.5 -2.5Q13.6 -6.2 9.65 -12.65Q5.7 -19.1 5.7 -27.3L5.7 -27.3L5.7 -74.5L21.2 -74.5L21.2 -28.3Q21.2 -23.9 23.15 -20.35Q25.1 -16.8 28.5 -14.8Q31.9 -12.8 36.2 -12.8L36.2 -12.8Q40.6 -12.8 43.95 -14.8Q47.3 -16.8 49.25 -20.35Q51.2 -23.9 51.2 -28.3L51.2 -28.3L51.2 -74.5L66.7 -74.5L66.7 -27.3Q66.7 -19.1 62.75 -12.65Q58.8 -6.2 51.9 -2.5Q45 1.2 36.2 1.2M90.9 0L75.9 0L75.9 -54.6L89.9 -54.6L89.9 -43.8L89.1 -46.2Q91 -51.1 95.25 -53.45Q99.5 -55.8 105.2 -55.8L105.2 -55.8Q111.4 -55.8 116.05 -53.2Q120.7 -50.6 123.3 -45.95Q125.9 -41.3 125.9 -35.1L125.9 -35.1L125.9 0L110.9 0L110.9 -31.9Q110.9 -35.1 109.65 -37.4Q108.4 -39.7 106.15 -41Q103.9 -42.3 100.9 -42.3L100.9 -42.3Q98 -42.3 95.7 -41Q93.4 -39.7 92.15 -37.4Q90.9 -35.1 90.9 -31.9L90.9 -31.9L90.9 0M148.8 0L133.8 0L133.8 -54.6L148.8 -54.6L148.8 0M148.8 -59.5L133.8 -59.5L133.8 -74.5L148.8 -74.5L148.8 -59.5M179.4 0L164.4 0L164.4 -41.6L155.2 -41.6L155.2 -54.6L164.4 -54.6L164.4 -55.4Q164.4 -61.9 166.95 -66.4Q169.5 -70.9 174.3 -73.3Q179.1 -75.7 185.9 -75.7L185.9 -75.7Q187.2 -75.7 188.7 -75.55Q190.2 -75.4 191.2 -75.2L191.2 -75.2L191.2 -62.4Q190.2 -62.6 189.45 -62.65Q188.7 -62.7 187.9 -62.7L187.9 -62.7Q183.7 -62.7 181.55 -60.85Q179.4 -59 179.4 -55.4L179.4 -55.4L179.4 -54.6L191.1 -54.6L191.1 -41.6L179.4 -41.6L179.4 0M210.8 0L195.8 0L195.8 -54.6L210.8 -54.6L210.8 0M210.8 -59.5L195.8 -59.5L195.8 -74.5L210.8 -74.5L210.8 -59.5M246.1 1.2L246.1 1.2Q237.4 1.2 231 -2.65Q224.6 -6.5 221.1 -13Q217.6 -19.5 217.6 -27.4L217.6 -27.4Q217.6 -35.6 221.25 -42Q224.9 -48.4 231.1 -52.1Q237.3 -55.8 245.1 -55.8L245.1 -55.8Q251.6 -55.8 256.6 -53.75Q261.6 -51.7 265.05 -48Q268.5 -44.3 270.3 -39.45Q272.1 -34.6 272.1 -28.9L272.1 -28.9Q272.1 -27.3 271.95 -25.75Q271.8 -24.2 271.4 -23.1L271.4 -23.1L230.5 -23.1L230.5 -34.1L262.9 -34.1L255.8 -28.9Q256.8 -33.2 255.7 -36.55Q254.6 -39.9 251.85 -41.85Q249.1 -43.8 245.1 -43.8L245.1 -43.8Q241.2 -43.8 238.4 -41.9Q235.6 -40 234.2 -36.3Q232.8 -32.6 233.1 -27.3L233.1 -27.3Q232.7 -22.7 234.2 -19.2Q235.7 -15.7 238.8 -13.75Q241.9 -11.8 246.3 -11.8L246.3 -11.8Q250.3 -11.8 253.15 -13.4Q256 -15 257.6 -17.8L257.6 -17.8L269.6 -12.1Q268 -8.1 264.55 -5.1Q261.1 -2.1 256.4 -0.45Q251.7 1.2 246.1 1.2M304.6 1.2L304.6 1.2Q296.6 1.2 290.3 -2.6Q284 -6.4 280.35 -12.9Q276.7 -19.4 276.7 -27.3L276.7 -27.3Q276.7 -35.3 280.4 -41.75Q284.1 -48.2 290.4 -52Q296.7 -55.8 304.5 -55.8L304.5 -55.8Q310.5 -55.8 315.15 -53.55Q319.8 -51.3 322.5 -47.2L322.5 -47.2L320.2 -44.2L320.2 -75.7L335.2 -75.7L335.2 0L321.2 0L321.2 -10L322.6 -6.9Q319.8 -2.9 315 -0.85Q310.2 1.2 304.6 1.2M306.4 -12.3L306.4 -12.3Q310.5 -12.3 313.6 -14.2Q316.7 -16.1 318.45 -19.5Q320.2 -22.9 320.2 -27.3L320.2 -27.3Q320.2 -31.7 318.45 -35.1Q316.7 -38.5 313.6 -40.4Q310.5 -42.3 306.4 -42.3L306.4 -42.3Q302.3 -42.3 299.05 -40.35Q295.8 -38.4 294 -35.05Q292.2 -31.7 292.2 -27.3L292.2 -27.3Q292.2 -22.9 294 -19.5Q295.8 -16.1 299.05 -14.2Q302.3 -12.3 306.4 -12.3"/><path fill="#0F4A3B" transform="translate(169 143.23525488936713) scale(0.2695386955403348)" d="M37.01 0L22.07 0L2.44 -72.75L16.46 -72.75L25.93 -34.03Q26.9 -29.83 27.76 -25.2Q28.61 -20.56 29.44 -15.87L29.44 -15.87Q29.69 -14.31 29.93 -12.7L29.93 -12.7Q30.22 -14.31 30.52 -15.87L30.52 -15.87Q31.35 -20.56 32.28 -25.2Q33.2 -29.83 34.23 -34.03L34.23 -34.03L44.09 -72.75L57.91 -72.75L67.72 -34.03Q68.8 -29.83 69.7 -25.2Q70.61 -20.56 71.48 -15.87L71.48 -15.87Q71.73 -14.36 72.02 -12.84L72.02 -12.84Q72.27 -14.36 72.56 -15.87L72.56 -15.87Q73.34 -20.56 74.22 -25.2Q75.1 -29.83 76.07 -34.03L76.07 -34.03L85.5 -72.75L99.56 -72.75L79.88 0L64.94 0L54.35 -40.19Q52.88 -45.8 51.81 -52.39L51.81 -52.39Q51.37 -54.83 50.93 -57.42L50.93 -57.42Q50.54 -55.03 50.2 -52.78L50.2 -52.78Q49.22 -46.29 47.61 -40.19L47.61 -40.19L37.01 0M136.7 0L122.44 0L147.83 -72.75L164.39 -72.75L190.36 0L176.06 0L169.9 -18.02L142.66 -18.02L136.7 0M146.13 -28.52L166.29 -28.52L163.12 -37.79Q161.21 -43.65 159.16 -51.07L159.16 -51.07Q157.7 -56.35 155.99 -62.65L155.99 -62.65Q154.38 -56.25 152.96 -50.93L152.96 -50.93Q150.96 -43.46 149.2 -37.79L149.2 -37.79L146.13 -28.52M243.62 1.12L243.62 1.12Q235.17 1.12 228.94 -1.51Q222.72 -4.15 219.2 -9.18Q215.69 -14.21 215.39 -21.39L215.39 -21.39L228.24 -21.39Q228.58 -17.58 230.63 -15.04Q232.68 -12.5 236.05 -11.25Q239.42 -10.01 243.52 -10.01L243.52 -10.01Q247.82 -10.01 251.11 -11.33Q254.41 -12.65 256.26 -15.01Q258.12 -17.38 258.12 -20.51L258.12 -20.51Q258.12 -23.34 256.48 -25.2Q254.85 -27.05 251.89 -28.34Q248.94 -29.64 244.98 -30.62L244.98 -30.62L236.73 -32.76Q227.6 -35.11 222.5 -39.84Q217.4 -44.58 217.4 -52.29L217.4 -52.29Q217.4 -58.74 220.86 -63.57Q224.33 -68.41 230.34 -71.07Q236.34 -73.73 243.96 -73.73L243.96 -73.73Q251.72 -73.73 257.58 -71.04Q263.44 -68.36 266.74 -63.62Q270.03 -58.89 270.18 -52.83L270.18 -52.83L257.53 -52.83Q257.04 -57.52 253.36 -60.08Q249.67 -62.65 243.76 -62.65L243.76 -62.65Q239.66 -62.65 236.71 -61.4Q233.75 -60.16 232.17 -58.01Q230.58 -55.86 230.58 -53.08L230.58 -53.08Q230.58 -50.05 232.46 -48.1Q234.34 -46.14 237.2 -44.97Q240.05 -43.8 242.98 -43.07L242.98 -43.07L249.77 -41.31Q253.82 -40.33 257.63 -38.72Q261.44 -37.11 264.49 -34.64Q267.54 -32.18 269.35 -28.66Q271.16 -25.15 271.16 -20.41L271.16 -20.41Q271.16 -14.01 267.88 -9.16Q264.61 -4.3 258.46 -1.59Q252.31 1.12 243.62 1.12M320.31 -61.77L297.85 -61.77L297.85 -72.75L355.76 -72.75L355.76 -61.77L333.35 -61.77L333.35 0L320.31 0L320.31 -61.77M432.6 0L385.13 0L385.13 -72.75L432.4 -72.75L432.4 -61.77L398.17 -61.77L398.17 -42.14L429.86 -42.14L429.86 -31.3L398.17 -31.3L398.17 -10.99L432.6 -10.99L432.6 0M532.41 1.12L532.41 1.12Q523.97 1.12 517.74 -1.51Q511.52 -4.15 508 -9.18Q504.48 -14.21 504.19 -21.39L504.19 -21.39L517.03 -21.39Q517.38 -17.58 519.43 -15.04Q521.48 -12.5 524.85 -11.25Q528.21 -10.01 532.32 -10.01L532.32 -10.01Q536.61 -10.01 539.91 -11.33Q543.21 -12.65 545.06 -15.01Q546.92 -17.38 546.92 -20.51L546.92 -20.51Q546.92 -23.34 545.28 -25.2Q543.64 -27.05 540.69 -28.34Q537.74 -29.64 533.78 -30.62L533.78 -30.62L525.53 -32.76Q516.4 -35.11 511.3 -39.84Q506.19 -44.58 506.19 -52.29L506.19 -52.29Q506.19 -58.74 509.66 -63.57Q513.13 -68.41 519.13 -71.07Q525.14 -73.73 532.76 -73.73L532.76 -73.73Q540.52 -73.73 546.38 -71.04Q552.24 -68.36 555.53 -63.62Q558.83 -58.89 558.98 -52.83L558.98 -52.83L546.33 -52.83Q545.84 -57.52 542.16 -60.08Q538.47 -62.65 532.56 -62.65L532.56 -62.65Q528.46 -62.65 525.5 -61.4Q522.55 -60.16 520.96 -58.01Q519.38 -55.86 519.38 -53.08L519.38 -53.08Q519.38 -50.05 521.26 -48.1Q523.14 -46.14 525.99 -44.97Q528.85 -43.8 531.78 -43.07L531.78 -43.07L538.57 -41.31Q542.62 -40.33 546.43 -38.72Q550.24 -37.11 553.29 -34.64Q556.34 -32.18 558.15 -28.66Q559.95 -25.15 559.95 -20.41L559.95 -20.41Q559.95 -14.01 556.68 -9.16Q553.41 -4.3 547.26 -1.59Q541.11 1.12 532.41 1.12M621.07 0.98L621.07 0.98Q611.5 0.98 603.93 -3.47Q596.36 -7.91 591.99 -16.26Q587.62 -24.61 587.62 -36.33L587.62 -36.33Q587.62 -48.1 591.99 -56.47Q596.36 -64.84 603.93 -69.29Q611.5 -73.73 621.07 -73.73L621.07 -73.73Q630.59 -73.73 638.13 -69.29Q645.68 -64.84 650.05 -56.47Q654.42 -48.1 654.42 -36.33L654.42 -36.33Q654.42 -24.61 650.05 -16.24Q645.68 -7.86 638.13 -3.44Q630.59 0.98 621.07 0.98M621.07 -10.69L621.07 -10.69Q626.98 -10.69 631.54 -13.65Q636.11 -16.6 638.7 -22.34Q641.28 -28.08 641.28 -36.33L641.28 -36.33Q641.28 -44.68 638.7 -50.42Q636.11 -56.15 631.54 -59.11Q626.98 -62.06 621.07 -62.06L621.07 -62.06Q615.11 -62.06 610.52 -59.08Q605.93 -56.1 603.32 -50.37Q600.71 -44.63 600.71 -36.33L600.71 -36.33Q600.71 -28.08 603.32 -22.36Q605.93 -16.65 610.52 -13.67Q615.11 -10.69 621.07 -10.69M729.94 0L684.77 0L684.77 -72.75L697.81 -72.75L697.81 -10.99L729.94 -10.99L729.94 0M788.81 1.07L788.81 1.07Q779.92 1.07 773.28 -2.27Q766.64 -5.62 762.98 -11.55Q759.31 -17.48 759.31 -25.24L759.31 -25.24L759.31 -72.75L772.35 -72.75L772.35 -26.32Q772.35 -21.78 774.38 -18.21Q776.4 -14.65 780.09 -12.62Q783.78 -10.6 788.81 -10.6L788.81 -10.6Q793.84 -10.6 797.52 -12.62Q801.21 -14.65 803.24 -18.21Q805.26 -21.78 805.26 -26.32L805.26 -26.32L805.26 -72.75L818.3 -72.75L818.3 -25.24Q818.3 -17.48 814.61 -11.55Q810.93 -5.62 804.31 -2.27Q797.69 1.07 788.81 1.07M870.09 -61.77L847.63 -61.77L847.63 -72.75L905.54 -72.75L905.54 -61.77L883.13 -61.77L883.13 0L870.09 0L870.09 -61.77M934.91 -72.75L947.95 -72.75L947.95 0L934.91 0L934.91 -72.75M1011.75 0.98L1011.75 0.98Q1002.18 0.98 994.61 -3.47Q987.04 -7.91 982.67 -16.26Q978.3 -24.61 978.3 -36.33L978.3 -36.33Q978.3 -48.1 982.67 -56.47Q987.04 -64.84 994.61 -69.29Q1002.18 -73.73 1011.75 -73.73L1011.75 -73.73Q1021.27 -73.73 1028.82 -69.29Q1036.36 -64.84 1040.73 -56.47Q1045.1 -48.1 1045.1 -36.33L1045.1 -36.33Q1045.1 -24.61 1040.73 -16.24Q1036.36 -7.86 1028.82 -3.44Q1021.27 0.98 1011.75 0.98M1011.75 -10.69L1011.75 -10.69Q1017.66 -10.69 1022.23 -13.65Q1026.79 -16.6 1029.38 -22.34Q1031.97 -28.08 1031.97 -36.33L1031.97 -36.33Q1031.97 -44.68 1029.38 -50.42Q1026.79 -56.15 1022.23 -59.11Q1017.66 -62.06 1011.75 -62.06L1011.75 -62.06Q1005.79 -62.06 1001.21 -59.08Q996.62 -56.1 994 -50.37Q991.39 -44.63 991.39 -36.33L991.39 -36.33Q991.39 -28.08 994 -22.36Q996.62 -16.65 1001.21 -13.67Q1005.79 -10.69 1011.75 -10.69M1088.74 0L1075.46 0L1075.46 -72.75L1090.2 -72.75L1115.35 -32.67Q1116.91 -30.18 1118.67 -27.03Q1120.43 -23.88 1122.33 -20.02L1122.33 -20.02Q1123.31 -17.97 1124.28 -15.77L1124.28 -15.77Q1124.14 -17.77 1124.04 -19.82L1124.04 -19.82Q1123.75 -24.12 1123.62 -28Q1123.5 -31.88 1123.5 -34.57L1123.5 -34.57L1123.5 -72.75L1136.73 -72.75L1136.73 0L1121.94 0L1099.23 -36.08Q1097.09 -39.55 1095.18 -42.92Q1093.28 -46.29 1091.08 -50.54L1091.08 -50.54Q1089.66 -53.32 1087.81 -56.79L1087.81 -56.79Q1088 -53.66 1088.15 -50.73L1088.15 -50.73Q1088.39 -45.95 1088.57 -42.19Q1088.74 -38.43 1088.74 -36.13L1088.74 -36.13L1088.74 0M1194.92 1.12L1194.92 1.12Q1186.47 1.12 1180.25 -1.51Q1174.02 -4.15 1170.51 -9.18Q1166.99 -14.21 1166.7 -21.39L1166.7 -21.39L1179.54 -21.39Q1179.88 -17.58 1181.93 -15.04Q1183.98 -12.5 1187.35 -11.25Q1190.72 -10.01 1194.82 -10.01L1194.82 -10.01Q1199.12 -10.01 1202.42 -11.33Q1205.71 -12.65 1207.57 -15.01Q1209.42 -17.38 1209.42 -20.51L1209.42 -20.51Q1209.42 -23.34 1207.79 -25.2Q1206.15 -27.05 1203.2 -28.34Q1200.24 -29.64 1196.29 -30.62L1196.29 -30.62L1188.04 -32.76Q1178.9 -35.11 1173.8 -39.84Q1168.7 -44.58 1168.7 -52.29L1168.7 -52.29Q1168.7 -58.74 1172.17 -63.57Q1175.63 -68.41 1181.64 -71.07Q1187.64 -73.73 1195.26 -73.73L1195.26 -73.73Q1203.03 -73.73 1208.88 -71.04Q1214.74 -68.36 1218.04 -63.62Q1221.34 -58.89 1221.48 -52.83L1221.48 -52.83L1208.84 -52.83Q1208.35 -57.52 1204.66 -60.08Q1200.97 -62.65 1195.07 -62.65L1195.07 -62.65Q1190.96 -62.65 1188.01 -61.4Q1185.06 -60.16 1183.47 -58.01Q1181.88 -55.86 1181.88 -53.08L1181.88 -53.08Q1181.88 -50.05 1183.76 -48.1Q1185.64 -46.14 1188.5 -44.97Q1191.36 -43.8 1194.29 -43.07L1194.29 -43.07L1201.07 -41.31Q1205.13 -40.33 1208.93 -38.72Q1212.74 -37.11 1215.79 -34.64Q1218.85 -32.18 1220.65 -28.66Q1222.46 -25.15 1222.46 -20.41L1222.46 -20.41Q1222.46 -14.01 1219.19 -9.16Q1215.92 -4.3 1209.76 -1.59Q1203.61 1.12 1194.92 1.12"/></svg></span></a>
+    <ul>
+      <li><a href="#why">Why Unified</a></li>
+      <li><a href="#service">The service</a></li>
+      <li><a href="#platform">Platform</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#" class="login">Client login</a>
+    <a href="#assessment" class="btn btn-lime">Free market assessment</a>
+    <button class="menu-btn" aria-label="Open menu" onclick="menu(true)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button>
+  </div>
+</header>
+<div class="mm" id="mm">
+  <div class="top"><svg role="img" aria-label="Unified Waste Solutions" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510.5 174.0"><g transform="translate(-16.5 -4.5) scale(1.5)"><defs><clipPath id="uws3mc"><polygon points="0,0 0,150 96.94,147.28 60,100 47.69,84.24 47.69,0"/></clipPath><mask id="uws3mm" maskUnits="userSpaceOnUse" x="-20" y="-20" width="160" height="170"><rect x="-20" y="-20" width="160" height="170" fill="#fff"/><line x1="50.15" y1="87.39" x2="69.85" y2="112.61" stroke="#000" stroke-width="3.2"/></mask></defs><g mask="url(#uws3mm)"><path d="M30 40V70A30 30 0 0 0 90 70V22" fill="none" stroke="#2FB67C" stroke-width="22" stroke-linecap="round"/><g clip-path="url(#uws3mc)"><path d="M30 40V70A30 30 0 0 0 90 70V22" fill="none" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round"/></g></g></g><path fill="#FFFFFF" transform="translate(163.3 106.16204052091472)" d="M36.2 1.2L36.2 1.2Q27.4 1.2 20.5 -2.5Q13.6 -6.2 9.65 -12.65Q5.7 -19.1 5.7 -27.3L5.7 -27.3L5.7 -74.5L21.2 -74.5L21.2 -28.3Q21.2 -23.9 23.15 -20.35Q25.1 -16.8 28.5 -14.8Q31.9 -12.8 36.2 -12.8L36.2 -12.8Q40.6 -12.8 43.95 -14.8Q47.3 -16.8 49.25 -20.35Q51.2 -23.9 51.2 -28.3L51.2 -28.3L51.2 -74.5L66.7 -74.5L66.7 -27.3Q66.7 -19.1 62.75 -12.65Q58.8 -6.2 51.9 -2.5Q45 1.2 36.2 1.2M90.9 0L75.9 0L75.9 -54.6L89.9 -54.6L89.9 -43.8L89.1 -46.2Q91 -51.1 95.25 -53.45Q99.5 -55.8 105.2 -55.8L105.2 -55.8Q111.4 -55.8 116.05 -53.2Q120.7 -50.6 123.3 -45.95Q125.9 -41.3 125.9 -35.1L125.9 -35.1L125.9 0L110.9 0L110.9 -31.9Q110.9 -35.1 109.65 -37.4Q108.4 -39.7 106.15 -41Q103.9 -42.3 100.9 -42.3L100.9 -42.3Q98 -42.3 95.7 -41Q93.4 -39.7 92.15 -37.4Q90.9 -35.1 90.9 -31.9L90.9 -31.9L90.9 0M148.8 0L133.8 0L133.8 -54.6L148.8 -54.6L148.8 0M148.8 -59.5L133.8 -59.5L133.8 -74.5L148.8 -74.5L148.8 -59.5M179.4 0L164.4 0L164.4 -41.6L155.2 -41.6L155.2 -54.6L164.4 -54.6L164.4 -55.4Q164.4 -61.9 166.95 -66.4Q169.5 -70.9 174.3 -73.3Q179.1 -75.7 185.9 -75.7L185.9 -75.7Q187.2 -75.7 188.7 -75.55Q190.2 -75.4 191.2 -75.2L191.2 -75.2L191.2 -62.4Q190.2 -62.6 189.45 -62.65Q188.7 -62.7 187.9 -62.7L187.9 -62.7Q183.7 -62.7 181.55 -60.85Q179.4 -59 179.4 -55.4L179.4 -55.4L179.4 -54.6L191.1 -54.6L191.1 -41.6L179.4 -41.6L179.4 0M210.8 0L195.8 0L195.8 -54.6L210.8 -54.6L210.8 0M210.8 -59.5L195.8 -59.5L195.8 -74.5L210.8 -74.5L210.8 -59.5M246.1 1.2L246.1 1.2Q237.4 1.2 231 -2.65Q224.6 -6.5 221.1 -13Q217.6 -19.5 217.6 -27.4L217.6 -27.4Q217.6 -35.6 221.25 -42Q224.9 -48.4 231.1 -52.1Q237.3 -55.8 245.1 -55.8L245.1 -55.8Q251.6 -55.8 256.6 -53.75Q261.6 -51.7 265.05 -48Q268.5 -44.3 270.3 -39.45Q272.1 -34.6 272.1 -28.9L272.1 -28.9Q272.1 -27.3 271.95 -25.75Q271.8 -24.2 271.4 -23.1L271.4 -23.1L230.5 -23.1L230.5 -34.1L262.9 -34.1L255.8 -28.9Q256.8 -33.2 255.7 -36.55Q254.6 -39.9 251.85 -41.85Q249.1 -43.8 245.1 -43.8L245.1 -43.8Q241.2 -43.8 238.4 -41.9Q235.6 -40 234.2 -36.3Q232.8 -32.6 233.1 -27.3L233.1 -27.3Q232.7 -22.7 234.2 -19.2Q235.7 -15.7 238.8 -13.75Q241.9 -11.8 246.3 -11.8L246.3 -11.8Q250.3 -11.8 253.15 -13.4Q256 -15 257.6 -17.8L257.6 -17.8L269.6 -12.1Q268 -8.1 264.55 -5.1Q261.1 -2.1 256.4 -0.45Q251.7 1.2 246.1 1.2M304.6 1.2L304.6 1.2Q296.6 1.2 290.3 -2.6Q284 -6.4 280.35 -12.9Q276.7 -19.4 276.7 -27.3L276.7 -27.3Q276.7 -35.3 280.4 -41.75Q284.1 -48.2 290.4 -52Q296.7 -55.8 304.5 -55.8L304.5 -55.8Q310.5 -55.8 315.15 -53.55Q319.8 -51.3 322.5 -47.2L322.5 -47.2L320.2 -44.2L320.2 -75.7L335.2 -75.7L335.2 0L321.2 0L321.2 -10L322.6 -6.9Q319.8 -2.9 315 -0.85Q310.2 1.2 304.6 1.2M306.4 -12.3L306.4 -12.3Q310.5 -12.3 313.6 -14.2Q316.7 -16.1 318.45 -19.5Q320.2 -22.9 320.2 -27.3L320.2 -27.3Q320.2 -31.7 318.45 -35.1Q316.7 -38.5 313.6 -40.4Q310.5 -42.3 306.4 -42.3L306.4 -42.3Q302.3 -42.3 299.05 -40.35Q295.8 -38.4 294 -35.05Q292.2 -31.7 292.2 -27.3L292.2 -27.3Q292.2 -22.9 294 -19.5Q295.8 -16.1 299.05 -14.2Q302.3 -12.3 306.4 -12.3"/><path fill="#C8F169" transform="translate(169 143.23525488936713) scale(0.2695386955403348)" d="M37.01 0L22.07 0L2.44 -72.75L16.46 -72.75L25.93 -34.03Q26.9 -29.83 27.76 -25.2Q28.61 -20.56 29.44 -15.87L29.44 -15.87Q29.69 -14.31 29.93 -12.7L29.93 -12.7Q30.22 -14.31 30.52 -15.87L30.52 -15.87Q31.35 -20.56 32.28 -25.2Q33.2 -29.83 34.23 -34.03L34.23 -34.03L44.09 -72.75L57.91 -72.75L67.72 -34.03Q68.8 -29.83 69.7 -25.2Q70.61 -20.56 71.48 -15.87L71.48 -15.87Q71.73 -14.36 72.02 -12.84L72.02 -12.84Q72.27 -14.36 72.56 -15.87L72.56 -15.87Q73.34 -20.56 74.22 -25.2Q75.1 -29.83 76.07 -34.03L76.07 -34.03L85.5 -72.75L99.56 -72.75L79.88 0L64.94 0L54.35 -40.19Q52.88 -45.8 51.81 -52.39L51.81 -52.39Q51.37 -54.83 50.93 -57.42L50.93 -57.42Q50.54 -55.03 50.2 -52.78L50.2 -52.78Q49.22 -46.29 47.61 -40.19L47.61 -40.19L37.01 0M136.7 0L122.44 0L147.83 -72.75L164.39 -72.75L190.36 0L176.06 0L169.9 -18.02L142.66 -18.02L136.7 0M146.13 -28.52L166.29 -28.52L163.12 -37.79Q161.21 -43.65 159.16 -51.07L159.16 -51.07Q157.7 -56.35 155.99 -62.65L155.99 -62.65Q154.38 -56.25 152.96 -50.93L152.96 -50.93Q150.96 -43.46 149.2 -37.79L149.2 -37.79L146.13 -28.52M243.62 1.12L243.62 1.12Q235.17 1.12 228.94 -1.51Q222.72 -4.15 219.2 -9.18Q215.69 -14.21 215.39 -21.39L215.39 -21.39L228.24 -21.39Q228.58 -17.58 230.63 -15.04Q232.68 -12.5 236.05 -11.25Q239.42 -10.01 243.52 -10.01L243.52 -10.01Q247.82 -10.01 251.11 -11.33Q254.41 -12.65 256.26 -15.01Q258.12 -17.38 258.12 -20.51L258.12 -20.51Q258.12 -23.34 256.48 -25.2Q254.85 -27.05 251.89 -28.34Q248.94 -29.64 244.98 -30.62L244.98 -30.62L236.73 -32.76Q227.6 -35.11 222.5 -39.84Q217.4 -44.58 217.4 -52.29L217.4 -52.29Q217.4 -58.74 220.86 -63.57Q224.33 -68.41 230.34 -71.07Q236.34 -73.73 243.96 -73.73L243.96 -73.73Q251.72 -73.73 257.58 -71.04Q263.44 -68.36 266.74 -63.62Q270.03 -58.89 270.18 -52.83L270.18 -52.83L257.53 -52.83Q257.04 -57.52 253.36 -60.08Q249.67 -62.65 243.76 -62.65L243.76 -62.65Q239.66 -62.65 236.71 -61.4Q233.75 -60.16 232.17 -58.01Q230.58 -55.86 230.58 -53.08L230.58 -53.08Q230.58 -50.05 232.46 -48.1Q234.34 -46.14 237.2 -44.97Q240.05 -43.8 242.98 -43.07L242.98 -43.07L249.77 -41.31Q253.82 -40.33 257.63 -38.72Q261.44 -37.11 264.49 -34.64Q267.54 -32.18 269.35 -28.66Q271.16 -25.15 271.16 -20.41L271.16 -20.41Q271.16 -14.01 267.88 -9.16Q264.61 -4.3 258.46 -1.59Q252.31 1.12 243.62 1.12M320.31 -61.77L297.85 -61.77L297.85 -72.75L355.76 -72.75L355.76 -61.77L333.35 -61.77L333.35 0L320.31 0L320.31 -61.77M432.6 0L385.13 0L385.13 -72.75L432.4 -72.75L432.4 -61.77L398.17 -61.77L398.17 -42.14L429.86 -42.14L429.86 -31.3L398.17 -31.3L398.17 -10.99L432.6 -10.99L432.6 0M532.41 1.12L532.41 1.12Q523.97 1.12 517.74 -1.51Q511.52 -4.15 508 -9.18Q504.48 -14.21 504.19 -21.39L504.19 -21.39L517.03 -21.39Q517.38 -17.58 519.43 -15.04Q521.48 -12.5 524.85 -11.25Q528.21 -10.01 532.32 -10.01L532.32 -10.01Q536.61 -10.01 539.91 -11.33Q543.21 -12.65 545.06 -15.01Q546.92 -17.38 546.92 -20.51L546.92 -20.51Q546.92 -23.34 545.28 -25.2Q543.64 -27.05 540.69 -28.34Q537.74 -29.64 533.78 -30.62L533.78 -30.62L525.53 -32.76Q516.4 -35.11 511.3 -39.84Q506.19 -44.58 506.19 -52.29L506.19 -52.29Q506.19 -58.74 509.66 -63.57Q513.13 -68.41 519.13 -71.07Q525.14 -73.73 532.76 -73.73L532.76 -73.73Q540.52 -73.73 546.38 -71.04Q552.24 -68.36 555.53 -63.62Q558.83 -58.89 558.98 -52.83L558.98 -52.83L546.33 -52.83Q545.84 -57.52 542.16 -60.08Q538.47 -62.65 532.56 -62.65L532.56 -62.65Q528.46 -62.65 525.5 -61.4Q522.55 -60.16 520.96 -58.01Q519.38 -55.86 519.38 -53.08L519.38 -53.08Q519.38 -50.05 521.26 -48.1Q523.14 -46.14 525.99 -44.97Q528.85 -43.8 531.78 -43.07L531.78 -43.07L538.57 -41.31Q542.62 -40.33 546.43 -38.72Q550.24 -37.11 553.29 -34.64Q556.34 -32.18 558.15 -28.66Q559.95 -25.15 559.95 -20.41L559.95 -20.41Q559.95 -14.01 556.68 -9.16Q553.41 -4.3 547.26 -1.59Q541.11 1.12 532.41 1.12M621.07 0.98L621.07 0.98Q611.5 0.98 603.93 -3.47Q596.36 -7.91 591.99 -16.26Q587.62 -24.61 587.62 -36.33L587.62 -36.33Q587.62 -48.1 591.99 -56.47Q596.36 -64.84 603.93 -69.29Q611.5 -73.73 621.07 -73.73L621.07 -73.73Q630.59 -73.73 638.13 -69.29Q645.68 -64.84 650.05 -56.47Q654.42 -48.1 654.42 -36.33L654.42 -36.33Q654.42 -24.61 650.05 -16.24Q645.68 -7.86 638.13 -3.44Q630.59 0.98 621.07 0.98M621.07 -10.69L621.07 -10.69Q626.98 -10.69 631.54 -13.65Q636.11 -16.6 638.7 -22.34Q641.28 -28.08 641.28 -36.33L641.28 -36.33Q641.28 -44.68 638.7 -50.42Q636.11 -56.15 631.54 -59.11Q626.98 -62.06 621.07 -62.06L621.07 -62.06Q615.11 -62.06 610.52 -59.08Q605.93 -56.1 603.32 -50.37Q600.71 -44.63 600.71 -36.33L600.71 -36.33Q600.71 -28.08 603.32 -22.36Q605.93 -16.65 610.52 -13.67Q615.11 -10.69 621.07 -10.69M729.94 0L684.77 0L684.77 -72.75L697.81 -72.75L697.81 -10.99L729.94 -10.99L729.94 0M788.81 1.07L788.81 1.07Q779.92 1.07 773.28 -2.27Q766.64 -5.62 762.98 -11.55Q759.31 -17.48 759.31 -25.24L759.31 -25.24L759.31 -72.75L772.35 -72.75L772.35 -26.32Q772.35 -21.78 774.38 -18.21Q776.4 -14.65 780.09 -12.62Q783.78 -10.6 788.81 -10.6L788.81 -10.6Q793.84 -10.6 797.52 -12.62Q801.21 -14.65 803.24 -18.21Q805.26 -21.78 805.26 -26.32L805.26 -26.32L805.26 -72.75L818.3 -72.75L818.3 -25.24Q818.3 -17.48 814.61 -11.55Q810.93 -5.62 804.31 -2.27Q797.69 1.07 788.81 1.07M870.09 -61.77L847.63 -61.77L847.63 -72.75L905.54 -72.75L905.54 -61.77L883.13 -61.77L883.13 0L870.09 0L870.09 -61.77M934.91 -72.75L947.95 -72.75L947.95 0L934.91 0L934.91 -72.75M1011.75 0.98L1011.75 0.98Q1002.18 0.98 994.61 -3.47Q987.04 -7.91 982.67 -16.26Q978.3 -24.61 978.3 -36.33L978.3 -36.33Q978.3 -48.1 982.67 -56.47Q987.04 -64.84 994.61 -69.29Q1002.18 -73.73 1011.75 -73.73L1011.75 -73.73Q1021.27 -73.73 1028.82 -69.29Q1036.36 -64.84 1040.73 -56.47Q1045.1 -48.1 1045.1 -36.33L1045.1 -36.33Q1045.1 -24.61 1040.73 -16.24Q1036.36 -7.86 1028.82 -3.44Q1021.27 0.98 1011.75 0.98M1011.75 -10.69L1011.75 -10.69Q1017.66 -10.69 1022.23 -13.65Q1026.79 -16.6 1029.38 -22.34Q1031.97 -28.08 1031.97 -36.33L1031.97 -36.33Q1031.97 -44.68 1029.38 -50.42Q1026.79 -56.15 1022.23 -59.11Q1017.66 -62.06 1011.75 -62.06L1011.75 -62.06Q1005.79 -62.06 1001.21 -59.08Q996.62 -56.1 994 -50.37Q991.39 -44.63 991.39 -36.33L991.39 -36.33Q991.39 -28.08 994 -22.36Q996.62 -16.65 1001.21 -13.67Q1005.79 -10.69 1011.75 -10.69M1088.74 0L1075.46 0L1075.46 -72.75L1090.2 -72.75L1115.35 -32.67Q1116.91 -30.18 1118.67 -27.03Q1120.43 -23.88 1122.33 -20.02L1122.33 -20.02Q1123.31 -17.97 1124.28 -15.77L1124.28 -15.77Q1124.14 -17.77 1124.04 -19.82L1124.04 -19.82Q1123.75 -24.12 1123.62 -28Q1123.5 -31.88 1123.5 -34.57L1123.5 -34.57L1123.5 -72.75L1136.73 -72.75L1136.73 0L1121.94 0L1099.23 -36.08Q1097.09 -39.55 1095.18 -42.92Q1093.28 -46.29 1091.08 -50.54L1091.08 -50.54Q1089.66 -53.32 1087.81 -56.79L1087.81 -56.79Q1088 -53.66 1088.15 -50.73L1088.15 -50.73Q1088.39 -45.95 1088.57 -42.19Q1088.74 -38.43 1088.74 -36.13L1088.74 -36.13L1088.74 0M1194.92 1.12L1194.92 1.12Q1186.47 1.12 1180.25 -1.51Q1174.02 -4.15 1170.51 -9.18Q1166.99 -14.21 1166.7 -21.39L1166.7 -21.39L1179.54 -21.39Q1179.88 -17.58 1181.93 -15.04Q1183.98 -12.5 1187.35 -11.25Q1190.72 -10.01 1194.82 -10.01L1194.82 -10.01Q1199.12 -10.01 1202.42 -11.33Q1205.71 -12.65 1207.57 -15.01Q1209.42 -17.38 1209.42 -20.51L1209.42 -20.51Q1209.42 -23.34 1207.79 -25.2Q1206.15 -27.05 1203.2 -28.34Q1200.24 -29.64 1196.29 -30.62L1196.29 -30.62L1188.04 -32.76Q1178.9 -35.11 1173.8 -39.84Q1168.7 -44.58 1168.7 -52.29L1168.7 -52.29Q1168.7 -58.74 1172.17 -63.57Q1175.63 -68.41 1181.64 -71.07Q1187.64 -73.73 1195.26 -73.73L1195.26 -73.73Q1203.03 -73.73 1208.88 -71.04Q1214.74 -68.36 1218.04 -63.62Q1221.34 -58.89 1221.48 -52.83L1221.48 -52.83L1208.84 -52.83Q1208.35 -57.52 1204.66 -60.08Q1200.97 -62.65 1195.07 -62.65L1195.07 -62.65Q1190.96 -62.65 1188.01 -61.4Q1185.06 -60.16 1183.47 -58.01Q1181.88 -55.86 1181.88 -53.08L1181.88 -53.08Q1181.88 -50.05 1183.76 -48.1Q1185.64 -46.14 1188.5 -44.97Q1191.36 -43.8 1194.29 -43.07L1194.29 -43.07L1201.07 -41.31Q1205.13 -40.33 1208.93 -38.72Q1212.74 -37.11 1215.79 -34.64Q1218.85 -32.18 1220.65 -28.66Q1222.46 -25.15 1222.46 -20.41L1222.46 -20.41Q1222.46 -14.01 1219.19 -9.16Q1215.92 -4.3 1209.76 -1.59Q1203.61 1.12 1194.92 1.12"/></svg><button aria-label="Close menu" onclick="menu(false)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <a class="m" href="#why" onclick="menu(false)">Why Unified</a>
+  <a class="m" href="#service" onclick="menu(false)">The service</a>
+  <a class="m" href="#platform" onclick="menu(false)">Platform</a>
+  <a class="m" href="#how" onclick="menu(false)">How it works</a>
+  <a class="m" href="#faq" onclick="menu(false)">FAQ</a>
+  <a class="m" href="#" onclick="menu(false)">Client login</a>
+  <a href="#assessment" class="btn btn-lime" onclick="menu(false)">Get my free market assessment</a>
+</div>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero dark">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="pilltag rv"><b>New</b>Live client portal<span class="lg">, every invoice line checked</span></span>
+      <h1 class="rv d1">Never check a waste bill <span class="hl">again<span class="p">.</span></span></h1>
+      <p class="lede rv d2">Unified runs your commercial waste end to end. We check every line of every invoice, chase every supplier and take your services back to market every quarter, and you can see all of it, live.</p>
+      <div class="ctas rv d3">
+        <a href="#assessment" class="btn btn-lime">Get my free market assessment <svg class="ar"><use href="#ar"/></svg></a>
+        <a href="#platform" class="btn btn-ghost">See the platform</a>
+      </div>
+      <div class="assure rv d3">
+        <span><svg class="tick"><use href="#tk"/></svg>No lock-in contracts</span>
+        <span><svg class="tick"><use href="#tk"/></svg>One all-in price</span>
+        <span><svg class="tick"><use href="#tk"/></svg>Suppliers across the country</span>
+      </div>
+    </div>
+
+    <div class="stagewrap rv d2">
+      <div class="app" id="heroApp">
+        <div class="app-bar"><i></i><i></i><i></i><span class="url">portal.unifiedwaste.com.au</span></div>
+        <div class="app-body">
+          <div class="side">
+            <div class="lg"><svg role="img" aria-label="Unified Waste Solutions" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510.5 174.0"><g transform="translate(-16.5 -4.5) scale(1.5)"><defs><clipPath id="uws3pc"><polygon points="0,0 0,150 96.94,147.28 60,100 47.69,84.24 47.69,0"/></clipPath><mask id="uws3pm" maskUnits="userSpaceOnUse" x="-20" y="-20" width="160" height="170"><rect x="-20" y="-20" width="160" height="170" fill="#fff"/><line x1="50.15" y1="87.39" x2="69.85" y2="112.61" stroke="#000" stroke-width="3.2"/></mask></defs><g mask="url(#uws3pm)"><path d="M30 40V70A30 30 0 0 0 90 70V22" fill="none" stroke="#2FB67C" stroke-width="22" stroke-linecap="round"/><g clip-path="url(#uws3pc)"><path d="M30 40V70A30 30 0 0 0 90 70V22" fill="none" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round"/></g></g></g><path fill="#FFFFFF" transform="translate(163.3 106.16204052091472)" d="M36.2 1.2L36.2 1.2Q27.4 1.2 20.5 -2.5Q13.6 -6.2 9.65 -12.65Q5.7 -19.1 5.7 -27.3L5.7 -27.3L5.7 -74.5L21.2 -74.5L21.2 -28.3Q21.2 -23.9 23.15 -20.35Q25.1 -16.8 28.5 -14.8Q31.9 -12.8 36.2 -12.8L36.2 -12.8Q40.6 -12.8 43.95 -14.8Q47.3 -16.8 49.25 -20.35Q51.2 -23.9 51.2 -28.3L51.2 -28.3L51.2 -74.5L66.7 -74.5L66.7 -27.3Q66.7 -19.1 62.75 -12.65Q58.8 -6.2 51.9 -2.5Q45 1.2 36.2 1.2M90.9 0L75.9 0L75.9 -54.6L89.9 -54.6L89.9 -43.8L89.1 -46.2Q91 -51.1 95.25 -53.45Q99.5 -55.8 105.2 -55.8L105.2 -55.8Q111.4 -55.8 116.05 -53.2Q120.7 -50.6 123.3 -45.95Q125.9 -41.3 125.9 -35.1L125.9 -35.1L125.9 0L110.9 0L110.9 -31.9Q110.9 -35.1 109.65 -37.4Q108.4 -39.7 106.15 -41Q103.9 -42.3 100.9 -42.3L100.9 -42.3Q98 -42.3 95.7 -41Q93.4 -39.7 92.15 -37.4Q90.9 -35.1 90.9 -31.9L90.9 -31.9L90.9 0M148.8 0L133.8 0L133.8 -54.6L148.8 -54.6L148.8 0M148.8 -59.5L133.8 -59.5L133.8 -74.5L148.8 -74.5L148.8 -59.5M179.4 0L164.4 0L164.4 -41.6L155.2 -41.6L155.2 -54.6L164.4 -54.6L164.4 -55.4Q164.4 -61.9 166.95 -66.4Q169.5 -70.9 174.3 -73.3Q179.1 -75.7 185.9 -75.7L185.9 -75.7Q187.2 -75.7 188.7 -75.55Q190.2 -75.4 191.2 -75.2L191.2 -75.2L191.2 -62.4Q190.2 -62.6 189.45 -62.65Q188.7 -62.7 187.9 -62.7L187.9 -62.7Q183.7 -62.7 181.55 -60.85Q179.4 -59 179.4 -55.4L179.4 -55.4L179.4 -54.6L191.1 -54.6L191.1 -41.6L179.4 -41.6L179.4 0M210.8 0L195.8 0L195.8 -54.6L210.8 -54.6L210.8 0M210.8 -59.5L195.8 -59.5L195.8 -74.5L210.8 -74.5L210.8 -59.5M246.1 1.2L246.1 1.2Q237.4 1.2 231 -2.65Q224.6 -6.5 221.1 -13Q217.6 -19.5 217.6 -27.4L217.6 -27.4Q217.6 -35.6 221.25 -42Q224.9 -48.4 231.1 -52.1Q237.3 -55.8 245.1 -55.8L245.1 -55.8Q251.6 -55.8 256.6 -53.75Q261.6 -51.7 265.05 -48Q268.5 -44.3 270.3 -39.45Q272.1 -34.6 272.1 -28.9L272.1 -28.9Q272.1 -27.3 271.95 -25.75Q271.8 -24.2 271.4 -23.1L271.4 -23.1L230.5 -23.1L230.5 -34.1L262.9 -34.1L255.8 -28.9Q256.8 -33.2 255.7 -36.55Q254.6 -39.9 251.85 -41.85Q249.1 -43.8 245.1 -43.8L245.1 -43.8Q241.2 -43.8 238.4 -41.9Q235.6 -40 234.2 -36.3Q232.8 -32.6 233.1 -27.3L233.1 -27.3Q232.7 -22.7 234.2 -19.2Q235.7 -15.7 238.8 -13.75Q241.9 -11.8 246.3 -11.8L246.3 -11.8Q250.3 -11.8 253.15 -13.4Q256 -15 257.6 -17.8L257.6 -17.8L269.6 -12.1Q268 -8.1 264.55 -5.1Q261.1 -2.1 256.4 -0.45Q251.7 1.2 246.1 1.2M304.6 1.2L304.6 1.2Q296.6 1.2 290.3 -2.6Q284 -6.4 280.35 -12.9Q276.7 -19.4 276.7 -27.3L276.7 -27.3Q276.7 -35.3 280.4 -41.75Q284.1 -48.2 290.4 -52Q296.7 -55.8 304.5 -55.8L304.5 -55.8Q310.5 -55.8 315.15 -53.55Q319.8 -51.3 322.5 -47.2L322.5 -47.2L320.2 -44.2L320.2 -75.7L335.2 -75.7L335.2 0L321.2 0L321.2 -10L322.6 -6.9Q319.8 -2.9 315 -0.85Q310.2 1.2 304.6 1.2M306.4 -12.3L306.4 -12.3Q310.5 -12.3 313.6 -14.2Q316.7 -16.1 318.45 -19.5Q320.2 -22.9 320.2 -27.3L320.2 -27.3Q320.2 -31.7 318.45 -35.1Q316.7 -38.5 313.6 -40.4Q310.5 -42.3 306.4 -42.3L306.4 -42.3Q302.3 -42.3 299.05 -40.35Q295.8 -38.4 294 -35.05Q292.2 -31.7 292.2 -27.3L292.2 -27.3Q292.2 -22.9 294 -19.5Q295.8 -16.1 299.05 -14.2Q302.3 -12.3 306.4 -12.3"/><path fill="#C8F169" transform="translate(169 143.23525488936713) scale(0.2695386955403348)" d="M37.01 0L22.07 0L2.44 -72.75L16.46 -72.75L25.93 -34.03Q26.9 -29.83 27.76 -25.2Q28.61 -20.56 29.44 -15.87L29.44 -15.87Q29.69 -14.31 29.93 -12.7L29.93 -12.7Q30.22 -14.31 30.52 -15.87L30.52 -15.87Q31.35 -20.56 32.28 -25.2Q33.2 -29.83 34.23 -34.03L34.23 -34.03L44.09 -72.75L57.91 -72.75L67.72 -34.03Q68.8 -29.83 69.7 -25.2Q70.61 -20.56 71.48 -15.87L71.48 -15.87Q71.73 -14.36 72.02 -12.84L72.02 -12.84Q72.27 -14.36 72.56 -15.87L72.56 -15.87Q73.34 -20.56 74.22 -25.2Q75.1 -29.83 76.07 -34.03L76.07 -34.03L85.5 -72.75L99.56 -72.75L79.88 0L64.94 0L54.35 -40.19Q52.88 -45.8 51.81 -52.39L51.81 -52.39Q51.37 -54.83 50.93 -57.42L50.93 -57.42Q50.54 -55.03 50.2 -52.78L50.2 -52.78Q49.22 -46.29 47.61 -40.19L47.61 -40.19L37.01 0M136.7 0L122.44 0L147.83 -72.75L164.39 -72.75L190.36 0L176.06 0L169.9 -18.02L142.66 -18.02L136.7 0M146.13 -28.52L166.29 -28.52L163.12 -37.79Q161.21 -43.65 159.16 -51.07L159.16 -51.07Q157.7 -56.35 155.99 -62.65L155.99 -62.65Q154.38 -56.25 152.96 -50.93L152.96 -50.93Q150.96 -43.46 149.2 -37.79L149.2 -37.79L146.13 -28.52M243.62 1.12L243.62 1.12Q235.17 1.12 228.94 -1.51Q222.72 -4.15 219.2 -9.18Q215.69 -14.21 215.39 -21.39L215.39 -21.39L228.24 -21.39Q228.58 -17.58 230.63 -15.04Q232.68 -12.5 236.05 -11.25Q239.42 -10.01 243.52 -10.01L243.52 -10.01Q247.82 -10.01 251.11 -11.33Q254.41 -12.65 256.26 -15.01Q258.12 -17.38 258.12 -20.51L258.12 -20.51Q258.12 -23.34 256.48 -25.2Q254.85 -27.05 251.89 -28.34Q248.94 -29.64 244.98 -30.62L244.98 -30.62L236.73 -32.76Q227.6 -35.11 222.5 -39.84Q217.4 -44.58 217.4 -52.29L217.4 -52.29Q217.4 -58.74 220.86 -63.57Q224.33 -68.41 230.34 -71.07Q236.34 -73.73 243.96 -73.73L243.96 -73.73Q251.72 -73.73 257.58 -71.04Q263.44 -68.36 266.74 -63.62Q270.03 -58.89 270.18 -52.83L270.18 -52.83L257.53 -52.83Q257.04 -57.52 253.36 -60.08Q249.67 -62.65 243.76 -62.65L243.76 -62.65Q239.66 -62.65 236.71 -61.4Q233.75 -60.16 232.17 -58.01Q230.58 -55.86 230.58 -53.08L230.58 -53.08Q230.58 -50.05 232.46 -48.1Q234.34 -46.14 237.2 -44.97Q240.05 -43.8 242.98 -43.07L242.98 -43.07L249.77 -41.31Q253.82 -40.33 257.63 -38.72Q261.44 -37.11 264.49 -34.64Q267.54 -32.18 269.35 -28.66Q271.16 -25.15 271.16 -20.41L271.16 -20.41Q271.16 -14.01 267.88 -9.16Q264.61 -4.3 258.46 -1.59Q252.31 1.12 243.62 1.12M320.31 -61.77L297.85 -61.77L297.85 -72.75L355.76 -72.75L355.76 -61.77L333.35 -61.77L333.35 0L320.31 0L320.31 -61.77M432.6 0L385.13 0L385.13 -72.75L432.4 -72.75L432.4 -61.77L398.17 -61.77L398.17 -42.14L429.86 -42.14L429.86 -31.3L398.17 -31.3L398.17 -10.99L432.6 -10.99L432.6 0M532.41 1.12L532.41 1.12Q523.97 1.12 517.74 -1.51Q511.52 -4.15 508 -9.18Q504.48 -14.21 504.19 -21.39L504.19 -21.39L517.03 -21.39Q517.38 -17.58 519.43 -15.04Q521.48 -12.5 524.85 -11.25Q528.21 -10.01 532.32 -10.01L532.32 -10.01Q536.61 -10.01 539.91 -11.33Q543.21 -12.65 545.06 -15.01Q546.92 -17.38 546.92 -20.51L546.92 -20.51Q546.92 -23.34 545.28 -25.2Q543.64 -27.05 540.69 -28.34Q537.74 -29.64 533.78 -30.62L533.78 -30.62L525.53 -32.76Q516.4 -35.11 511.3 -39.84Q506.19 -44.58 506.19 -52.29L506.19 -52.29Q506.19 -58.74 509.66 -63.57Q513.13 -68.41 519.13 -71.07Q525.14 -73.73 532.76 -73.73L532.76 -73.73Q540.52 -73.73 546.38 -71.04Q552.24 -68.36 555.53 -63.62Q558.83 -58.89 558.98 -52.83L558.98 -52.83L546.33 -52.83Q545.84 -57.52 542.16 -60.08Q538.47 -62.65 532.56 -62.65L532.56 -62.65Q528.46 -62.65 525.5 -61.4Q522.55 -60.16 520.96 -58.01Q519.38 -55.86 519.38 -53.08L519.38 -53.08Q519.38 -50.05 521.26 -48.1Q523.14 -46.14 525.99 -44.97Q528.85 -43.8 531.78 -43.07L531.78 -43.07L538.57 -41.31Q542.62 -40.33 546.43 -38.72Q550.24 -37.11 553.29 -34.64Q556.34 -32.18 558.15 -28.66Q559.95 -25.15 559.95 -20.41L559.95 -20.41Q559.95 -14.01 556.68 -9.16Q553.41 -4.3 547.26 -1.59Q541.11 1.12 532.41 1.12M621.07 0.98L621.07 0.98Q611.5 0.98 603.93 -3.47Q596.36 -7.91 591.99 -16.26Q587.62 -24.61 587.62 -36.33L587.62 -36.33Q587.62 -48.1 591.99 -56.47Q596.36 -64.84 603.93 -69.29Q611.5 -73.73 621.07 -73.73L621.07 -73.73Q630.59 -73.73 638.13 -69.29Q645.68 -64.84 650.05 -56.47Q654.42 -48.1 654.42 -36.33L654.42 -36.33Q654.42 -24.61 650.05 -16.24Q645.68 -7.86 638.13 -3.44Q630.59 0.98 621.07 0.98M621.07 -10.69L621.07 -10.69Q626.98 -10.69 631.54 -13.65Q636.11 -16.6 638.7 -22.34Q641.28 -28.08 641.28 -36.33L641.28 -36.33Q641.28 -44.68 638.7 -50.42Q636.11 -56.15 631.54 -59.11Q626.98 -62.06 621.07 -62.06L621.07 -62.06Q615.11 -62.06 610.52 -59.08Q605.93 -56.1 603.32 -50.37Q600.71 -44.63 600.71 -36.33L600.71 -36.33Q600.71 -28.08 603.32 -22.36Q605.93 -16.65 610.52 -13.67Q615.11 -10.69 621.07 -10.69M729.94 0L684.77 0L684.77 -72.75L697.81 -72.75L697.81 -10.99L729.94 -10.99L729.94 0M788.81 1.07L788.81 1.07Q779.92 1.07 773.28 -2.27Q766.64 -5.62 762.98 -11.55Q759.31 -17.48 759.31 -25.24L759.31 -25.24L759.31 -72.75L772.35 -72.75L772.35 -26.32Q772.35 -21.78 774.38 -18.21Q776.4 -14.65 780.09 -12.62Q783.78 -10.6 788.81 -10.6L788.81 -10.6Q793.84 -10.6 797.52 -12.62Q801.21 -14.65 803.24 -18.21Q805.26 -21.78 805.26 -26.32L805.26 -26.32L805.26 -72.75L818.3 -72.75L818.3 -25.24Q818.3 -17.48 814.61 -11.55Q810.93 -5.62 804.31 -2.27Q797.69 1.07 788.81 1.07M870.09 -61.77L847.63 -61.77L847.63 -72.75L905.54 -72.75L905.54 -61.77L883.13 -61.77L883.13 0L870.09 0L870.09 -61.77M934.91 -72.75L947.95 -72.75L947.95 0L934.91 0L934.91 -72.75M1011.75 0.98L1011.75 0.98Q1002.18 0.98 994.61 -3.47Q987.04 -7.91 982.67 -16.26Q978.3 -24.61 978.3 -36.33L978.3 -36.33Q978.3 -48.1 982.67 -56.47Q987.04 -64.84 994.61 -69.29Q1002.18 -73.73 1011.75 -73.73L1011.75 -73.73Q1021.27 -73.73 1028.82 -69.29Q1036.36 -64.84 1040.73 -56.47Q1045.1 -48.1 1045.1 -36.33L1045.1 -36.33Q1045.1 -24.61 1040.73 -16.24Q1036.36 -7.86 1028.82 -3.44Q1021.27 0.98 1011.75 0.98M1011.75 -10.69L1011.75 -10.69Q1017.66 -10.69 1022.23 -13.65Q1026.79 -16.6 1029.38 -22.34Q1031.97 -28.08 1031.97 -36.33L1031.97 -36.33Q1031.97 -44.68 1029.38 -50.42Q1026.79 -56.15 1022.23 -59.11Q1017.66 -62.06 1011.75 -62.06L1011.75 -62.06Q1005.79 -62.06 1001.21 -59.08Q996.62 -56.1 994 -50.37Q991.39 -44.63 991.39 -36.33L991.39 -36.33Q991.39 -28.08 994 -22.36Q996.62 -16.65 1001.21 -13.67Q1005.79 -10.69 1011.75 -10.69M1088.74 0L1075.46 0L1075.46 -72.75L1090.2 -72.75L1115.35 -32.67Q1116.91 -30.18 1118.67 -27.03Q1120.43 -23.88 1122.33 -20.02L1122.33 -20.02Q1123.31 -17.97 1124.28 -15.77L1124.28 -15.77Q1124.14 -17.77 1124.04 -19.82L1124.04 -19.82Q1123.75 -24.12 1123.62 -28Q1123.5 -31.88 1123.5 -34.57L1123.5 -34.57L1123.5 -72.75L1136.73 -72.75L1136.73 0L1121.94 0L1099.23 -36.08Q1097.09 -39.55 1095.18 -42.92Q1093.28 -46.29 1091.08 -50.54L1091.08 -50.54Q1089.66 -53.32 1087.81 -56.79L1087.81 -56.79Q1088 -53.66 1088.15 -50.73L1088.15 -50.73Q1088.39 -45.95 1088.57 -42.19Q1088.74 -38.43 1088.74 -36.13L1088.74 -36.13L1088.74 0M1194.92 1.12L1194.92 1.12Q1186.47 1.12 1180.25 -1.51Q1174.02 -4.15 1170.51 -9.18Q1166.99 -14.21 1166.7 -21.39L1166.7 -21.39L1179.54 -21.39Q1179.88 -17.58 1181.93 -15.04Q1183.98 -12.5 1187.35 -11.25Q1190.72 -10.01 1194.82 -10.01L1194.82 -10.01Q1199.12 -10.01 1202.42 -11.33Q1205.71 -12.65 1207.57 -15.01Q1209.42 -17.38 1209.42 -20.51L1209.42 -20.51Q1209.42 -23.34 1207.79 -25.2Q1206.15 -27.05 1203.2 -28.34Q1200.24 -29.64 1196.29 -30.62L1196.29 -30.62L1188.04 -32.76Q1178.9 -35.11 1173.8 -39.84Q1168.7 -44.58 1168.7 -52.29L1168.7 -52.29Q1168.7 -58.74 1172.17 -63.57Q1175.63 -68.41 1181.64 -71.07Q1187.64 -73.73 1195.26 -73.73L1195.26 -73.73Q1203.03 -73.73 1208.88 -71.04Q1214.74 -68.36 1218.04 -63.62Q1221.34 -58.89 1221.48 -52.83L1221.48 -52.83L1208.84 -52.83Q1208.35 -57.52 1204.66 -60.08Q1200.97 -62.65 1195.07 -62.65L1195.07 -62.65Q1190.96 -62.65 1188.01 -61.4Q1185.06 -60.16 1183.47 -58.01Q1181.88 -55.86 1181.88 -53.08L1181.88 -53.08Q1181.88 -50.05 1183.76 -48.1Q1185.64 -46.14 1188.5 -44.97Q1191.36 -43.8 1194.29 -43.07L1194.29 -43.07L1201.07 -41.31Q1205.13 -40.33 1208.93 -38.72Q1212.74 -37.11 1215.79 -34.64Q1218.85 -32.18 1220.65 -28.66Q1222.46 -25.15 1222.46 -20.41L1222.46 -20.41Q1222.46 -14.01 1219.19 -9.16Q1215.92 -4.3 1209.76 -1.59Q1203.61 1.12 1194.92 1.12"/></svg></div>
+            <a>Overview</a><a class="on">Invoices <em>2</em></a><a>Services</a><a>Requests</a><a>Market reviews</a><a>Reports</a><a>Documents</a>
+            <div class="acct"><b>Harbour &amp; Co. Hospitality</b>6 sites · NSW, VIC</div>
+          </div>
+          <div class="main">
+            <div class="mhead"><div><h4>Good morning, Sam</h4><small>Here’s what we did for you this month.</small></div><div class="seg"><span>Week</span><span class="on">Month</span><span>Quarter</span></div></div>
+            <div class="kpis">
+              <div class="kpi"><small>Waste spend</small><b>$6,214</b><em>▼ 21% vs last year</em><svg class="spark" viewBox="0 0 100 28" preserveAspectRatio="none"><path d="M0 6 L14 5 L28 8 L42 7 L56 15 L70 17 L84 18 L100 19" fill="none" stroke="#2FB67C" stroke-width="2"/></svg></div>
+              <div class="kpi"><small>Invoice lines checked</small><b>412</b><em class="n">100% of lines</em><svg class="spark" viewBox="0 0 100 28" preserveAspectRatio="none"><path d="M0 22 L14 18 L28 19 L42 14 L56 12 L70 10 L84 8 L100 5" fill="none" stroke="#2FB67C" stroke-width="2"/></svg></div>
+              <div class="kpi"><small>Charges disputed</small><b>$1,180</b><em>kept off your bills</em><svg class="spark" viewBox="0 0 100 28" preserveAspectRatio="none"><path d="M0 20 L14 21 L28 14 L42 16 L56 9 L70 11 L84 7 L100 6" fill="none" stroke="#2FB67C" stroke-width="2"/></svg></div>
+              <div class="kpi"><small>Next market review</small><b>14 Jan</b><em class="n">every 90 days</em><svg class="spark" viewBox="0 0 100 28" preserveAspectRatio="none"><rect x="0" y="12" width="100" height="4" rx="2" fill="#EFEDE6"/><rect x="0" y="12" width="64" height="4" rx="2" fill="#2FB67C"/></svg></div>
+            </div>
+            <div class="grid2">
+              <div class="panel"><h5>October supplier invoices <span>Checked against your agreements</span></h5>
+                <div class="rows anim" id="audit">
+                  <div class="row" data-s="ok"><div><b>General waste · 3000L front lift</b><small>Surry Hills · 13 lifts</small></div><span class="amt">$1,284.40</span><span class="st q">Queued</span></div>
+                  <div class="row" data-s="ok"><div><b>Commingled recycling · 660L</b><small>Bondi · 8 lifts</small></div><span class="amt">$196.80</span><span class="st q">Queued</span></div>
+                  <div class="row" data-s="bad"><div><b>Contamination charge</b><small>Bondi · no photo or weight evidence</small></div><span class="amt">$185.00</span><span class="st q">Queued</span></div>
+                  <div class="row" data-s="ok"><div><b>Food organics · 240L</b><small>Surry Hills · 26 lifts</small></div><span class="amt">$338.00</span><span class="st q">Queued</span></div>
+                  <div class="row" data-s="bad"><div><b>Lift billed, not collected</b><small>Richmond · 14 Oct</small></div><span class="amt">$96.20</span><span class="st q">Queued</span></div>
+                </div>
+              </div>
+              <div class="panel"><h5>Activity <span>Live</span></h5>
+                <div class="feed">
+                  <div><i></i><span><b>Missed lift recovered</b><small>Richmond · supplier back in 3h 12m</small></span></div>
+                  <div><i class="a"></i><span><b>2 charges disputed</b><small>Credit requested · reply due 21 Nov</small></span></div>
+                  <div><i></i><span><b>Cardboard re-priced</b><small>Q4 market review · all sites</small></span></div>
+                  <div><i></i><span><b>Bondi bin right-sized</b><small>1100L to 660L · from 1 Dec</small></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="floatc fc1"><div class="t"><b>Q4 market review</b><span class="st ok">Complete</span></div>
+        <div class="bar you"><span style="text-align:left;color:var(--muted);font-weight:500">Your price</span><i style="--w:100%"></i><span>$412</span></div>
+        <div class="bar"><span style="text-align:left;color:var(--muted);font-weight:500">Supplier A</span><i style="--w:92%"></i><span>$379</span></div>
+        <div class="bar best"><span style="text-align:left;color:var(--muted);font-weight:500">Supplier B</span><i style="--w:81%"></i><span>$334</span></div>
+        <div class="bar"><span style="text-align:left;color:var(--muted);font-weight:500">Supplier C</span><i style="--w:96%"></i><span>$396</span></div>
+      </div>
+      <div class="floatc fc2"><small style="color:var(--muted)">Kept off your invoices this year</small><div class="big">$11,960</div><small style="color:var(--muted)">across 47 disputed charges</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATEMENT -->
+<section class="statement" id="why">
+  <div class="wrap">
+    <p class="big rv">Most brokers find you a deal and move on. <strong>Then the price creeps back up, the invoices go unchecked and you’re chasing the bin company again.</strong> Unified never stops working for you.</p>
+    <div class="facts">
+      <div class="rv"><b>100<sup>%</sup></b><span>of supplier invoice lines checked against your agreement</span></div>
+      <div class="rv d1"><b>90<sup>days</sup></b><span>between market reviews, so your price never drifts</span></div>
+      <div class="rv d2"><b>2<sup>min</sup></b><span>to log a missed lift and send the supplier back</span></div>
+      <div class="rv d3"><b>$0</b><span>exit fees. Leave on 30 days’ notice, any time</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- VS -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Why we’re different</span>
+      <h2>A broker sells you a contract<span class="p">.</span> <span class="hl">We manage your waste<span class="p">.</span></span></h2>
+      <p>The difference shows up every month, on every invoice and every time something goes wrong.</p>
+    </div>
+    <div class="vs">
+      <div class="vcol them rv">
+        <h3>A typical broker</h3><p class="sub">Paid at signing. Gone soon after.</p>
+        <ul>
+          <li><svg><use href="#xx"/></svg>Finds a price once, at the start of your contract</li>
+          <li><svg><use href="#xx"/></svg>Leaves you to check every supplier invoice yourself</li>
+          <li><svg><use href="#xx"/></svg>Passes your complaints on and waits</li>
+          <li><svg><use href="#xx"/></svg>Signs you into a long, auto-renewing term</li>
+          <li><svg><use href="#xx"/></svg>Fuel, admin and environmental fees still arrive</li>
+          <li><svg><use href="#xx"/></svg>No visibility of what they actually do</li>
+        </ul>
+      </div>
+      <div class="vcol us rv d1">
+        <h3>Unified</h3><p class="sub">Working for you every day you’re with us.</p>
+        <ul>
+          <li><svg><use href="#tk"/></svg>Takes your services back to market every quarter</li>
+          <li><svg><use href="#tk"/></svg>Checks every line of every invoice before you pay</li>
+          <li><svg><use href="#tk"/></svg>Owns every issue, on the clock, until it’s fixed</li>
+          <li><svg><use href="#tk"/></svg>No lock-in. 30 days’ notice and no exit fee</li>
+          <li><svg><use href="#tk"/></svg>One all-in price per service, levy included</li>
+          <li><svg><use href="#tk"/></svg>A live portal that shows every check and every result</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE: FEATURE ROWS -->
+<section class="sec" id="service" style="padding-top:20px">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">The service</span>
+      <h2>Lower costs<span class="p">.</span> Zero admin<span class="p">.</span> <span class="hl">No surprises<span class="p">.</span></span></h2>
+      <p>Everything a large company’s procurement team would do for its waste, done for you, for every site.</p>
+    </div>
+
+    <div class="feat">
+      <div class="ftext rv">
+        <span class="idx">01 · INVOICE ASSURANCE</span>
+        <h3>Every line of every invoice, checked<span class="p">.</span></h3>
+        <p>Rates, lift counts, bin sizes, levies, fees and duplicates. Every supplier charge is matched to your agreement and your collection records before it reaches you.</p>
+        <ul>
+          <li><svg class="tick"><use href="#tk"/></svg>Wrong charges are disputed with the supplier, never passed to you</li>
+          <li><svg class="tick"><use href="#tk"/></svg>Contamination and overweight charges need photo or weighbridge proof</li>
+          <li><svg class="tick"><use href="#tk"/></svg>One clear invoice for every site, every month</li>
+        </ul>
+      </div>
+      <div class="fvis rv d1">
+        <div class="card">
+          <h5>Invoice INV-20431 <span class="st bad">2 disputed</span></h5><p class="cs">Surry Hills · October · 14 lines</p>
+          <div class="rows">
+            <div class="row"><div><b>General waste · 3000L × 13</b><small>Rate matches agreement</small></div><span class="amt">$1,284.40</span><span class="st ok">Correct</span></div>
+            <div class="row"><div><b>Food organics · 240L × 26</b><small>Lifts match collection records</small></div><span class="amt">$338.00</span><span class="st ok">Correct</span></div>
+            <div class="row"><div><b>Overweight charge</b><small>No weighbridge docket supplied</small></div><span class="amt">$142.00</span><span class="st bad">Disputed</span></div>
+            <div class="row"><div><b>Bin rental · 3000L × 2</b><small>Only one bin on site</small></div><span class="amt">$48.00</span><span class="st bad">Disputed</span></div>
+          </div>
+        </div>
+        <div class="mini-float"><b>$190.00 kept off your bill</b>Credit requested from the supplier the same day.</div>
+      </div>
+    </div>
+
+    <div class="feat rev">
+      <div class="ftext rv">
+        <span class="idx">02 · QUARTERLY MARKET REVIEW</span>
+        <h3>Back to market, every quarter<span class="p">.</span></h3>
+        <p>Prices drift and suppliers compete. Every 90 days we take your services back to our supplier network, compare like for like and move you to a better deal when we find one.</p>
+        <ul>
+          <li><svg class="tick"><use href="#tk"/></svg>Every service benchmarked against current market rates in your area</li>
+          <li><svg class="tick"><use href="#tk"/></svg>Bins and lift days right-sized to how full they really are</li>
+          <li><svg class="tick"><use href="#tk"/></svg>A written review in your portal. Nothing changes without your OK</li>
+        </ul>
+      </div>
+      <div class="fvis rv d1" id="tender">
+        <div class="card">
+          <h5>Q4 market review · Cardboard 1500L <span class="st ok">Complete</span></h5><p class="cs">All 6 sites · suppliers asked to quote like for like</p>
+          <div class="tender">
+            <div class="tr you"><span>Your current price</span><i style="--w:100%"></i><b>$58.40</b></div>
+            <div class="tr"><span>Supplier A</span><i style="--w:94%"></i><b>$54.90</b></div>
+            <div class="tr best"><span>Supplier B</span><i style="--w:79%"></i><b>$46.10</b></div>
+            <div class="tr"><span>Supplier C</span><i style="--w:97%"></i><b>$56.70</b></div>
+            <div class="tr"><span>Supplier D</span><i style="--w:88%"></i><b>$51.40</b></div>
+          </div>
+          <div class="outcome"><div><small>Recommended: move to Supplier B from 1 December</small>Saving across all sites</div><b>$3,830 / yr</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feat">
+      <div class="ftext rv">
+        <span class="idx">03 · SUPPLIER MANAGEMENT</span>
+        <h3>One call<span class="p">.</span> We chase it to the end<span class="p">.</span></h3>
+        <p>Missed lift, overflowing bin, damaged bin or an extra collection. Tell us once and we take it from there, with a deadline and a named person on every issue.</p>
+        <ul>
+          <li><svg class="tick"><use href="#tk"/></svg>Missed lifts logged and sent to the supplier within 2 minutes</li>
+          <li><svg class="tick"><use href="#tk"/></svg>Chased at 2 hours, owned by a person at 4 hours</li>
+          <li><svg class="tick"><use href="#tk"/></svg>Updates by email, SMS or portal, your choice</li>
+        </ul>
+      </div>
+      <div class="fvis rv d1">
+        <div class="card">
+          <h5>Request #4182 · Missed lift <span class="st ok">Resolved</span></h5><p class="cs">Bondi · reported by Sam with a photo</p>
+          <div class="timeline">
+            <div class="tl"><span class="tm">7:42am</span><span class="dt"></span><div><b>Reported in the portal</b><small>General waste 1100L not collected</small></div></div>
+            <div class="tl"><span class="tm">7:43am</span><span class="dt"></span><div><b>Sent to supplier with a deadline</b><small>Return requested by 2:00pm</small></div></div>
+            <div class="tl"><span class="tm">9:10am</span><span class="dt"></span><div><b>Supplier confirmed</b><small>Truck booked for 1:00–2:00pm</small></div></div>
+            <div class="tl"><span class="tm">1:26pm</span><span class="dt"></span><div><b>Collected</b><small>Confirmed by the driver</small></div></div>
+            <div class="tl"><span class="tm">Next day</span><span class="dt a"></span><div><b>Missed lift removed from your invoice</b><small>Supplier charge disputed</small></div></div>
+          </div>
+          <div class="sla"><div><small>Time to supplier</small><b>1 min</b></div><div><small>Time to collection</small><b>5h 44m</b></div><div><small>Your effort</small><b>1 photo</b></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUDED -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Included as standard</span>
+      <h2>Everything you<span class="ap">’</span>d expect<span class="p">.</span> <span class="hl">And what you wouldn<span class="ap">’</span>t<span class="p">.</span></span></h2>
+    </div>
+    <div class="inc rv">
+      <div><span class="n">01</span><h4>One all-in price</h4><p>One price per service with the landfill levy built in. No fuel, environmental, account or admin fees on top.</p></div>
+      <div><span class="n">02</span><h4>No lock-in</h4><p>No auto-renewing terms and no exit fees. Stay because it works. Leave on 30 days’ notice if it doesn’t.</p></div>
+      <div><span class="n">03</span><h4>Every site, one account</h4><p>One team, one invoice and one portal for every location, from a single café to a national network.</p></div>
+      <div><span class="n">04</span><h4>A dedicated account manager</h4><p>A named person who knows your sites, reviews your account every quarter and picks up the phone.</p></div>
+      <div><span class="n">05</span><h4>Sustainability reporting</h4><p>Tonnes and recycling rates by site and stream, ready for ESG reports and Scope 3 disclosures.</p></div>
+      <div><span class="n">06</span><h4>Compliance handled</h4><p>Food organics mandates, liquid waste certificates and secure destruction records, tracked and filed.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BILL X-RAY -->
+<section class="sec xr-sec" id="xray">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Bill X-ray</span>
+      <h2>What<span class="ap">’</span>s hiding in <span class="hl">your bin bill?</span></h2>
+      <p>Select the highlighted lines on this typical commercial waste invoice. These are the charges we find and remove most often.</p>
+    </div>
+    <div class="xray">
+      <div class="invoice rv" id="bill">
+        <div class="inv-h"><div><b>Tax invoice · Waste services</b><small>Account 004417 · 1–31 October · 12 Example St, Richmond</small></div><span class="tag">Example</span></div>
+        <div class="il"><span>General waste 1100L × 13</span><span class="v">$611.00</span><span></span></div>
+        <div class="il hot" data-i="1"><span>Annual rate adjustment (+7.5%)</span><span class="v">$45.83</span><span class="k">1</span></div>
+        <div class="il"><span>Recycling 660L × 4</span><span class="v">$98.40</span><span></span></div>
+        <div class="il hot" data-i="2"><span>Fuel and environmental surcharge</span><span class="v">$62.15</span><span class="k">2</span></div>
+        <div class="il hot" data-i="3"><span>Contamination charge</span><span class="v">$95.00</span><span class="k">3</span></div>
+        <div class="il hot" data-i="4"><span>Account management fee</span><span class="v">$14.95</span><span class="k">4</span></div>
+        <div class="il hot" data-i="5"><span>Bin rental 1100L × 2</span><span class="v">$36.00</span><span class="k">5</span></div>
+        <div class="inv-t"><span>Total (inc GST)</span><span>$1,059.66</span></div>
+        <div class="inv-f hot" data-i="6"><span>Agreement renews automatically for a further 36 months unless cancelled in writing 90 days before the renewal date. Early termination fees apply.</span><span class="k" style="background:#F3E6C7;color:#8F6420;width:24px;height:24px;border-radius:50%;font:700 12px/24px Inter;text-align:center">6</span></div>
+      </div>
+      <div class="xp rv d1">
+        <div class="xp-card" id="xpCard"></div>
+        <div class="xp-nav" id="xpNav"></div>
+        <p class="note" style="margin-top:14px">Illustrative invoice. Not a real supplier’s bill.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORM -->
+<section class="sec dark plat" id="platform">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">The Unified platform</span>
+      <h2>Don<span class="ap">’</span>t take our word for it<span class="p">.</span> <span class="hl">Watch us work<span class="p">.</span></span></h2>
+      <p>Every invoice we check, every request we chase and every market review we run is in your portal, live, for every site.</p>
+    </div>
+    <div class="ptabs rv" id="ptabs"><button class="on" data-t="0">Invoices</button><button data-t="1">Spend</button><button data-t="2">Market reviews</button><button data-t="3">Sustainability</button></div>
+    <div class="pwrap">
+      <div class="pview rv" id="pview">
+        <div class="pane on">
+          <h4>Invoice checks</h4><p class="cs">All sites · last 90 days</p>
+          <table class="t"><tr><th>Invoice</th><th>Site</th><th>Lines</th><th>Checked</th><th>Result</th></tr>
+          <tr><td>INV-20431</td><td>Surry Hills</td><td>14</td><td>2 Nov</td><td><span class="st bad">2 disputed</span></td></tr>
+          <tr><td>INV-20428</td><td>Bondi</td><td>9</td><td>2 Nov</td><td><span class="st ok">All correct</span></td></tr>
+          <tr><td>INV-20425</td><td>Richmond</td><td>11</td><td>1 Nov</td><td><span class="st wait">Credit pending</span></td></tr>
+          <tr><td>INV-20398</td><td>Newtown</td><td>8</td><td>3 Oct</td><td><span class="st ok">All correct</span></td></tr>
+          <tr><td>INV-20391</td><td>Surry Hills</td><td>13</td><td>3 Oct</td><td><span class="st ok">Credit received</span></td></tr>
+          <tr><td>INV-20387</td><td>Fitzroy</td><td>10</td><td>2 Oct</td><td><span class="st ok">All correct</span></td></tr></table>
+        </div>
+        <div class="pane">
+          <h4>Spend by month</h4><p class="cs">All sites · since joining Unified in June</p>
+          <div class="chart">
+            <div><i class="g" style="height:96%"></i></div><div><i class="g" style="height:100%"></i></div><div><i class="g" style="height:93%"></i></div>
+            <div><i class="r" style="height:78%"></i></div><div><i class="r" style="height:75%"></i></div><div><i class="r" style="height:76%"></i></div><div><i class="r" style="height:72%"></i></div><div><i class="r" style="height:71%"></i></div>
+          </div>
+          <div class="clab"><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span></div>
+          <div class="legend"><span><i style="background:#CFCAC0"></i>Before Unified</span><span><i style="background:var(--green)"></i>With Unified</span></div>
+        </div>
+        <div class="pane">
+          <h4>Q4 market review</h4><p class="cs">Completed 2 October · 5 suppliers asked per service</p>
+          <table class="t"><tr><th>Service</th><th>Sites</th><th>Finding</th><th>Action</th></tr>
+          <tr><td>General waste 3000L</td><td>3</td><td>In market range</td><td><span class="st ok">Keep</span></td></tr>
+          <tr><td>Cardboard 1500L</td><td>6</td><td>Better offer found</td><td><span class="st ok">Re-priced</span></td></tr>
+          <tr><td>General waste 1100L</td><td>Bondi</td><td>Bin half empty 9 weeks</td><td><span class="st wait">Downsize</span></td></tr>
+          <tr><td>Food organics 240L</td><td>2</td><td>In market range</td><td><span class="st ok">Keep</span></td></tr></table>
+        </div>
+        <div class="pane">
+          <h4>Sustainability</h4><p class="cs">All sites · financial year to date</p>
+          <div class="chart" style="height:150px">
+            <div><i class="o" style="height:22%"></i><i class="r" style="height:30%"></i><i class="g" style="height:44%"></i></div>
+            <div><i class="o" style="height:24%"></i><i class="r" style="height:31%"></i><i class="g" style="height:40%"></i></div>
+            <div><i class="o" style="height:27%"></i><i class="r" style="height:32%"></i><i class="g" style="height:36%"></i></div>
+            <div><i class="o" style="height:29%"></i><i class="r" style="height:33%"></i><i class="g" style="height:33%"></i></div>
+          </div>
+          <div class="clab"><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span></div>
+          <div class="legend"><span><i style="background:var(--lime)"></i>Organics</span><span><i style="background:var(--green)"></i>Recycling</span><span><i style="background:#CFCAC0"></i>Landfill</span></div>
+        </div>
+      </div>
+      <div class="pside">
+        <div class="pstat rv d1"><small>Lines checked for our clients</small><b id="cnt">48,213</b><p>supplier invoice lines checked this year</p></div>
+        <div class="pfeat rv d2"><h4>In your portal</h4><ul>
+          <li><svg class="tick"><use href="#tk"/></svg>Every invoice line, its check and the result</li>
+          <li><svg class="tick"><use href="#tk"/></svg>Every request, its owner and its deadline</li>
+          <li><svg class="tick"><use href="#tk"/></svg>Quarterly market reviews in writing</li>
+          <li><svg class="tick"><use href="#tk"/></svg>Spend, lifts and recycling by site</li>
+          <li><svg class="tick"><use href="#tk"/></svg>ESG and Scope 3 data export</li>
+          <li><svg class="tick"><use href="#tk"/></svg>Agreements, certificates and invoices</li>
+        </ul></div>
+      </div>
+    </div>
+    <p class="note" style="margin-top:18px">Example screens. Figures are illustrative.</p>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps<span class="p">.</span> <span class="hl">You only do the first<span class="p">.</span></span></h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><span class="no">01</span><h3>Send us a bill</h3><p>Upload a photo or PDF of a recent waste invoice. That’s all we need to start.</p><span class="when">2 minutes of your time</span></div>
+      <div class="step rv d1"><span class="no">02</span><h3>We go to market</h3><p>We compare every service with the market, check your contract terms and show you the options in plain English.</p><span class="when">Assessment within 1 business day</span></div>
+      <div class="step rv d2"><span class="no">03</span><h3>We take it from here</h3><p>If you switch, we manage the changeover, then check every invoice, chase every issue and review your prices every quarter.</p><span class="when">For as long as you’re with us</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMISES -->
+<section class="sec dark">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Our commitments</span>
+      <h2>Promises in writing, <span class="hl">not slogans<span class="p">.</span></span></h2>
+      <p>These are in our standard client terms, so you can hold us to them.</p>
+    </div>
+    <div class="prom rv">
+      <div><span class="n">01</span><h4>Wrong charges never reach you</h4><p>If a supplier charge is wrong, we dispute it. It never appears on your invoice.</p></div>
+      <div><span class="n">02</span><h4>One all-in price</h4><p>One price per service, levy included. No account, admin or fuel fees, ever.</p></div>
+      <div><span class="n">03</span><h4>Back to market every quarter</h4><p>Your services are re-tested every 90 days and the findings are written up for you.</p></div>
+      <div><span class="n">04</span><h4>No lock-in, no exit fee</h4><p>Leave any time on 30 days’ notice. No auto-renewing terms.</p></div>
+      <div><span class="n">05</span><h4>No extra charge without proof</h4><p>Contamination or overweight charges are passed on only with photo or weighbridge evidence.</p></div>
+      <div><span class="n">06</span><h4>Price changes, explained</h4><p>Prices change only when supplier costs do, with 30 days’ notice and the right to leave free.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLIANCE -->
+<section class="sec">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Compliance and sustainability</span>
+      <h2>Stay ahead of the rules, <span class="hl">and prove your progress<span class="p">.</span></span></h2>
+    </div>
+    <div class="comp">
+      <div class="ccard rv">
+        <span class="eyebrow">NSW food organics mandate</span>
+        <h3>Is your business caught?</h3>
+        <p>Food businesses in NSW must separate food waste, starting with the largest producers in July 2026. On-the-spot fines reach $5,000. Your free assessment tells you if and when it applies, and we set up the right service before it does.</p>
+        <div class="fogo"><div class="now"><b>Jul 2026</b><small>3,960L+ general waste a week</small></div><div><b>Jul 2028</b><small>1,980L+ a week</small></div><div><b>Jul 2030</b><small>660L+ a week</small></div></div>
+      </div>
+      <div class="ccard rv d1">
+        <span class="eyebrow">ESG and Scope 3 reporting</span>
+        <h3>Waste data you can report on<span class="p">.</span></h3>
+        <p>Tonnes, streams and recycling rates by site, each figure marked as measured or estimated. Export it straight into your sustainability report.</p>
+        <div class="esg"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="46" fill="none" stroke="#EFEDE6" stroke-width="18"/><circle cx="60" cy="60" r="46" fill="none" stroke="#2FB67C" stroke-width="18" stroke-dasharray="94 289" transform="rotate(-90 60 60)"/><circle cx="60" cy="60" r="46" fill="none" stroke="#C8F169" stroke-width="18" stroke-dasharray="78 289" stroke-dashoffset="-94" transform="rotate(-90 60 60)"/><text x="60" y="58" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="20" fill="#0B2E26">60%</text><text x="60" y="74" text-anchor="middle" font-family="Inter" font-size="9.5" fill="#5E6D67">diverted</text></svg>
+          <ul><li><span><i style="background:#2FB67C"></i>Recycling</span><b>32.6 t</b></li><li><span><i style="background:#C8F169"></i>Organics</span><b>27.1 t</b></li><li><span><i style="background:#D9D5CB"></i>Landfill</span><b>39.8 t</b></li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COVERAGE -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap cov">
+    <div class="rv">
+      <span class="eyebrow">Coverage</span>
+      <h2 style="font-size:clamp(36px,4.6vw,56px);margin:18px 0 18px">Wherever you are, <span class="hl">whatever you do<span class="p">.</span></span></h2>
+      <p style="font-size:18px;color:var(--muted)">We work with suppliers across the country, so one team can look after one café or a national network. We’re independent of every collector, so we always choose the right one for you.</p>
+      <div class="streams">
+        <span>General waste</span><span>Commingled recycling</span><span>Cardboard and paper</span><span>Food organics</span><span>Front and rear lift</span><span>Hook lift and skips</span><span>Liquid trade waste</span><span>Grease traps</span><span>Secure document destruction</span>
+      </div>
+    </div>
+    <div class="states rv d1">
+      <div><b>NSW</b><small>Metro and regional</small></div><div><b>VIC</b><small>Metro and regional</small></div><div><b>QLD</b><small>Metro and regional</small></div><div><b>WA</b><small>Metro and regional</small></div>
+      <div><b>SA</b><small>Metro and regional</small></div><div><b>TAS</b><small>Statewide</small></div><div><b>ACT</b><small>Canberra region</small></div><div><b>NT</b><small>Darwin and Alice Springs</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq" style="padding-top:20px">
+  <div class="wrap faq">
+    <div class="rv">
+      <span class="eyebrow">FAQ</span>
+      <h2 style="font-size:clamp(36px,4.6vw,56px);margin:18px 0 18px">Straight answers<span class="p">.</span></h2>
+      <p style="font-size:18px;color:var(--muted)">Anything else, ask us when you request your assessment.</p>
+    </div>
+    <div class="rv d1">
+      <details open><summary>Is the market assessment really free?<span class="pm"></span></summary><p>Yes. Send us one recent invoice and we’ll compare each service with the market, flag fees and contract terms worth knowing about, and tell you whether you’re caught by any new rules. No cost and no obligation. If you’re already on a good deal, we’ll say so.</p></details>
+      <details><summary>How is Unified different from other brokers?<span class="pm"></span></summary><p>Most brokers are paid to sign you up and then step back. We manage your waste every day after that: we check every invoice line, chase every issue, take your services back to market every quarter and show you all of it in your portal.</p></details>
+      <details><summary>How do you check every invoice line?<span class="pm"></span></summary><p>Every supplier invoice is checked automatically against your agreement and your collection records: rates, lift counts, bin sizes, levies, fees and duplicates. Anything that doesn’t match is reviewed by our team and disputed with the supplier. You can see every check in your portal.</p></details>
+      <details><summary>How do you get paid?<span class="pm"></span></summary><p>Our fee is built into one all-in price for each service. There are no separate management, account or admin fees.</p></details>
+      <details><summary>I’m still in a contract. Can you help?<span class="pm"></span></summary><p>Yes. We find your end date, notice period and rollover terms, then time the switch so you don’t pay twice or miss the notice window.</p></details>
+      <details><summary>Do you work with multi-site and national businesses?<span class="pm"></span></summary><p>Yes. Every site sits under one account, one portal and one monthly invoice, across every state and territory.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="sec" id="assessment" style="padding-top:20px">
+  <div class="wrap">
+    <div class="cta dark">
+      <div class="rv">
+        <span class="eyebrow">Free market assessment</span>
+        <h2>Let<span class="ap">’</span>s be <span class="hl">unified<span class="p">.</span></span></h2>
+        <p>Send us one recent waste invoice. We’ll show you what the market charges for the same service, what’s hiding in your bill and when your contract can end.</p>
+        <ul>
+          <li><svg class="tick"><use href="#tk"/></svg>A service-by-service market comparison</li>
+          <li><svg class="tick"><use href="#tk"/></svg>A Bill X-ray of every fee and surcharge</li>
+          <li><svg class="tick"><use href="#tk"/></svg>Your contract end date and notice window</li>
+          <li><svg class="tick"><use href="#tk"/></svg>Whether food organics rules apply to you</li>
+        </ul>
+      </div>
+      <form class="rv d1" id="form" onsubmit="return send(event)">
+        <div class="fb">
+          <h3>Get your free assessment</h3>
+          <p class="fs">Takes about a minute. A specialist replies within one business day.</p>
+          <div class="fields">
+            <div class="full"><label for="biz">Business name</label><input id="biz" type="text" required autocomplete="organization"></div>
+            <div><label for="nm">Your name</label><input id="nm" type="text" required autocomplete="name"></div>
+            <div><label for="pc">Postcode</label><input id="pc" type="text" inputmode="numeric" maxlength="4" required autocomplete="postal-code"></div>
+            <div><label for="em">Work email</label><input id="em" type="email" required autocomplete="email"></div>
+            <div><label for="ph">Phone</label><input id="ph" type="tel" autocomplete="tel"></div>
+            <div class="full"><label class="drop" for="inv"><span><b id="invname">Attach a recent invoice</b><small>Photo or PDF. Makes your assessment exact.</small></span><span class="bt">Choose file</span><input id="inv" type="file" accept="image/*,.pdf" onchange="document.getElementById('invname').textContent=this.files[0]?this.files[0].name:'Attach a recent invoice'"></label></div>
+          </div>
+          <label class="consent"><input type="checkbox" required>I agree to Unified Waste Solutions using these details to prepare my assessment and contact me about it.</label>
+          <button class="btn btn-ink" type="submit">Get my free assessment <svg class="ar"><use href="#ar"/></svg></button>
+        </div>
+        <div class="thanks"><div class="ok"><svg viewBox="0 0 16 16"><use href="#tk" style="color:#0B2E26"/></svg></div><h3>Preview only</h3><p>This is a design concept, so nothing was sent. On the live site, this sends the request to the Unified team.</p></div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><a href="#top" class="logo" aria-label="Unified Waste Solutions"><svg role="img" aria-label="Unified Waste Solutions" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510.5 174.0"><g transform="translate(-16.5 -4.5) scale(1.5)"><defs><clipPath id="uws0fc"><polygon points="0,0 0,150 96.94,147.28 60,100 47.69,84.24 47.69,0"/></clipPath><mask id="uws0fm" maskUnits="userSpaceOnUse" x="-20" y="-20" width="160" height="170"><rect x="-20" y="-20" width="160" height="170" fill="#fff"/><line x1="50.15" y1="87.39" x2="69.85" y2="112.61" stroke="#000" stroke-width="3.2"/></mask></defs><g mask="url(#uws0fm)"><path d="M30 40V70A30 30 0 0 0 90 70V22" fill="none" stroke="#2FB67C" stroke-width="22" stroke-linecap="round"/><g clip-path="url(#uws0fc)"><path d="M30 40V70A30 30 0 0 0 90 70V22" fill="none" stroke="#0F4A3B" stroke-width="22" stroke-linecap="round"/></g></g></g><path fill="#0B2E26" transform="translate(163.3 106.16204052091472)" d="M36.2 1.2L36.2 1.2Q27.4 1.2 20.5 -2.5Q13.6 -6.2 9.65 -12.65Q5.7 -19.1 5.7 -27.3L5.7 -27.3L5.7 -74.5L21.2 -74.5L21.2 -28.3Q21.2 -23.9 23.15 -20.35Q25.1 -16.8 28.5 -14.8Q31.9 -12.8 36.2 -12.8L36.2 -12.8Q40.6 -12.8 43.95 -14.8Q47.3 -16.8 49.25 -20.35Q51.2 -23.9 51.2 -28.3L51.2 -28.3L51.2 -74.5L66.7 -74.5L66.7 -27.3Q66.7 -19.1 62.75 -12.65Q58.8 -6.2 51.9 -2.5Q45 1.2 36.2 1.2M90.9 0L75.9 0L75.9 -54.6L89.9 -54.6L89.9 -43.8L89.1 -46.2Q91 -51.1 95.25 -53.45Q99.5 -55.8 105.2 -55.8L105.2 -55.8Q111.4 -55.8 116.05 -53.2Q120.7 -50.6 123.3 -45.95Q125.9 -41.3 125.9 -35.1L125.9 -35.1L125.9 0L110.9 0L110.9 -31.9Q110.9 -35.1 109.65 -37.4Q108.4 -39.7 106.15 -41Q103.9 -42.3 100.9 -42.3L100.9 -42.3Q98 -42.3 95.7 -41Q93.4 -39.7 92.15 -37.4Q90.9 -35.1 90.9 -31.9L90.9 -31.9L90.9 0M148.8 0L133.8 0L133.8 -54.6L148.8 -54.6L148.8 0M148.8 -59.5L133.8 -59.5L133.8 -74.5L148.8 -74.5L148.8 -59.5M179.4 0L164.4 0L164.4 -41.6L155.2 -41.6L155.2 -54.6L164.4 -54.6L164.4 -55.4Q164.4 -61.9 166.95 -66.4Q169.5 -70.9 174.3 -73.3Q179.1 -75.7 185.9 -75.7L185.9 -75.7Q187.2 -75.7 188.7 -75.55Q190.2 -75.4 191.2 -75.2L191.2 -75.2L191.2 -62.4Q190.2 -62.6 189.45 -62.65Q188.7 -62.7 187.9 -62.7L187.9 -62.7Q183.7 -62.7 181.55 -60.85Q179.4 -59 179.4 -55.4L179.4 -55.4L179.4 -54.6L191.1 -54.6L191.1 -41.6L179.4 -41.6L179.4 0M210.8 0L195.8 0L195.8 -54.6L210.8 -54.6L210.8 0M210.8 -59.5L195.8 -59.5L195.8 -74.5L210.8 -74.5L210.8 -59.5M246.1 1.2L246.1 1.2Q237.4 1.2 231 -2.65Q224.6 -6.5 221.1 -13Q217.6 -19.5 217.6 -27.4L217.6 -27.4Q217.6 -35.6 221.25 -42Q224.9 -48.4 231.1 -52.1Q237.3 -55.8 245.1 -55.8L245.1 -55.8Q251.6 -55.8 256.6 -53.75Q261.6 -51.7 265.05 -48Q268.5 -44.3 270.3 -39.45Q272.1 -34.6 272.1 -28.9L272.1 -28.9Q272.1 -27.3 271.95 -25.75Q271.8 -24.2 271.4 -23.1L271.4 -23.1L230.5 -23.1L230.5 -34.1L262.9 -34.1L255.8 -28.9Q256.8 -33.2 255.7 -36.55Q254.6 -39.9 251.85 -41.85Q249.1 -43.8 245.1 -43.8L245.1 -43.8Q241.2 -43.8 238.4 -41.9Q235.6 -40 234.2 -36.3Q232.8 -32.6 233.1 -27.3L233.1 -27.3Q232.7 -22.7 234.2 -19.2Q235.7 -15.7 238.8 -13.75Q241.9 -11.8 246.3 -11.8L246.3 -11.8Q250.3 -11.8 253.15 -13.4Q256 -15 257.6 -17.8L257.6 -17.8L269.6 -12.1Q268 -8.1 264.55 -5.1Q261.1 -2.1 256.4 -0.45Q251.7 1.2 246.1 1.2M304.6 1.2L304.6 1.2Q296.6 1.2 290.3 -2.6Q284 -6.4 280.35 -12.9Q276.7 -19.4 276.7 -27.3L276.7 -27.3Q276.7 -35.3 280.4 -41.75Q284.1 -48.2 290.4 -52Q296.7 -55.8 304.5 -55.8L304.5 -55.8Q310.5 -55.8 315.15 -53.55Q319.8 -51.3 322.5 -47.2L322.5 -47.2L320.2 -44.2L320.2 -75.7L335.2 -75.7L335.2 0L321.2 0L321.2 -10L322.6 -6.9Q319.8 -2.9 315 -0.85Q310.2 1.2 304.6 1.2M306.4 -12.3L306.4 -12.3Q310.5 -12.3 313.6 -14.2Q316.7 -16.1 318.45 -19.5Q320.2 -22.9 320.2 -27.3L320.2 -27.3Q320.2 -31.7 318.45 -35.1Q316.7 -38.5 313.6 -40.4Q310.5 -42.3 306.4 -42.3L306.4 -42.3Q302.3 -42.3 299.05 -40.35Q295.8 -38.4 294 -35.05Q292.2 -31.7 292.2 -27.3L292.2 -27.3Q292.2 -22.9 294 -19.5Q295.8 -16.1 299.05 -14.2Q302.3 -12.3 306.4 -12.3"/><path fill="#0F4A3B" transform="translate(169 143.23525488936713) scale(0.2695386955403348)" d="M37.01 0L22.07 0L2.44 -72.75L16.46 -72.75L25.93 -34.03Q26.9 -29.83 27.76 -25.2Q28.61 -20.56 29.44 -15.87L29.44 -15.87Q29.69 -14.31 29.93 -12.7L29.93 -12.7Q30.22 -14.31 30.52 -15.87L30.52 -15.87Q31.35 -20.56 32.28 -25.2Q33.2 -29.83 34.23 -34.03L34.23 -34.03L44.09 -72.75L57.91 -72.75L67.72 -34.03Q68.8 -29.83 69.7 -25.2Q70.61 -20.56 71.48 -15.87L71.48 -15.87Q71.73 -14.36 72.02 -12.84L72.02 -12.84Q72.27 -14.36 72.56 -15.87L72.56 -15.87Q73.34 -20.56 74.22 -25.2Q75.1 -29.83 76.07 -34.03L76.07 -34.03L85.5 -72.75L99.56 -72.75L79.88 0L64.94 0L54.35 -40.19Q52.88 -45.8 51.81 -52.39L51.81 -52.39Q51.37 -54.83 50.93 -57.42L50.93 -57.42Q50.54 -55.03 50.2 -52.78L50.2 -52.78Q49.22 -46.29 47.61 -40.19L47.61 -40.19L37.01 0M136.7 0L122.44 0L147.83 -72.75L164.39 -72.75L190.36 0L176.06 0L169.9 -18.02L142.66 -18.02L136.7 0M146.13 -28.52L166.29 -28.52L163.12 -37.79Q161.21 -43.65 159.16 -51.07L159.16 -51.07Q157.7 -56.35 155.99 -62.65L155.99 -62.65Q154.38 -56.25 152.96 -50.93L152.96 -50.93Q150.96 -43.46 149.2 -37.79L149.2 -37.79L146.13 -28.52M243.62 1.12L243.62 1.12Q235.17 1.12 228.94 -1.51Q222.72 -4.15 219.2 -9.18Q215.69 -14.21 215.39 -21.39L215.39 -21.39L228.24 -21.39Q228.58 -17.58 230.63 -15.04Q232.68 -12.5 236.05 -11.25Q239.42 -10.01 243.52 -10.01L243.52 -10.01Q247.82 -10.01 251.11 -11.33Q254.41 -12.65 256.26 -15.01Q258.12 -17.38 258.12 -20.51L258.12 -20.51Q258.12 -23.34 256.48 -25.2Q254.85 -27.05 251.89 -28.34Q248.94 -29.64 244.98 -30.62L244.98 -30.62L236.73 -32.76Q227.6 -35.11 222.5 -39.84Q217.4 -44.58 217.4 -52.29L217.4 -52.29Q217.4 -58.74 220.86 -63.57Q224.33 -68.41 230.34 -71.07Q236.34 -73.73 243.96 -73.73L243.96 -73.73Q251.72 -73.73 257.58 -71.04Q263.44 -68.36 266.74 -63.62Q270.03 -58.89 270.18 -52.83L270.18 -52.83L257.53 -52.83Q257.04 -57.52 253.36 -60.08Q249.67 -62.65 243.76 -62.65L243.76 -62.65Q239.66 -62.65 236.71 -61.4Q233.75 -60.16 232.17 -58.01Q230.58 -55.86 230.58 -53.08L230.58 -53.08Q230.58 -50.05 232.46 -48.1Q234.34 -46.14 237.2 -44.97Q240.05 -43.8 242.98 -43.07L242.98 -43.07L249.77 -41.31Q253.82 -40.33 257.63 -38.72Q261.44 -37.11 264.49 -34.64Q267.54 -32.18 269.35 -28.66Q271.16 -25.15 271.16 -20.41L271.16 -20.41Q271.16 -14.01 267.88 -9.16Q264.61 -4.3 258.46 -1.59Q252.31 1.12 243.62 1.12M320.31 -61.77L297.85 -61.77L297.85 -72.75L355.76 -72.75L355.76 -61.77L333.35 -61.77L333.35 0L320.31 0L320.31 -61.77M432.6 0L385.13 0L385.13 -72.75L432.4 -72.75L432.4 -61.77L398.17 -61.77L398.17 -42.14L429.86 -42.14L429.86 -31.3L398.17 -31.3L398.17 -10.99L432.6 -10.99L432.6 0M532.41 1.12L532.41 1.12Q523.97 1.12 517.74 -1.51Q511.52 -4.15 508 -9.18Q504.48 -14.21 504.19 -21.39L504.19 -21.39L517.03 -21.39Q517.38 -17.58 519.43 -15.04Q521.48 -12.5 524.85 -11.25Q528.21 -10.01 532.32 -10.01L532.32 -10.01Q536.61 -10.01 539.91 -11.33Q543.21 -12.65 545.06 -15.01Q546.92 -17.38 546.92 -20.51L546.92 -20.51Q546.92 -23.34 545.28 -25.2Q543.64 -27.05 540.69 -28.34Q537.74 -29.64 533.78 -30.62L533.78 -30.62L525.53 -32.76Q516.4 -35.11 511.3 -39.84Q506.19 -44.58 506.19 -52.29L506.19 -52.29Q506.19 -58.74 509.66 -63.57Q513.13 -68.41 519.13 -71.07Q525.14 -73.73 532.76 -73.73L532.76 -73.73Q540.52 -73.73 546.38 -71.04Q552.24 -68.36 555.53 -63.62Q558.83 -58.89 558.98 -52.83L558.98 -52.83L546.33 -52.83Q545.84 -57.52 542.16 -60.08Q538.47 -62.65 532.56 -62.65L532.56 -62.65Q528.46 -62.65 525.5 -61.4Q522.55 -60.16 520.96 -58.01Q519.38 -55.86 519.38 -53.08L519.38 -53.08Q519.38 -50.05 521.26 -48.1Q523.14 -46.14 525.99 -44.97Q528.85 -43.8 531.78 -43.07L531.78 -43.07L538.57 -41.31Q542.62 -40.33 546.43 -38.72Q550.24 -37.11 553.29 -34.64Q556.34 -32.18 558.15 -28.66Q559.95 -25.15 559.95 -20.41L559.95 -20.41Q559.95 -14.01 556.68 -9.16Q553.41 -4.3 547.26 -1.59Q541.11 1.12 532.41 1.12M621.07 0.98L621.07 0.98Q611.5 0.98 603.93 -3.47Q596.36 -7.91 591.99 -16.26Q587.62 -24.61 587.62 -36.33L587.62 -36.33Q587.62 -48.1 591.99 -56.47Q596.36 -64.84 603.93 -69.29Q611.5 -73.73 621.07 -73.73L621.07 -73.73Q630.59 -73.73 638.13 -69.29Q645.68 -64.84 650.05 -56.47Q654.42 -48.1 654.42 -36.33L654.42 -36.33Q654.42 -24.61 650.05 -16.24Q645.68 -7.86 638.13 -3.44Q630.59 0.98 621.07 0.98M621.07 -10.69L621.07 -10.69Q626.98 -10.69 631.54 -13.65Q636.11 -16.6 638.7 -22.34Q641.28 -28.08 641.28 -36.33L641.28 -36.33Q641.28 -44.68 638.7 -50.42Q636.11 -56.15 631.54 -59.11Q626.98 -62.06 621.07 -62.06L621.07 -62.06Q615.11 -62.06 610.52 -59.08Q605.93 -56.1 603.32 -50.37Q600.71 -44.63 600.71 -36.33L600.71 -36.33Q600.71 -28.08 603.32 -22.36Q605.93 -16.65 610.52 -13.67Q615.11 -10.69 621.07 -10.69M729.94 0L684.77 0L684.77 -72.75L697.81 -72.75L697.81 -10.99L729.94 -10.99L729.94 0M788.81 1.07L788.81 1.07Q779.92 1.07 773.28 -2.27Q766.64 -5.62 762.98 -11.55Q759.31 -17.48 759.31 -25.24L759.31 -25.24L759.31 -72.75L772.35 -72.75L772.35 -26.32Q772.35 -21.78 774.38 -18.21Q776.4 -14.65 780.09 -12.62Q783.78 -10.6 788.81 -10.6L788.81 -10.6Q793.84 -10.6 797.52 -12.62Q801.21 -14.65 803.24 -18.21Q805.26 -21.78 805.26 -26.32L805.26 -26.32L805.26 -72.75L818.3 -72.75L818.3 -25.24Q818.3 -17.48 814.61 -11.55Q810.93 -5.62 804.31 -2.27Q797.69 1.07 788.81 1.07M870.09 -61.77L847.63 -61.77L847.63 -72.75L905.54 -72.75L905.54 -61.77L883.13 -61.77L883.13 0L870.09 0L870.09 -61.77M934.91 -72.75L947.95 -72.75L947.95 0L934.91 0L934.91 -72.75M1011.75 0.98L1011.75 0.98Q1002.18 0.98 994.61 -3.47Q987.04 -7.91 982.67 -16.26Q978.3 -24.61 978.3 -36.33L978.3 -36.33Q978.3 -48.1 982.67 -56.47Q987.04 -64.84 994.61 -69.29Q1002.18 -73.73 1011.75 -73.73L1011.75 -73.73Q1021.27 -73.73 1028.82 -69.29Q1036.36 -64.84 1040.73 -56.47Q1045.1 -48.1 1045.1 -36.33L1045.1 -36.33Q1045.1 -24.61 1040.73 -16.24Q1036.36 -7.86 1028.82 -3.44Q1021.27 0.98 1011.75 0.98M1011.75 -10.69L1011.75 -10.69Q1017.66 -10.69 1022.23 -13.65Q1026.79 -16.6 1029.38 -22.34Q1031.97 -28.08 1031.97 -36.33L1031.97 -36.33Q1031.97 -44.68 1029.38 -50.42Q1026.79 -56.15 1022.23 -59.11Q1017.66 -62.06 1011.75 -62.06L1011.75 -62.06Q1005.79 -62.06 1001.21 -59.08Q996.62 -56.1 994 -50.37Q991.39 -44.63 991.39 -36.33L991.39 -36.33Q991.39 -28.08 994 -22.36Q996.62 -16.65 1001.21 -13.67Q1005.79 -10.69 1011.75 -10.69M1088.74 0L1075.46 0L1075.46 -72.75L1090.2 -72.75L1115.35 -32.67Q1116.91 -30.18 1118.67 -27.03Q1120.43 -23.88 1122.33 -20.02L1122.33 -20.02Q1123.31 -17.97 1124.28 -15.77L1124.28 -15.77Q1124.14 -17.77 1124.04 -19.82L1124.04 -19.82Q1123.75 -24.12 1123.62 -28Q1123.5 -31.88 1123.5 -34.57L1123.5 -34.57L1123.5 -72.75L1136.73 -72.75L1136.73 0L1121.94 0L1099.23 -36.08Q1097.09 -39.55 1095.18 -42.92Q1093.28 -46.29 1091.08 -50.54L1091.08 -50.54Q1089.66 -53.32 1087.81 -56.79L1087.81 -56.79Q1088 -53.66 1088.15 -50.73L1088.15 -50.73Q1088.39 -45.95 1088.57 -42.19Q1088.74 -38.43 1088.74 -36.13L1088.74 -36.13L1088.74 0M1194.92 1.12L1194.92 1.12Q1186.47 1.12 1180.25 -1.51Q1174.02 -4.15 1170.51 -9.18Q1166.99 -14.21 1166.7 -21.39L1166.7 -21.39L1179.54 -21.39Q1179.88 -17.58 1181.93 -15.04Q1183.98 -12.5 1187.35 -11.25Q1190.72 -10.01 1194.82 -10.01L1194.82 -10.01Q1199.12 -10.01 1202.42 -11.33Q1205.71 -12.65 1207.57 -15.01Q1209.42 -17.38 1209.42 -20.51L1209.42 -20.51Q1209.42 -23.34 1207.79 -25.2Q1206.15 -27.05 1203.2 -28.34Q1200.24 -29.64 1196.29 -30.62L1196.29 -30.62L1188.04 -32.76Q1178.9 -35.11 1173.8 -39.84Q1168.7 -44.58 1168.7 -52.29L1168.7 -52.29Q1168.7 -58.74 1172.17 -63.57Q1175.63 -68.41 1181.64 -71.07Q1187.64 -73.73 1195.26 -73.73L1195.26 -73.73Q1203.03 -73.73 1208.88 -71.04Q1214.74 -68.36 1218.04 -63.62Q1221.34 -58.89 1221.48 -52.83L1221.48 -52.83L1208.84 -52.83Q1208.35 -57.52 1204.66 -60.08Q1200.97 -62.65 1195.07 -62.65L1195.07 -62.65Q1190.96 -62.65 1188.01 -61.4Q1185.06 -60.16 1183.47 -58.01Q1181.88 -55.86 1181.88 -53.08L1181.88 -53.08Q1181.88 -50.05 1183.76 -48.1Q1185.64 -46.14 1188.5 -44.97Q1191.36 -43.8 1194.29 -43.07L1194.29 -43.07L1201.07 -41.31Q1205.13 -40.33 1208.93 -38.72Q1212.74 -37.11 1215.79 -34.64Q1218.85 -32.18 1220.65 -28.66Q1222.46 -25.15 1222.46 -20.41L1222.46 -20.41Q1222.46 -14.01 1219.19 -9.16Q1215.92 -4.3 1209.76 -1.59Q1203.61 1.12 1194.92 1.12"/></svg></a><p style="max-width:300px">Your ally in waste. Commercial waste management for Australian businesses.</p></div>
+      <div><h4>Service</h4><ul><li><a href="#service">Invoice assurance</a></li><li><a href="#service">Quarterly market review</a></li><li><a href="#service">Supplier management</a></li><li><a href="#platform">Platform</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="#why">Why Unified</a></li><li><a href="#how">How it works</a></li><li><a href="#faq">FAQ</a></li><li><a href="#">Privacy policy</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="#">1300 000 000</a></li><li><a href="#">hello@unifiedwaste.com.au</a></li><li><a href="#">Client login</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 Unified Waste Solutions Pty Ltd · ABN 00 000 000 000</span><span>Working for Australian businesses</span></div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+const onScroll=()=>nav.classList.toggle('solid',scrollY>30);addEventListener('scroll',onScroll,{passive:true});onScroll();
+function menu(o){document.getElementById('mm').classList.toggle('open',o);document.body.style.overflow=o?'hidden':''}
+function send(e){e.preventDefault();document.getElementById('form').classList.add('sent');return false}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+/* hero audit animation */
+(function(){const rows=[...document.querySelectorAll('#audit .row')];
+function run(){rows.forEach(r=>{r.classList.remove('done');const s=r.querySelector('.st');s.className='st q';s.textContent='Queued'});
+ rows.forEach((r,i)=>setTimeout(()=>{const s=r.querySelector('.st');s.className='st wait';s.textContent='Checking'},300+i*700));
+ rows.forEach((r,i)=>setTimeout(()=>{r.classList.add('done');const s=r.querySelector('.st');const bad=r.dataset.s==='bad';s.className='st '+(bad?'bad':'ok');s.textContent=bad?'Disputed':'Correct'},750+i*700));}
+run();setInterval(run,9000);})();
+
+/* bill x-ray */
+const XR=[
+ {k:'Price creep',h:'A rate rise you didn’t agree to',p:'Many contracts let the collector raise prices every year, sometimes by more than inflation. It appears as one small line most people never question.',f:'Prices only change when supplier costs do, with 30 days’ notice and the right to leave. And we test your price against the market every quarter.'},
+ {k:'Surcharges',h:'Fuel and “environmental” surcharges',p:'Percentages added on top of the service price. Rarely explained, and they can change from month to month.',f:'One all-in price per service. No fuel, environmental, admin or account fees on top.'},
+ {k:'Unproven charges',h:'Contamination charges with no evidence',p:'A flat penalty for the wrong items in a bin, often with no photo, no weight and no warning.',f:'Contamination and overweight charges are passed on only with photo or weighbridge proof, and only after we’ve challenged them.'},
+ {k:'Admin fees',h:'Fees just for having an account',p:'Account management, invoice and paper-statement fees that add cost without adding any service.',f:'No account, admin or invoice fees. Ever.'},
+ {k:'Wrong size',h:'Paying for bins you don’t use',p:'Bins that go out half empty, or a second bin nobody needs. You pay rental and lifts on capacity you never use.',f:'We right-size your bins and lift days every quarter, based on how full they really are.'},
+ {k:'The fine print',h:'The auto-renewal trap',p:'Long contracts that roll over for years unless you cancel in a narrow window, with fees if you leave early.',f:'No lock-in and no exit fee. 30 days’ notice. We’ll also find your current end date and notice window for you.'},
+];
+const card=document.getElementById('xpCard'),navx=document.getElementById('xpNav'),hot=[...document.querySelectorAll('#bill .hot')];
+XR.forEach((x,i)=>{const b=document.createElement('button');b.textContent=i+1;b.setAttribute('aria-label','Charge '+(i+1));b.onclick=()=>show(i);navx.appendChild(b)});
+function show(i){const x=XR[i];card.innerHTML=`<span class="lab">${String(i+1).padStart(2,'0')} · ${x.k}</span><h3>${x.h}</h3><p>${x.p}</p><div class="fix"><b>With Unified</b>${x.f}</div>`;
+ [...navx.children].forEach((b,j)=>b.classList.toggle('on',j===i));hot.forEach(r=>r.classList.toggle('sel',+r.dataset.i===i+1));}
+hot.forEach(r=>r.addEventListener('click',()=>show(+r.dataset.i-1)));show(0);
+
+/* platform tabs */
+const pt=[...document.querySelectorAll('#ptabs button')],panes=[...document.querySelectorAll('#pview .pane')];
+pt.forEach(b=>b.onclick=()=>{pt.forEach(x=>x.classList.toggle('on',x===b));panes.forEach((p,i)=>p.classList.toggle('on',i===+b.dataset.t))});
+
+/* counter */
+const cnt=document.getElementById('cnt');let done=false;
+new IntersectionObserver(es=>{if(es[0].isIntersecting&&!done){done=true;const end=48213,t0=performance.now();(function f(t){const k=Math.min(1,(t-t0)/1800);cnt.textContent=Math.round(end*(1-Math.pow(1-k,3))).toLocaleString('en-AU');if(k<1)requestAnimationFrame(f)})(t0)}}).observe(cnt);
+</script>
+</body>
+</html>
