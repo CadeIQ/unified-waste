@@ -5,21 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Unified Waste Solutions | Design concept</title>
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="Commercial waste management for Australian businesses. Free assessment in seconds, every invoice and contract vetted, and a 24/7 client portal.">
+<meta name="description" content="Commercial waste management for Australian businesses. Free assessment in seconds, every invoice line vetted, automated market analysis and a 24/7 client portal.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064.0%2064.0%22%20width%3D%2264%22%20height%3D%2264%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%230B2E26%22%2F%3E%3Cg%20transform%3D%22translate(3.200000000000003%203.200000000000003)%20scale(0.48)%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22uws14c%22%3E%3Cpolygon%20points%3D%220%2C0%200%2C150%2096.94%2C147.28%2060%2C100%2047.69%2C84.24%2047.69%2C0%22%2F%3E%3C%2FclipPath%3E%3Cmask%20id%3D%22uws14m%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%22-20%22%20y%3D%22-20%22%20width%3D%22160%22%20height%3D%22170%22%3E%3Crect%20x%3D%22-20%22%20y%3D%22-20%22%20width%3D%22160%22%20height%3D%22170%22%20fill%3D%22%23fff%22%2F%3E%3Cline%20x1%3D%2250.15%22%20y1%3D%2287.39%22%20x2%3D%2269.85%22%20y2%3D%22112.61%22%20stroke%3D%22%23000%22%20stroke-width%3D%223.2%22%2F%3E%3C%2Fmask%3E%3C%2Fdefs%3E%3Cg%20mask%3D%22url(%23uws14m)%22%3E%3Cpath%20d%3D%22M30%2040V70A30%2030%200%200%200%2090%2070V22%22%20fill%3D%22none%22%20stroke%3D%22%232FB67C%22%20stroke-width%3D%2222%22%20stroke-linecap%3D%22round%22%2F%3E%3Cg%20clip-path%3D%22url(%23uws14c)%22%3E%3Cpath%20d%3D%22M30%2040V70A30%2030%200%200%200%2090%2070V22%22%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%2222%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-/* Layout: dark hero (rotating promise + live portal with popping notifications), service ticker, feature slider, statement band, form. */
+/* Layout: split hero (promise left, laptop + phone portal right), service ticker, feature slider, statement band, form, pop-up. */
 :root{
   --ink:#0B2E26;--a:#0F4A3B;--b:#2FB67C;--txt:#1C8A5A;--cta:#C8F169;--cta-h:#D6F88A;--glow:47,182,124;
   --bg:#F7F6F2;--bg2:#EFEDE6;--line:#E4E1D8;--muted:#5E6D67;--soft:#8A9792;
   --ok:#1C8A5A;--ok-bg:#E6F5ED;--bad:#C2412D;--bad-bg:#FBEAE6;--wait:#8F6420;--wait-bg:#F5EFE2;
-  --r:20px;--max:1160px;--ease:cubic-bezier(.2,.8,.2,1);
+  --r:22px;--max:1320px;--ease:cubic-bezier(.2,.8,.2,1);
   --sh:0 1px 2px rgba(10,20,30,.05),0 24px 50px -24px rgba(10,20,30,.32);
 }
+:root[data-pal="greengold"]{--ink:#0C2B23;--a:#0F4A3B;--b:#C9A43A;--txt:#8C6E1C;--cta:#E3C35E;--cta-h:#ECD283;--glow:201,164,58;--bg:#F7F6F1;--bg2:#EEECE4;--line:#E3E0D6;--muted:#5E6A63;--soft:#8D968F}
+:root[data-pal="sage"]{--ink:#13302A;--a:#2C5A4E;--b:#6FAF93;--txt:#2F7A60;--cta:#F1D9A7;--cta-h:#F6E4BF;--glow:111,175,147;--bg:#F6F5F0;--bg2:#ECEBE3;--line:#E1DFD5;--muted:#5D6A64;--soft:#8C9690}
 :root[data-pal="navy"]{--ink:#0B1B33;--a:#1E3A66;--b:#3B82F6;--txt:#2563EB;--cta:#FFC857;--cta-h:#FFD47A;--glow:59,130,246;--bg:#F5F7FA;--bg2:#ECF0F5;--line:#E1E6ED;--muted:#5B6778;--soft:#8A94A3}
+:root[data-pal="ocean"]{--ink:#082A3A;--a:#0E4A63;--b:#22A6C9;--txt:#0E7FA0;--cta:#9BE7F5;--cta-h:#B8EEF8;--glow:34,166,201;--bg:#F3F7F8;--bg2:#E8EFF1;--line:#DCE6E9;--muted:#577079;--soft:#87A0A8}
+:root[data-pal="copper"]{--ink:#18191D;--a:#3A3D45;--b:#D8783F;--txt:#B45F2B;--cta:#F2A65A;--cta-h:#F6BB7E;--glow:216,120,63;--bg:#F6F5F3;--bg2:#EDEBE7;--line:#E3E0DA;--muted:#6A6863;--soft:#99968F}
+:root[data-pal="gold"]{--ink:#151515;--a:#363636;--b:#C9A43A;--txt:#8E7020;--cta:#E3C35E;--cta-h:#ECD283;--glow:201,164,58;--bg:#F7F6F2;--bg2:#EEECE6;--line:#E3E0D8;--muted:#66645E;--soft:#97948C}
+:root[data-pal="coral"]{--ink:#141B2D;--a:#2B3550;--b:#FF7A59;--txt:#D9532F;--cta:#FF9B7D;--cta-h:#FFB49C;--glow:255,122,89;--bg:#F6F6F8;--bg2:#ECECF1;--line:#E1E2E9;--muted:#5E6274;--soft:#8F93A3}
+:root[data-pal="orange"]{--ink:#101010;--a:#2B2B2B;--b:#FF6B1A;--txt:#E0560B;--cta:#FF7A2E;--cta-h:#FF9455;--glow:255,107,26;--bg:#F7F6F4;--bg2:#EEECE8;--line:#E4E1DB;--muted:#66625C;--soft:#98938B}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16.5px;-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background .4s}
@@ -27,7 +34,7 @@ h1,h2,h3,h4{font-family:"Plus Jakarta Sans",Inter,sans-serif;font-weight:800;let
 a{color:inherit;text-decoration:none}
 svg{display:block}
 .p{margin-left:-.06em}.ap{margin:0 -.05em 0 -.03em}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 40px}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 12.5px/1 Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--txt)}
 .dark{background:var(--ink);color:#fff}
 .dark .eyebrow{color:var(--cta)}
@@ -35,14 +42,15 @@ svg{display:block}
 .tick{width:16px;height:16px;flex:none}
 svg [stroke="#0F4A3B"]{stroke:var(--a)} svg [stroke="#2FB67C"]{stroke:var(--b)}
 svg [fill="#0B2E26"]{fill:var(--ink)} svg [fill="#0F4A3B"]{fill:var(--a)} svg [fill="#C8F169"]{fill:var(--cta)}
-.btn{display:inline-flex;align-items:center;gap:10px;font:600 15.5px/1 Inter;padding:17px 26px;border-radius:999px;border:0;cursor:pointer;transition:background .2s,transform .2s;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 15.5px/1 Inter;padding:17px 26px;border-radius:999px;border:0;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s;white-space:nowrap}
 .btn .ar{width:16px;height:16px;transition:transform .2s}.btn:hover .ar{transform:translateX(3px)}
-.btn-cta{background:var(--cta);color:var(--ink)}.btn-cta:hover{background:var(--cta-h)}
+.btn-cta{background:var(--cta);color:var(--ink);box-shadow:0 10px 30px -12px rgba(var(--glow),.8)}.btn-cta:hover{background:var(--cta-h)}
 .btn-ink{background:var(--ink);color:#fff}.btn-ink:hover{background:var(--a)}
-.sec{padding:110px 0}
-.head h2{font-size:clamp(34px,4.4vw,52px);margin-top:16px}
+.btn-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}.btn-ghost:hover{box-shadow:inset 0 0 0 1px rgba(255,255,255,.6)}
+.sec{padding:120px 0}
+.head h2{font-size:clamp(34px,4.2vw,56px);margin-top:16px}
 
-/* entrance animation */
+/* entrance */
 .fade{opacity:0;transform:translateY(16px);animation:fadeUp .9s var(--ease) forwards}
 @keyframes fadeUp{to{opacity:1;transform:none}}
 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em}
@@ -50,64 +58,93 @@ svg [fill="#0B2E26"]{fill:var(--ink)} svg [fill="#0F4A3B"]{fill:var(--a)} svg [f
 @keyframes rise{to{transform:none}}
 
 /* NAV */
-.nav{position:fixed;inset:0 0 auto;z-index:50;padding:18px 0;transition:background .3s,padding .3s,box-shadow .3s}
+.nav{position:fixed;inset:0 0 auto;z-index:50;padding:20px 0;transition:background .3s,padding .3s,box-shadow .3s}
 .nav .wrap{display:flex;align-items:center;gap:34px}
-.nav .logo svg{height:38px;width:auto}
+.nav .logo svg{height:40px;width:auto}
 .nav .rev{display:block}.nav .col{display:none}
-.nav ul{display:flex;gap:28px;list-style:none;margin-left:auto}
-.nav ul a{font:500 15px Inter;color:rgba(255,255,255,.78)}.nav ul a:hover{color:#fff}
-.nav .btn{padding:12px 18px;font-size:14.5px}
-.nav.solid{background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:saturate(1.4) blur(16px);-webkit-backdrop-filter:saturate(1.4) blur(16px);box-shadow:0 1px 0 var(--line);padding:10px 0}
+.nav ul{display:flex;gap:30px;list-style:none;margin-left:auto}
+.nav ul a,.nav .contact{font:500 15px Inter;color:rgba(255,255,255,.78);background:none;border:0;cursor:pointer}
+.nav ul a:hover,.nav .contact:hover{color:#fff}
+.nav .btn{padding:12px 20px;font-size:14.5px;box-shadow:none}
+.nav.solid{background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(16px);-webkit-backdrop-filter:saturate(1.4) blur(16px);box-shadow:0 1px 0 var(--line);padding:11px 0}
 .nav.solid .rev{display:none}.nav.solid .col{display:block}
-.nav.solid ul a{color:var(--muted)}.nav.solid ul a:hover{color:var(--ink)}
+.nav.solid ul a,.nav.solid .contact{color:var(--muted)}.nav.solid ul a:hover,.nav.solid .contact:hover{color:var(--ink)}
 .nav.solid .btn-cta{background:var(--ink);color:#fff}
 
 /* HERO */
-.hero{position:relative;overflow:hidden;padding:150px 0 0;isolation:isolate;background:linear-gradient(180deg,var(--ink) 0,var(--ink) calc(100% - 190px),var(--bg) calc(100% - 190px))}
+.hero{position:relative;overflow:hidden;padding:168px 0 120px;isolation:isolate}
 .hero .orb{position:absolute;border-radius:50%;filter:blur(30px);z-index:-2;pointer-events:none}
-.hero .o1{width:640px;height:640px;right:-160px;top:-200px;background:radial-gradient(circle,rgba(var(--glow),.45),transparent 70%);animation:drift 18s ease-in-out infinite alternate}
-.hero .o2{width:520px;height:520px;left:-220px;top:240px;background:radial-gradient(circle,rgba(var(--glow),.22),transparent 70%);animation:drift 22s ease-in-out infinite alternate-reverse}
+.hero .o1{width:760px;height:760px;right:-200px;top:-220px;background:radial-gradient(circle,rgba(var(--glow),.42),transparent 70%);animation:drift 18s ease-in-out infinite alternate}
+.hero .o2{width:560px;height:560px;left:-260px;bottom:-200px;background:radial-gradient(circle,rgba(var(--glow),.2),transparent 70%);animation:drift 22s ease-in-out infinite alternate-reverse}
 @keyframes drift{to{transform:translate(-60px,80px) scale(1.12)}}
-.hero::after{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(180deg,#000,transparent 60%);-webkit-mask-image:linear-gradient(180deg,#000,transparent 60%)}
-.hero-copy{max-width:900px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center}
-.hero .eyebrow{color:rgba(255,255,255,.8);padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);letter-spacing:.12em}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 60% 40%,#000 10%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 60% 40%,#000 10%,transparent 70%)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:56px;align-items:center}
+.hero-copy{display:flex;flex-direction:column;align-items:flex-start;gap:0}
+.hero .eyebrow{color:rgba(255,255,255,.82);padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);letter-spacing:.12em}
 .hero .eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--cta);box-shadow:0 0 0 4px rgba(255,255,255,.08)}
-.hero h1{font-size:clamp(42px,6.4vw,84px);letter-spacing:-.045em;line-height:1;margin:26px 0 24px;align-self:stretch}
+.hero h1{font-size:clamp(42px,4.8vw,76px);letter-spacing:-.045em;line-height:1;margin:28px 0 26px;align-self:stretch}
 .hero h1 .line{display:block}
-.rot{display:block;height:1.12em;overflow:hidden;position:relative;color:var(--cta)}
-.rot span{position:absolute;left:0;right:0;top:0;white-space:nowrap;transform:translateY(110%);opacity:0;transition:transform .7s var(--ease),opacity .5s}
+.rot{display:block;height:1.12em;position:relative;color:var(--cta);clip-path:inset(0 -100vw 0 -100vw)}
+.rot span{position:absolute;left:0;top:0;white-space:nowrap;transform:translateY(110%);opacity:0;transition:transform .7s var(--ease),opacity .5s}
 .rot span.on{transform:none;opacity:1}
 .rot span.out{transform:translateY(-110%);opacity:0}
-.hero .lede{font-size:19px;color:rgba(255,255,255,.72);max-width:640px}
-.hero .ctas{display:flex;gap:16px;align-items:center;justify-content:center;margin-top:32px;flex-wrap:wrap}
-.hero .ctas small{font-size:14px;color:rgba(255,255,255,.6)}
-.stage{position:relative;margin:64px auto 0;max-width:1000px}
-.stage::after{content:"";position:absolute;left:-400px;right:-400px;bottom:0;height:30%;background:linear-gradient(180deg,transparent,var(--bg) 80%);z-index:3;pointer-events:none}
-.app{background:#fff;color:var(--ink);border-radius:18px;box-shadow:0 0 0 1px rgba(255,255,255,.08),0 50px 120px -40px rgba(0,0,0,.6);overflow:hidden;position:relative;z-index:2}
-.app-bar{display:flex;align-items:center;gap:7px;padding:12px 16px;border-bottom:1px solid var(--line);background:#FBFBFA}
-.app-bar i{width:10px;height:10px;border-radius:50%;background:#DFE2E6}
-.app-bar .url{margin:0 auto;font-size:12px;color:var(--soft);background:#fff;border:1px solid var(--line);border-radius:8px;padding:5px 60px}
-.app-body{display:grid;grid-template-columns:190px 1fr}
-.side{background:var(--ink);color:rgba(255,255,255,.6);padding:20px 14px;font-size:13.5px;display:flex;flex-direction:column;gap:2px}
-.side .lg{padding:4px 10px 22px}.side .lg svg{height:24px;width:auto}
-.side a{padding:9px 12px;border-radius:9px;display:flex;justify-content:space-between}
-.side a.on{background:rgba(255,255,255,.08);color:#fff;font-weight:600}
-.side a em{font-style:normal;font-size:11px;background:var(--cta);color:var(--ink);border-radius:999px;padding:1px 7px;font-weight:700}
-.main{padding:24px 26px 30px}
-.mhead{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:18px;gap:14px}
-.mhead h4{font-size:21px;letter-spacing:-.02em}
-.mhead small{display:block;font:400 13px Inter;color:var(--muted);letter-spacing:0;margin-top:4px}
+.hero .lede{font-size:19px;color:rgba(255,255,255,.72);max-width:540px}
+.hero .ctas{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}
+.proof{display:flex;gap:28px;margin-top:40px;padding-top:28px;border-top:1px solid rgba(255,255,255,.1);flex-wrap:wrap}
+.proof div b{display:block;font:800 26px/1 "Plus Jakarta Sans";letter-spacing:-.02em;color:#fff}
+.proof div span{font-size:13px;color:rgba(255,255,255,.6)}
+
+/* devices */
+.devices{position:relative;aspect-ratio:1.12/1;width:100%}
+.lap{position:absolute;left:0;top:7%;width:90%;filter:drop-shadow(0 40px 60px rgba(0,0,0,.45))}
+.lap .bez{background:#0A0F0D;border-radius:16px 16px 0 0;padding:10px 10px 12px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+.lap .bez::before{content:"";display:block;width:6px;height:6px;border-radius:50%;background:#2A302E;margin:-4px auto 4px}
+.lap .base{height:14px;margin:0 -6%;background:linear-gradient(#E4E7E6,#B9C0BE);border-radius:2px 2px 18px 18px;box-shadow:inset 0 2px 0 rgba(255,255,255,.7)}
+.lap .base::after{content:"";display:block;width:18%;height:5px;margin:0 auto;background:rgba(0,0,0,.12);border-radius:0 0 8px 8px}
+.screen{position:relative;width:100%;aspect-ratio:16/10;overflow:hidden;border-radius:6px;background:#fff}
+.ui{position:absolute;left:0;top:0;width:1120px;height:700px;transform-origin:0 0;display:grid;grid-template-columns:210px 1fr;color:var(--ink);font-size:13px;background:#fff}
+.ph{position:absolute;right:0;bottom:0;width:29%;z-index:3;filter:drop-shadow(0 30px 50px rgba(0,0,0,.5))}
+.ph .bez{background:#0A0F0D;border-radius:36px;padding:9px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.1)}
+.ph .scr{position:relative;width:100%;aspect-ratio:9/19;overflow:hidden;border-radius:28px;background:var(--bg)}
+.mui{position:absolute;left:0;top:0;width:330px;height:697px;transform-origin:0 0;color:var(--ink);font-size:13px}
+
+/* desktop portal UI */
+.u-side{background:var(--ink);color:rgba(255,255,255,.62);padding:22px 16px;display:flex;flex-direction:column;gap:3px}
+.u-side .lg{padding:2px 10px 26px}.u-side .lg svg{height:26px;width:auto}
+.u-side a{padding:10px 12px;border-radius:10px;display:flex;justify-content:space-between;align-items:center;font-size:13.5px}
+.u-side a.on{background:rgba(255,255,255,.09);color:#fff;font-weight:600}
+.u-side a em{font-style:normal;font-size:11px;background:var(--cta);color:var(--ink);border-radius:999px;padding:1px 8px;font-weight:700}
+.u-side .card{margin-top:auto;border-radius:14px;background:rgba(255,255,255,.06);padding:14px;font-size:12px;line-height:1.45}
+.u-side .card b{display:block;color:#fff;font:700 18px "Plus Jakarta Sans";margin:2px 0}
+.u-main{padding:24px 28px;display:grid;grid-template-rows:auto auto auto 1fr;gap:16px;background:#FAFAF8}
+.u-top{display:flex;justify-content:space-between;align-items:center}
+.u-top h4{font-size:23px;letter-spacing:-.02em}
+.u-top small{display:block;font:400 13px Inter;color:var(--muted);letter-spacing:0;margin-top:3px}
+.u-top .r{display:flex;gap:10px;align-items:center}
+.search{width:200px;height:36px;border-radius:10px;border:1px solid var(--line);background:#fff;display:flex;align-items:center;padding:0 12px;color:var(--soft);font-size:12.5px}
+.avatar{width:36px;height:36px;border-radius:50%;background:var(--a);color:#fff;display:grid;place-items:center;font:700 13px Inter}
 .live{display:inline-flex;align-items:center;gap:7px;font:600 12px Inter;color:var(--ok);background:var(--ok-bg);padding:6px 11px;border-radius:999px}
 .live i{width:7px;height:7px;border-radius:50%;background:var(--ok);animation:pulse 1.8s infinite}
 @keyframes pulse{50%{opacity:.35}}
-.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
-.kpi{border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.kpi{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
 .kpi small{font-size:12px;color:var(--muted)}
-.kpi b{display:block;font:700 25px/1.2 "Plus Jakarta Sans";letter-spacing:-.02em;margin-top:2px;font-variant-numeric:tabular-nums}
+.kpi b{display:block;font:700 26px/1.2 "Plus Jakarta Sans";letter-spacing:-.02em;margin-top:2px;font-variant-numeric:tabular-nums}
 .kpi em{font-style:normal;font-size:12px;font-weight:600;color:var(--txt)}
-.panel{border:1px solid var(--line);border-radius:14px;padding:14px 18px}
-.panel h5{font:700 14px "Plus Jakarta Sans";display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.u-row{display:grid;grid-template-columns:1.5fr 1fr;gap:14px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 18px}
+.panel h5{font:700 14px "Plus Jakarta Sans";display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
 .panel h5 span{font:500 12px Inter;color:var(--muted)}
+.chart{display:flex;align-items:flex-end;gap:9px;height:118px;padding-top:6px;border-bottom:1px solid var(--line)}
+.chart i{flex:1;border-radius:5px 5px 0 0;background:#D8D5CC;height:var(--h)}
+.chart i.n{background:var(--b)}
+.clab{display:flex;gap:9px;margin-top:6px}.clab span{flex:1;text-align:center;font-size:10.5px;color:var(--soft)}
+.feed{display:grid;gap:11px;font-size:12.5px}
+.feed>div{display:grid;grid-template-columns:8px 1fr;gap:10px}
+.feed i{width:8px;height:8px;border-radius:50%;background:var(--ok);margin-top:5px}
+.feed i.a{background:#D9922E}
+.feed b{font-weight:600;display:block;font-size:13px}
+.feed small{color:var(--muted)}
 .row{display:grid;grid-template-columns:1fr auto auto;gap:14px;align-items:center;padding:10px 0;border-top:1px solid var(--line);font-size:13px;transition:opacity .4s}
 .row:first-child{border-top:0}
 .row b{font-weight:600;display:block}.row small{color:var(--muted);font-size:11.5px}
@@ -117,8 +154,38 @@ svg [fill="#0B2E26"]{fill:var(--ink)} svg [fill="#0F4A3B"]{fill:var(--a)} svg [f
 .st.ok{background:var(--ok-bg);color:var(--ok)}.st.bad{background:var(--bad-bg);color:var(--bad)}.st.wait{background:var(--wait-bg);color:var(--wait)}.st.q{background:var(--bg);color:var(--soft)}
 .anim .row{opacity:.6}.anim .row.done{opacity:1}
 
-/* popping notifications */
-.node{position:absolute;z-index:4;display:flex;gap:11px;align-items:center;background:rgba(255,255,255,.98);color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:11px 14px 11px 11px;box-shadow:var(--sh);font-size:12.5px;line-height:1.3;white-space:nowrap;opacity:0;transform:translateY(16px) scale(.94);transition:opacity .3s ease,transform .3s ease}
+/* phone portal UI */
+.m-bar{display:flex;justify-content:space-between;padding:14px 24px 6px;font:600 13px Inter}
+.m-bar i{display:inline-block;width:18px;height:10px;border-radius:3px;border:1.5px solid var(--ink);position:relative;vertical-align:middle}
+.m-head{display:flex;justify-content:space-between;align-items:center;padding:10px 20px 14px}
+.m-head svg{height:26px;width:auto}
+.m-head .bell{width:34px;height:34px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center;position:relative}
+.m-head .bell::after{content:"";position:absolute;top:7px;right:8px;width:7px;height:7px;border-radius:50%;background:var(--bad)}
+.m-head .bell svg{width:16px;height:16px}
+.m-body{padding:0 16px;display:grid;gap:12px}
+.m-body h6{font:800 22px "Plus Jakarta Sans";letter-spacing:-.02em;padding:0 4px}
+.m-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}
+.m-card .t{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.m-card .t b{font:700 15px "Plus Jakarta Sans"}
+.eta{background:var(--ink);color:#fff;border-radius:14px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.eta small{color:rgba(255,255,255,.65);font-size:11.5px;display:block}
+.eta b{font:800 20px "Plus Jakarta Sans";color:var(--cta)}
+.m-tl{display:grid;gap:12px}
+.m-tl>div{display:grid;grid-template-columns:12px 1fr auto;gap:10px;align-items:start;font-size:12.5px}
+.m-tl i{width:12px;height:12px;border-radius:50%;background:var(--ok);margin-top:3px;box-shadow:0 0 0 4px var(--ok-bg)}
+.m-tl i.p{background:#fff;border:2px solid var(--soft);box-shadow:none}
+.m-tl b{font-weight:600;display:block}.m-tl span{color:var(--muted);font-size:11.5px}
+.m-btn{background:var(--cta);color:var(--ink);border-radius:999px;padding:14px;text-align:center;font:700 14px Inter}
+.m-mini{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.m-mini div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 14px}
+.m-mini small{font-size:11px;color:var(--muted)}
+.m-mini b{display:block;font:800 19px "Plus Jakarta Sans";letter-spacing:-.02em}
+.m-tabs{position:absolute;left:0;right:0;bottom:0;display:grid;grid-template-columns:repeat(4,1fr);padding:10px 12px 22px;background:#fff;border-top:1px solid var(--line);font-size:10.5px;color:var(--soft);text-align:center}
+.m-tabs span::before{content:"";display:block;width:20px;height:20px;border-radius:6px;background:var(--bg2);margin:0 auto 4px}
+.m-tabs span.on{color:var(--ink);font-weight:600}.m-tabs span.on::before{background:var(--ink)}
+
+/* notifications */
+.node{position:absolute;z-index:5;display:flex;gap:11px;align-items:center;background:rgba(255,255,255,.98);color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:11px 14px 11px 11px;box-shadow:0 24px 50px -20px rgba(0,0,0,.45);font-size:12.5px;line-height:1.3;white-space:nowrap;opacity:0;transform:translateY(16px) scale(.94);transition:opacity .3s ease,transform .3s ease}
 .node.show{opacity:1;transform:none;transition:opacity .35s ease-out,transform .7s cubic-bezier(.2,1.25,.4,1)}
 .node.out{opacity:0;transform:translateY(-10px) scale(.97);transition:opacity .4s ease-in,transform .4s ease-in}
 .node .ic{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;flex:none;background:var(--bg);color:var(--txt)}
@@ -126,35 +193,34 @@ svg [fill="#0B2E26"]{fill:var(--ink)} svg [fill="#0F4A3B"]{fill:var(--a)} svg [f
 .node b{display:block;font-size:13.5px;font-weight:600}
 .node span{color:var(--muted)}
 .node em{margin-left:8px;font-style:normal;font:700 10px Inter;letter-spacing:.08em;padding:3px 7px;border-radius:6px;background:var(--ink);color:var(--cta)}
-.n1{left:-70px;top:60px}.n2{right:-80px;top:200px}.n3{left:-50px;top:330px}
+.n1{left:-3%;top:-1%}.n2{left:6%;bottom:2%}
 
 /* TICKER */
-.ticker{border-block:1px solid var(--line);overflow:hidden;padding:20px 0;position:relative}
-.ticker::before,.ticker::after{content:"";position:absolute;top:0;bottom:0;width:120px;z-index:1;pointer-events:none}
-.ticker::before{left:0;background:linear-gradient(90deg,var(--bg),transparent)}.ticker::after{right:0;background:linear-gradient(-90deg,var(--bg),transparent)}
-.track{display:flex;gap:48px;width:max-content;animation:tick 38s linear infinite}
-.track span{display:flex;align-items:center;gap:14px;font:700 17px "Plus Jakarta Sans";letter-spacing:-.01em;white-space:nowrap}
+.ticker{border-bottom:1px solid var(--line);overflow:hidden;padding:22px 0;position:relative;background:#fff}
+.ticker::before,.ticker::after{content:"";position:absolute;top:0;bottom:0;width:140px;z-index:1;pointer-events:none}
+.ticker::before{left:0;background:linear-gradient(90deg,#fff,transparent)}.ticker::after{right:0;background:linear-gradient(-90deg,#fff,transparent)}
+.track{display:flex;gap:52px;width:max-content;animation:tick 40s linear infinite}
+.track span{display:flex;align-items:center;gap:14px;font:700 18px "Plus Jakarta Sans";letter-spacing:-.01em;white-space:nowrap}
 .track span::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--b)}
 @keyframes tick{to{transform:translateX(-50%)}}
 
 /* FEATURE SLIDER */
-.sl-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:36px}
+.sl-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px}
 .sl-ctrl{display:flex;gap:10px}
-.sl-ctrl button{width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;display:grid;place-items:center;transition:background .2s,color .2s,border-color .2s}
+.sl-ctrl button{width:52px;height:52px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;display:grid;place-items:center;transition:background .2s,color .2s,border-color .2s}
 .sl-ctrl button:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
 .sl-ctrl svg{width:18px;height:18px}
-.slider{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding-bottom:4px}
+.slider{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}
 .slider::-webkit-scrollbar{display:none}
-.slide{flex:0 0 100%;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:24px;padding:44px;display:grid;grid-template-columns:1fr 1.05fr;gap:48px;align-items:center;min-width:0}
+.slide{flex:0 0 100%;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:28px;padding:56px;display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:center;min-width:0}
 .slide .n{font:600 13px Inter;color:var(--soft);letter-spacing:.06em}
 .slide .k{display:block;font:600 12.5px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--txt);margin-top:18px}
-.slide h3{font-size:clamp(28px,3.2vw,40px);margin:12px 0 14px}
-.slide p{color:var(--muted);font-size:17px;max-width:440px}
-.slide ul{list-style:none;display:grid;gap:10px;margin-top:22px}
-.slide li{display:flex;gap:10px;font-size:15px}
+.slide h3{font-size:clamp(30px,3.4vw,46px);margin:12px 0 16px}
+.slide p{color:var(--muted);font-size:17.5px;max-width:460px}
+.slide ul{list-style:none;display:grid;gap:12px;margin-top:24px}
+.slide li{display:flex;gap:10px;font-size:15.5px}
 .slide li .tick{color:var(--b);margin-top:4px}
-.vis{border-radius:18px;background:var(--bg);padding:22px;font-size:13.5px;min-width:0}
-.vis .row{border-color:var(--line)}
+.vis{border-radius:20px;background:var(--bg);padding:24px;font-size:13.5px;min-width:0}
 .up{display:flex;align-items:center;gap:12px;background:#fff;border:1px dashed var(--line);border-radius:14px;padding:14px 16px}
 .up .doc{width:36px;height:44px;border-radius:7px;background:var(--bg2);position:relative;flex:none}
 .up .doc::before,.up .doc::after{content:"";position:absolute;left:8px;right:8px;height:3px;border-radius:2px;background:var(--line);top:13px}
@@ -171,7 +237,7 @@ svg [fill="#0B2E26"]{fill:var(--ink)} svg [fill="#0F4A3B"]{fill:var(--a)} svg [f
 .res .wide b{color:var(--cta)}
 .vcard{background:#fff;border-radius:14px;padding:6px 16px}
 .mini-tl{display:grid;gap:14px;background:#fff;border-radius:14px;padding:18px}
-.mini-tl div{display:grid;grid-template-columns:56px 12px 1fr;gap:12px;align-items:start}
+.mini-tl>div{display:grid;grid-template-columns:56px 12px 1fr;gap:12px;align-items:start}
 .mini-tl span{font:600 12px Inter;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums;padding-top:1px}
 .mini-tl i{width:12px;height:12px;border-radius:50%;background:var(--ok);margin-top:3px;box-shadow:0 0 0 4px var(--ok-bg)}
 .mini-tl b{font-weight:600;display:block}.mini-tl small{color:var(--muted)}
@@ -182,39 +248,40 @@ svg [fill="#0B2E26"]{fill:var(--ink)} svg [fill="#0F4A3B"]{fill:var(--a)} svg [f
 .br i::after{content:"";position:absolute;inset:0;width:var(--w);border-radius:99px;background:color-mix(in srgb,var(--b) 30%,#fff)}
 .br.you i::after{background:#A3AEA9}.br.best i::after{background:var(--b)}
 .br b{text-align:right;font-variant-numeric:tabular-nums}
-.dots{display:flex;gap:8px;justify-content:center;margin-top:26px}
-.dots button{width:36px;height:5px;border-radius:99px;border:0;background:var(--line);cursor:pointer;position:relative;overflow:hidden;padding:0}
+.dots{display:flex;gap:8px;justify-content:center;margin-top:28px}
+.dots button{width:40px;height:5px;border-radius:99px;border:0;background:var(--line);cursor:pointer;position:relative;overflow:hidden;padding:0}
 .dots button i{position:absolute;inset:0;width:0;background:var(--ink);border-radius:99px}
 .dots button.on i{animation:fill var(--dur,6s) linear forwards}
 .dots.paused button.on i{animation:none;width:100%}
 @keyframes fill{to{width:100%}}
 
 /* STATEMENT BAND */
-.band{border-radius:28px;padding:72px 64px;position:relative;overflow:hidden;isolation:isolate}
-.band .glow{position:absolute;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,rgba(var(--glow),.32),transparent 65%);right:-220px;top:-300px;z-index:-1;animation:breathe 8s ease-in-out infinite}
+.band{border-radius:32px;padding:84px 72px;position:relative;overflow:hidden;isolation:isolate}
+.band .glow{position:absolute;width:800px;height:800px;border-radius:50%;background:radial-gradient(circle,rgba(var(--glow),.32),transparent 65%);right:-220px;top:-320px;z-index:-1;animation:breathe 8s ease-in-out infinite}
 @keyframes breathe{50%{transform:scale(1.15);opacity:.7}}
-.band .say{font:800 clamp(30px,4vw,50px)/1.12 "Plus Jakarta Sans";letter-spacing:-.035em;max-width:900px}
+.band .say{font:800 clamp(32px,4vw,56px)/1.1 "Plus Jakarta Sans";letter-spacing:-.035em;max-width:1000px}
 .band .say .wd{color:rgba(255,255,255,.22);transition:color .35s}
 .band .say .wd.on{color:#fff}
 .band .say .wd.hl.on{color:var(--cta)}
-.band .three{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px;border-top:1px solid rgba(255,255,255,.12);padding-top:30px}
-.band .three b{display:block;font:700 18px "Plus Jakarta Sans";letter-spacing:-.015em;margin-bottom:6px}
+.band .three{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:52px;border-top:1px solid rgba(255,255,255,.12);padding-top:32px}
+.band .three b{display:block;font:700 19px "Plus Jakarta Sans";letter-spacing:-.015em;margin-bottom:6px}
 .band .three span{color:rgba(255,255,255,.64);font-size:15px}
 
 /* CTA */
-.cta{border-radius:28px;padding:64px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;position:relative;overflow:hidden;isolation:isolate}
-.cta::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(600px 400px at 0% 100%,rgba(var(--glow),.3),transparent 70%)}
-.cta h2{font-size:clamp(40px,5vw,62px);margin:14px 0 16px}
-.cta p{color:rgba(255,255,255,.72);font-size:18px;max-width:440px}
-form{background:#fff;color:var(--ink);border-radius:22px;padding:30px}
-form h3{font-size:23px;letter-spacing:-.02em}
+.cta{border-radius:32px;padding:72px;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;position:relative;overflow:hidden;isolation:isolate}
+.cta::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(640px 420px at 0% 100%,rgba(var(--glow),.3),transparent 70%)}
+.cta h2{font-size:clamp(40px,5vw,68px);margin:14px 0 16px}
+.cta p{color:rgba(255,255,255,.72);font-size:18px;max-width:460px}
+form{background:#fff;color:var(--ink);border-radius:24px;padding:32px}
+form h3{font-size:24px;letter-spacing:-.02em}
 form .fs{font-size:14px;color:var(--muted);margin:4px 0 20px}
 .fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .fields .full{grid-column:1/-1}
 label{display:block;font-size:13px;font-weight:600;margin-bottom:6px}
 label small{font-weight:400;color:var(--soft)}
-input[type=email],input[type=tel]{width:100%;font:15.5px Inter;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);transition:border-color .2s,background .2s,box-shadow .2s}
-input:focus{outline:0;border-color:var(--b);background:#fff;box-shadow:0 0 0 4px rgba(var(--glow),.14)}
+input[type=email],input[type=tel],input[type=text],select,textarea{width:100%;font:15.5px Inter;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);transition:border-color .2s,background .2s,box-shadow .2s}
+textarea{resize:vertical;min-height:110px;line-height:1.5}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--b);background:#fff;box-shadow:0 0 0 4px rgba(var(--glow),.14)}
 .drop{display:flex;align-items:center;gap:16px;border:1.5px dashed var(--line);border-radius:16px;padding:20px;cursor:pointer;background:var(--bg);transition:border-color .2s,background .2s}
 .drop:hover{border-color:var(--b);background:#fff}
 .drop .ic{width:46px;height:46px;border-radius:14px;background:var(--ink);color:var(--cta);display:grid;place-items:center;flex:none}
@@ -230,53 +297,70 @@ form .btn{width:100%;justify-content:center}
 .thanks h3{font-size:24px;margin-bottom:8px}.thanks p{color:var(--muted)}
 form.sent .fb{display:none}form.sent .thanks{display:block}
 
-footer{padding:56px 0 40px;color:var(--muted);font-size:14px}
-.foot{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding-bottom:26px;border-bottom:1px solid var(--line)}
-.foot .logo svg{height:40px;width:auto}
-.foot ul{display:flex;gap:24px;list-style:none;flex-wrap:wrap}
+/* POP-UP */
+.modal{position:fixed;inset:0;z-index:90;display:grid;place-items:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:rgba(6,14,12,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);opacity:0;transition:opacity .25s}
+.modal[hidden]{display:none}
+.modal.open{opacity:1}
+.mbox{position:relative;width:100%;max-width:540px;max-height:100%;overflow:auto;background:#fff;color:var(--ink);border-radius:26px;padding:32px;box-shadow:0 40px 100px -30px rgba(0,0,0,.6);transform:translateY(16px) scale(.98);transition:transform .35s var(--ease)}
+.modal.open .mbox{transform:none}
+.mclose{position:absolute;top:16px;right:16px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;display:grid;place-items:center}
+.mclose:hover{background:var(--bg)}
+.mclose svg{width:16px;height:16px}
+.mtabs{display:inline-flex;gap:4px;padding:4px;border-radius:999px;background:var(--bg);margin-bottom:22px}
+.mtabs button{font:600 14px Inter;border:0;padding:10px 16px;border-radius:999px;background:transparent;color:var(--muted);cursor:pointer}
+.mtabs button.on{background:var(--ink);color:#fff}
+.mbox form{padding:0;border-radius:0}
+.mbox form[hidden]{display:none}
+.direct{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px;padding-top:16px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted)}
+.direct b{color:var(--ink);font-weight:600}
+
+footer{padding:60px 0 44px;color:var(--muted);font-size:14px}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.foot .logo svg{height:42px;width:auto}
+.foot ul{display:flex;gap:26px;list-style:none;flex-wrap:wrap}
 .foot a:hover{color:var(--ink)}
-.legal{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:20px;font-size:13px}
+.legal{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:22px;font-size:13px}
 
 /* palette picker (design concept only) */
 .pal{position:fixed;z-index:70;left:50%;bottom:max(18px,env(safe-area-inset-bottom,0px));transform:translateX(-50%);display:flex;align-items:center;gap:6px;background:rgba(15,18,22,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff;border-radius:999px;padding:6px 8px 6px 16px;box-shadow:0 10px 30px -10px rgba(0,0,0,.5);font:500 12.5px Inter}
 .pal span{margin-right:6px;color:rgba(255,255,255,.7);white-space:nowrap}
 .pal button{width:30px;height:30px;border-radius:50%;border:2px solid transparent;cursor:pointer;background:conic-gradient(var(--c1) 0 50%,var(--c2) 50% 100%)}
 .pal button.on{border-color:#fff}
-.pal .nm{min-width:54px;text-align:left;margin:0 6px 0 4px;font-weight:600;color:#fff}
+.pal .nm{min-width:122px;text-align:left;margin:0 6px 0 4px;font-weight:600;color:#fff}
 
-@media (max-width:1080px){.node.n2{right:-20px}.node.n1{left:-20px}.node.n3{left:-10px}}
+@media (max-width:1180px){.hero-grid{grid-template-columns:1fr;gap:64px}.hero-copy{max-width:720px}.devices{max-width:820px;margin:0 auto}}
 @media (max-width:1000px){
   .nav ul{display:none}.nav .btn{margin-left:auto}
-  .app-body{grid-template-columns:1fr}.side{display:none}
-  .slide{grid-template-columns:1fr;gap:28px;padding:32px}
+  .slide{grid-template-columns:1fr;gap:30px;padding:36px}
   .cta{grid-template-columns:1fr}
 }
 @media (max-width:640px){
   body{font-size:16px}.wrap{padding:0 16px}
-  .sec{padding:76px 0}
-  .nav{padding:12px 0}.nav .logo svg{height:32px}.nav .btn{padding:10px 14px;font-size:13.5px}
-  .hero{padding-top:112px;background:linear-gradient(180deg,var(--ink) 0,var(--ink) calc(100% - 110px),var(--bg) calc(100% - 110px))}
+  .sec{padding:80px 0}
+  .nav{padding:12px 0}.nav .logo svg{height:32px}.nav .btn{padding:10px 14px;font-size:13.5px}.nav .contact{display:none}
+  .hero{padding:112px 0 80px}
   .hero .eyebrow{font-size:11px;letter-spacing:.1em}.hero .eyebrow .aw{display:none}
-  .slider{align-items:flex-start}
-  .hero h1{font-size:40px}
+  .hero h1{font-size:42px;margin:22px 0 20px}
   .hero .lede{font-size:16.5px}
-  .hero .ctas .btn{width:100%;justify-content:center}
-  .stage{margin-top:70px}
-  .app-bar .url{padding:5px 18px}
-  .main{padding:16px}.mhead h4{font-size:18px}
-  .kpis{grid-template-columns:1fr 1fr;gap:8px}.kpi{padding:11px 12px}.kpi b{font-size:20px}
-  .row{grid-template-columns:1fr auto}.row .amt{display:none}
-  .node{font-size:11.5px;padding:9px 11px 9px 9px;gap:9px}.node .ic{width:28px;height:28px}.node b{font-size:12.5px}.node em{display:none}
-  .n1{left:-4px;top:-38px}.n2{right:-4px;top:150px}.n3{display:none}
+  .hero .ctas{width:100%}.hero .ctas .btn{width:100%;justify-content:center}
+  .proof{gap:18px}.proof div b{font-size:22px}
+  .devices{aspect-ratio:1/1}
+  .lap{width:100%;top:10%}
+  .lap .bez{padding:6px 6px 8px;border-radius:10px 10px 0 0}
+  .ph{width:34%;bottom:0}.ph .bez{border-radius:24px;padding:6px}.ph .scr{border-radius:19px}
+  .node{font-size:11px;padding:8px 10px 8px 8px;gap:8px}.node .ic{width:26px;height:26px}.node b{font-size:12px}.node em{display:none}
+  .n1{left:0;top:-7%}.n2{display:none}
   .track span{font-size:15px}
   .sl-head{flex-direction:column;align-items:flex-start}.sl-ctrl{display:none}
-  .slide{padding:24px 20px;border-radius:20px}
+  .slider{align-items:flex-start}
+  .slide{padding:26px 20px;border-radius:22px}
   .vis{padding:14px}
   .br{grid-template-columns:84px 1fr 54px;font-size:12px}
-  .band,.cta{padding:40px 22px;border-radius:22px}
+  .band,.cta{padding:44px 22px;border-radius:24px}
   .band .three{grid-template-columns:1fr;gap:18px}
   form{padding:22px}.fields{grid-template-columns:1fr}
-  .pal{padding:5px 6px 5px 12px}.pal span{display:none}.pal button{width:26px;height:26px}
+  .mbox{padding:24px 20px;border-radius:22px}
+  .pal{padding:5px 8px;gap:5px}.pal span,.pal .nm{display:none}.pal button{width:28px;height:28px}
   footer{padding-bottom:90px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.fade,.w>span{opacity:1;transform:none}}
@@ -320,63 +404,105 @@ body{background:var(--bg);color:var(--ink)}
       <li><a href="#why">Why Unified</a></li>
       <li><a href="#">Client login</a></li>
     </ul>
-    <a href="#assessment" class="btn btn-cta">Free assessment</a>
+    <button class="contact" type="button" data-open="contact">Contact</button>
+    <a href="#assessment" class="btn btn-cta" data-open="assess">Free assessment</a>
   </div>
 </header>
 
 <main id="top">
 <section class="hero dark">
   <div class="orb o1"></div><div class="orb o2"></div>
-  <div class="wrap">
+  <div class="wrap hero-grid">
     <div class="hero-copy">
       <span class="eyebrow fade" style="animation-delay:.05s"><i></i>Commercial waste management<span class="aw"> · Australia-wide</span></span>
       <h1>
         <span class="line"><span class="w"><span style="animation-delay:.15s">Never</span></span></span>
-        <span class="rot" id="rot" aria-live="polite"><span class="on">check a waste bill</span><span>chase a supplier</span><span>overpay for waste</span><span>get locked in</span></span>
+        <span class="rot" id="rot" aria-live="polite"><span class="on">check a waste bill</span><span>chase a supplier</span><span>overpay for waste</span><span>wait on hold</span></span>
         <span class="line"><span class="w"><span style="animation-delay:.3s">again<span class="p">.</span></span></span></span>
       </h1>
-      <p class="lede fade" style="animation-delay:.5s">Unified manages your business waste end to end. We find you the right price, vet every invoice and contract, and chase every supplier, all in a portal that never closes.</p>
+      <p class="lede fade" style="animation-delay:.5s">Unified manages your business waste end to end. We find you the right price, vet every invoice line and chase every supplier, all from a portal that never closes.</p>
       <div class="ctas fade" style="animation-delay:.65s">
-        <a href="#assessment" class="btn btn-cta">Get your free assessment <svg class="ar"><use href="#ar"/></svg></a>
-        <small>Results in seconds. No obligation.</small>
+        <a href="#assessment" class="btn btn-cta" data-open="assess">Get your free assessment <svg class="ar"><use href="#ar"/></svg></a>
+        <button class="btn btn-ghost" type="button" data-open="contact">Talk to us</button>
+      </div>
+      <div class="proof fade" style="animation-delay:.8s">
+        <div><b>Seconds</b><span>to your market price</span></div>
+        <div><b>100%</b><span>of invoice lines vetted</span></div>
+        <div><b>24/7</b><span>portal and support</span></div>
       </div>
     </div>
-    <div class="stage fade" style="animation-delay:.4s">
-      <div class="app">
-        <div class="app-bar"><i></i><i></i><i></i><span class="url">portal.unifiedwaste.com.au</span></div>
-        <div class="app-body">
-          <div class="side">
+
+    <div class="devices fade" style="animation-delay:.35s">
+      <div class="lap">
+        <div class="bez"><div class="screen" data-fit="1120"><div class="ui">
+          <aside class="u-side">
             <div class="lg"><svg role="img" aria-label="Unified Waste Solutions" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510.5 174.0"><g transform="translate(-16.5 -4.5) scale(1.5)"><defs><clipPath id="uws3pc"><polygon points="0,0 0,150 96.94,147.28 60,100 47.69,84.24 47.69,0"/></clipPath><mask id="uws3pm" maskUnits="userSpaceOnUse" x="-20" y="-20" width="160" height="170"><rect x="-20" y="-20" width="160" height="170" fill="#fff"/><line x1="50.15" y1="87.39" x2="69.85" y2="112.61" stroke="#000" stroke-width="3.2"/></mask></defs><g mask="url(#uws3pm)"><path d="M30 40V70A30 30 0 0 0 90 70V22" fill="none" stroke="#2FB67C" stroke-width="22" stroke-linecap="round"/><g clip-path="url(#uws3pc)"><path d="M30 40V70A30 30 0 0 0 90 70V22" fill="none" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round"/></g></g></g><path fill="#FFFFFF" transform="translate(163.3 106.16204052091472)" d="M36.2 1.2L36.2 1.2Q27.4 1.2 20.5 -2.5Q13.6 -6.2 9.65 -12.65Q5.7 -19.1 5.7 -27.3L5.7 -27.3L5.7 -74.5L21.2 -74.5L21.2 -28.3Q21.2 -23.9 23.15 -20.35Q25.1 -16.8 28.5 -14.8Q31.9 -12.8 36.2 -12.8L36.2 -12.8Q40.6 -12.8 43.95 -14.8Q47.3 -16.8 49.25 -20.35Q51.2 -23.9 51.2 -28.3L51.2 -28.3L51.2 -74.5L66.7 -74.5L66.7 -27.3Q66.7 -19.1 62.75 -12.65Q58.8 -6.2 51.9 -2.5Q45 1.2 36.2 1.2M90.9 0L75.9 0L75.9 -54.6L89.9 -54.6L89.9 -43.8L89.1 -46.2Q91 -51.1 95.25 -53.45Q99.5 -55.8 105.2 -55.8L105.2 -55.8Q111.4 -55.8 116.05 -53.2Q120.7 -50.6 123.3 -45.95Q125.9 -41.3 125.9 -35.1L125.9 -35.1L125.9 0L110.9 0L110.9 -31.9Q110.9 -35.1 109.65 -37.4Q108.4 -39.7 106.15 -41Q103.9 -42.3 100.9 -42.3L100.9 -42.3Q98 -42.3 95.7 -41Q93.4 -39.7 92.15 -37.4Q90.9 -35.1 90.9 -31.9L90.9 -31.9L90.9 0M148.8 0L133.8 0L133.8 -54.6L148.8 -54.6L148.8 0M148.8 -59.5L133.8 -59.5L133.8 -74.5L148.8 -74.5L148.8 -59.5M179.4 0L164.4 0L164.4 -41.6L155.2 -41.6L155.2 -54.6L164.4 -54.6L164.4 -55.4Q164.4 -61.9 166.95 -66.4Q169.5 -70.9 174.3 -73.3Q179.1 -75.7 185.9 -75.7L185.9 -75.7Q187.2 -75.7 188.7 -75.55Q190.2 -75.4 191.2 -75.2L191.2 -75.2L191.2 -62.4Q190.2 -62.6 189.45 -62.65Q188.7 -62.7 187.9 -62.7L187.9 -62.7Q183.7 -62.7 181.55 -60.85Q179.4 -59 179.4 -55.4L179.4 -55.4L179.4 -54.6L191.1 -54.6L191.1 -41.6L179.4 -41.6L179.4 0M210.8 0L195.8 0L195.8 -54.6L210.8 -54.6L210.8 0M210.8 -59.5L195.8 -59.5L195.8 -74.5L210.8 -74.5L210.8 -59.5M246.1 1.2L246.1 1.2Q237.4 1.2 231 -2.65Q224.6 -6.5 221.1 -13Q217.6 -19.5 217.6 -27.4L217.6 -27.4Q217.6 -35.6 221.25 -42Q224.9 -48.4 231.1 -52.1Q237.3 -55.8 245.1 -55.8L245.1 -55.8Q251.6 -55.8 256.6 -53.75Q261.6 -51.7 265.05 -48Q268.5 -44.3 270.3 -39.45Q272.1 -34.6 272.1 -28.9L272.1 -28.9Q272.1 -27.3 271.95 -25.75Q271.8 -24.2 271.4 -23.1L271.4 -23.1L230.5 -23.1L230.5 -34.1L262.9 -34.1L255.8 -28.9Q256.8 -33.2 255.7 -36.55Q254.6 -39.9 251.85 -41.85Q249.1 -43.8 245.1 -43.8L245.1 -43.8Q241.2 -43.8 238.4 -41.9Q235.6 -40 234.2 -36.3Q232.8 -32.6 233.1 -27.3L233.1 -27.3Q232.7 -22.7 234.2 -19.2Q235.7 -15.7 238.8 -13.75Q241.9 -11.8 246.3 -11.8L246.3 -11.8Q250.3 -11.8 253.15 -13.4Q256 -15 257.6 -17.8L257.6 -17.8L269.6 -12.1Q268 -8.1 264.55 -5.1Q261.1 -2.1 256.4 -0.45Q251.7 1.2 246.1 1.2M304.6 1.2L304.6 1.2Q296.6 1.2 290.3 -2.6Q284 -6.4 280.35 -12.9Q276.7 -19.4 276.7 -27.3L276.7 -27.3Q276.7 -35.3 280.4 -41.75Q284.1 -48.2 290.4 -52Q296.7 -55.8 304.5 -55.8L304.5 -55.8Q310.5 -55.8 315.15 -53.55Q319.8 -51.3 322.5 -47.2L322.5 -47.2L320.2 -44.2L320.2 -75.7L335.2 -75.7L335.2 0L321.2 0L321.2 -10L322.6 -6.9Q319.8 -2.9 315 -0.85Q310.2 1.2 304.6 1.2M306.4 -12.3L306.4 -12.3Q310.5 -12.3 313.6 -14.2Q316.7 -16.1 318.45 -19.5Q320.2 -22.9 320.2 -27.3L320.2 -27.3Q320.2 -31.7 318.45 -35.1Q316.7 -38.5 313.6 -40.4Q310.5 -42.3 306.4 -42.3L306.4 -42.3Q302.3 -42.3 299.05 -40.35Q295.8 -38.4 294 -35.05Q292.2 -31.7 292.2 -27.3L292.2 -27.3Q292.2 -22.9 294 -19.5Q295.8 -16.1 299.05 -14.2Q302.3 -12.3 306.4 -12.3"/><path fill="#C8F169" transform="translate(169 143.23525488936713) scale(0.2695386955403348)" d="M37.01 0L22.07 0L2.44 -72.75L16.46 -72.75L25.93 -34.03Q26.9 -29.83 27.76 -25.2Q28.61 -20.56 29.44 -15.87L29.44 -15.87Q29.69 -14.31 29.93 -12.7L29.93 -12.7Q30.22 -14.31 30.52 -15.87L30.52 -15.87Q31.35 -20.56 32.28 -25.2Q33.2 -29.83 34.23 -34.03L34.23 -34.03L44.09 -72.75L57.91 -72.75L67.72 -34.03Q68.8 -29.83 69.7 -25.2Q70.61 -20.56 71.48 -15.87L71.48 -15.87Q71.73 -14.36 72.02 -12.84L72.02 -12.84Q72.27 -14.36 72.56 -15.87L72.56 -15.87Q73.34 -20.56 74.22 -25.2Q75.1 -29.83 76.07 -34.03L76.07 -34.03L85.5 -72.75L99.56 -72.75L79.88 0L64.94 0L54.35 -40.19Q52.88 -45.8 51.81 -52.39L51.81 -52.39Q51.37 -54.83 50.93 -57.42L50.93 -57.42Q50.54 -55.03 50.2 -52.78L50.2 -52.78Q49.22 -46.29 47.61 -40.19L47.61 -40.19L37.01 0M136.7 0L122.44 0L147.83 -72.75L164.39 -72.75L190.36 0L176.06 0L169.9 -18.02L142.66 -18.02L136.7 0M146.13 -28.52L166.29 -28.52L163.12 -37.79Q161.21 -43.65 159.16 -51.07L159.16 -51.07Q157.7 -56.35 155.99 -62.65L155.99 -62.65Q154.38 -56.25 152.96 -50.93L152.96 -50.93Q150.96 -43.46 149.2 -37.79L149.2 -37.79L146.13 -28.52M243.62 1.12L243.62 1.12Q235.17 1.12 228.94 -1.51Q222.72 -4.15 219.2 -9.18Q215.69 -14.21 215.39 -21.39L215.39 -21.39L228.24 -21.39Q228.58 -17.58 230.63 -15.04Q232.68 -12.5 236.05 -11.25Q239.42 -10.01 243.52 -10.01L243.52 -10.01Q247.82 -10.01 251.11 -11.33Q254.41 -12.65 256.26 -15.01Q258.12 -17.38 258.12 -20.51L258.12 -20.51Q258.12 -23.34 256.48 -25.2Q254.85 -27.05 251.89 -28.34Q248.94 -29.64 244.98 -30.62L244.98 -30.62L236.73 -32.76Q227.6 -35.11 222.5 -39.84Q217.4 -44.58 217.4 -52.29L217.4 -52.29Q217.4 -58.74 220.86 -63.57Q224.33 -68.41 230.34 -71.07Q236.34 -73.73 243.96 -73.73L243.96 -73.73Q251.72 -73.73 257.58 -71.04Q263.44 -68.36 266.74 -63.62Q270.03 -58.89 270.18 -52.83L270.18 -52.83L257.53 -52.83Q257.04 -57.52 253.36 -60.08Q249.67 -62.65 243.76 -62.65L243.76 -62.65Q239.66 -62.65 236.71 -61.4Q233.75 -60.16 232.17 -58.01Q230.58 -55.86 230.58 -53.08L230.58 -53.08Q230.58 -50.05 232.46 -48.1Q234.34 -46.14 237.2 -44.97Q240.05 -43.8 242.98 -43.07L242.98 -43.07L249.77 -41.31Q253.82 -40.33 257.63 -38.72Q261.44 -37.11 264.49 -34.64Q267.54 -32.18 269.35 -28.66Q271.16 -25.15 271.16 -20.41L271.16 -20.41Q271.16 -14.01 267.88 -9.16Q264.61 -4.3 258.46 -1.59Q252.31 1.12 243.62 1.12M320.31 -61.77L297.85 -61.77L297.85 -72.75L355.76 -72.75L355.76 -61.77L333.35 -61.77L333.35 0L320.31 0L320.31 -61.77M432.6 0L385.13 0L385.13 -72.75L432.4 -72.75L432.4 -61.77L398.17 -61.77L398.17 -42.14L429.86 -42.14L429.86 -31.3L398.17 -31.3L398.17 -10.99L432.6 -10.99L432.6 0M532.41 1.12L532.41 1.12Q523.97 1.12 517.74 -1.51Q511.52 -4.15 508 -9.18Q504.48 -14.21 504.19 -21.39L504.19 -21.39L517.03 -21.39Q517.38 -17.58 519.43 -15.04Q521.48 -12.5 524.85 -11.25Q528.21 -10.01 532.32 -10.01L532.32 -10.01Q536.61 -10.01 539.91 -11.33Q543.21 -12.65 545.06 -15.01Q546.92 -17.38 546.92 -20.51L546.92 -20.51Q546.92 -23.34 545.28 -25.2Q543.64 -27.05 540.69 -28.34Q537.74 -29.64 533.78 -30.62L533.78 -30.62L525.53 -32.76Q516.4 -35.11 511.3 -39.84Q506.19 -44.58 506.19 -52.29L506.19 -52.29Q506.19 -58.74 509.66 -63.57Q513.13 -68.41 519.13 -71.07Q525.14 -73.73 532.76 -73.73L532.76 -73.73Q540.52 -73.73 546.38 -71.04Q552.24 -68.36 555.53 -63.62Q558.83 -58.89 558.98 -52.83L558.98 -52.83L546.33 -52.83Q545.84 -57.52 542.16 -60.08Q538.47 -62.65 532.56 -62.65L532.56 -62.65Q528.46 -62.65 525.5 -61.4Q522.55 -60.16 520.96 -58.01Q519.38 -55.86 519.38 -53.08L519.38 -53.08Q519.38 -50.05 521.26 -48.1Q523.14 -46.14 525.99 -44.97Q528.85 -43.8 531.78 -43.07L531.78 -43.07L538.57 -41.31Q542.62 -40.33 546.43 -38.72Q550.24 -37.11 553.29 -34.64Q556.34 -32.18 558.15 -28.66Q559.95 -25.15 559.95 -20.41L559.95 -20.41Q559.95 -14.01 556.68 -9.16Q553.41 -4.3 547.26 -1.59Q541.11 1.12 532.41 1.12M621.07 0.98L621.07 0.98Q611.5 0.98 603.93 -3.47Q596.36 -7.91 591.99 -16.26Q587.62 -24.61 587.62 -36.33L587.62 -36.33Q587.62 -48.1 591.99 -56.47Q596.36 -64.84 603.93 -69.29Q611.5 -73.73 621.07 -73.73L621.07 -73.73Q630.59 -73.73 638.13 -69.29Q645.68 -64.84 650.05 -56.47Q654.42 -48.1 654.42 -36.33L654.42 -36.33Q654.42 -24.61 650.05 -16.24Q645.68 -7.86 638.13 -3.44Q630.59 0.98 621.07 0.98M621.07 -10.69L621.07 -10.69Q626.98 -10.69 631.54 -13.65Q636.11 -16.6 638.7 -22.34Q641.28 -28.08 641.28 -36.33L641.28 -36.33Q641.28 -44.68 638.7 -50.42Q636.11 -56.15 631.54 -59.11Q626.98 -62.06 621.07 -62.06L621.07 -62.06Q615.11 -62.06 610.52 -59.08Q605.93 -56.1 603.32 -50.37Q600.71 -44.63 600.71 -36.33L600.71 -36.33Q600.71 -28.08 603.32 -22.36Q605.93 -16.65 610.52 -13.67Q615.11 -10.69 621.07 -10.69M729.94 0L684.77 0L684.77 -72.75L697.81 -72.75L697.81 -10.99L729.94 -10.99L729.94 0M788.81 1.07L788.81 1.07Q779.92 1.07 773.28 -2.27Q766.64 -5.62 762.98 -11.55Q759.31 -17.48 759.31 -25.24L759.31 -25.24L759.31 -72.75L772.35 -72.75L772.35 -26.32Q772.35 -21.78 774.38 -18.21Q776.4 -14.65 780.09 -12.62Q783.78 -10.6 788.81 -10.6L788.81 -10.6Q793.84 -10.6 797.52 -12.62Q801.21 -14.65 803.24 -18.21Q805.26 -21.78 805.26 -26.32L805.26 -26.32L805.26 -72.75L818.3 -72.75L818.3 -25.24Q818.3 -17.48 814.61 -11.55Q810.93 -5.62 804.31 -2.27Q797.69 1.07 788.81 1.07M870.09 -61.77L847.63 -61.77L847.63 -72.75L905.54 -72.75L905.54 -61.77L883.13 -61.77L883.13 0L870.09 0L870.09 -61.77M934.91 -72.75L947.95 -72.75L947.95 0L934.91 0L934.91 -72.75M1011.75 0.98L1011.75 0.98Q1002.18 0.98 994.61 -3.47Q987.04 -7.91 982.67 -16.26Q978.3 -24.61 978.3 -36.33L978.3 -36.33Q978.3 -48.1 982.67 -56.47Q987.04 -64.84 994.61 -69.29Q1002.18 -73.73 1011.75 -73.73L1011.75 -73.73Q1021.27 -73.73 1028.82 -69.29Q1036.36 -64.84 1040.73 -56.47Q1045.1 -48.1 1045.1 -36.33L1045.1 -36.33Q1045.1 -24.61 1040.73 -16.24Q1036.36 -7.86 1028.82 -3.44Q1021.27 0.98 1011.75 0.98M1011.75 -10.69L1011.75 -10.69Q1017.66 -10.69 1022.23 -13.65Q1026.79 -16.6 1029.38 -22.34Q1031.97 -28.08 1031.97 -36.33L1031.97 -36.33Q1031.97 -44.68 1029.38 -50.42Q1026.79 -56.15 1022.23 -59.11Q1017.66 -62.06 1011.75 -62.06L1011.75 -62.06Q1005.79 -62.06 1001.21 -59.08Q996.62 -56.1 994 -50.37Q991.39 -44.63 991.39 -36.33L991.39 -36.33Q991.39 -28.08 994 -22.36Q996.62 -16.65 1001.21 -13.67Q1005.79 -10.69 1011.75 -10.69M1088.74 0L1075.46 0L1075.46 -72.75L1090.2 -72.75L1115.35 -32.67Q1116.91 -30.18 1118.67 -27.03Q1120.43 -23.88 1122.33 -20.02L1122.33 -20.02Q1123.31 -17.97 1124.28 -15.77L1124.28 -15.77Q1124.14 -17.77 1124.04 -19.82L1124.04 -19.82Q1123.75 -24.12 1123.62 -28Q1123.5 -31.88 1123.5 -34.57L1123.5 -34.57L1123.5 -72.75L1136.73 -72.75L1136.73 0L1121.94 0L1099.23 -36.08Q1097.09 -39.55 1095.18 -42.92Q1093.28 -46.29 1091.08 -50.54L1091.08 -50.54Q1089.66 -53.32 1087.81 -56.79L1087.81 -56.79Q1088 -53.66 1088.15 -50.73L1088.15 -50.73Q1088.39 -45.95 1088.57 -42.19Q1088.74 -38.43 1088.74 -36.13L1088.74 -36.13L1088.74 0M1194.92 1.12L1194.92 1.12Q1186.47 1.12 1180.25 -1.51Q1174.02 -4.15 1170.51 -9.18Q1166.99 -14.21 1166.7 -21.39L1166.7 -21.39L1179.54 -21.39Q1179.88 -17.58 1181.93 -15.04Q1183.98 -12.5 1187.35 -11.25Q1190.72 -10.01 1194.82 -10.01L1194.82 -10.01Q1199.12 -10.01 1202.42 -11.33Q1205.71 -12.65 1207.57 -15.01Q1209.42 -17.38 1209.42 -20.51L1209.42 -20.51Q1209.42 -23.34 1207.79 -25.2Q1206.15 -27.05 1203.2 -28.34Q1200.24 -29.64 1196.29 -30.62L1196.29 -30.62L1188.04 -32.76Q1178.9 -35.11 1173.8 -39.84Q1168.7 -44.58 1168.7 -52.29L1168.7 -52.29Q1168.7 -58.74 1172.17 -63.57Q1175.63 -68.41 1181.64 -71.07Q1187.64 -73.73 1195.26 -73.73L1195.26 -73.73Q1203.03 -73.73 1208.88 -71.04Q1214.74 -68.36 1218.04 -63.62Q1221.34 -58.89 1221.48 -52.83L1221.48 -52.83L1208.84 -52.83Q1208.35 -57.52 1204.66 -60.08Q1200.97 -62.65 1195.07 -62.65L1195.07 -62.65Q1190.96 -62.65 1188.01 -61.4Q1185.06 -60.16 1183.47 -58.01Q1181.88 -55.86 1181.88 -53.08L1181.88 -53.08Q1181.88 -50.05 1183.76 -48.1Q1185.64 -46.14 1188.5 -44.97Q1191.36 -43.8 1194.29 -43.07L1194.29 -43.07L1201.07 -41.31Q1205.13 -40.33 1208.93 -38.72Q1212.74 -37.11 1215.79 -34.64Q1218.85 -32.18 1220.65 -28.66Q1222.46 -25.15 1222.46 -20.41L1222.46 -20.41Q1222.46 -14.01 1219.19 -9.16Q1215.92 -4.3 1209.76 -1.59Q1203.61 1.12 1194.92 1.12"/></svg></div>
-            <a>Overview</a><a class="on">Invoices <em>2</em></a><a>Contracts</a><a>Requests</a><a>Market reviews</a><a>Reports</a>
-          </div>
-          <div class="main">
-            <div class="mhead"><div><h4>Good morning, Sam</h4><small>Harbour &amp; Co. Hospitality · 6 sites</small></div><span class="live"><i></i>Live</span></div>
+            <a class="on">Overview</a><a>Invoices <em>2</em></a><a>Requests</a><a>Market analysis</a><a>Sites</a><a>Reports</a>
+            <div class="card">Market position<b>In range</b>Checked today, every service</div>
+          </aside>
+          <div class="u-main">
+            <div class="u-top"><div><h4>Good morning, Sam</h4><small>Harbour &amp; Co. Hospitality · 6 sites · Tuesday 11 November</small></div><div class="r"><span class="live"><i></i>Live</span><span class="search">Search invoices, sites…</span><span class="avatar">SH</span></div></div>
             <div class="kpis">
-              <div class="kpi"><small>Waste spend</small><b>$6,214</b><em>▼ 21% vs last year</em></div>
-              <div class="kpi"><small>Lines vetted</small><b>412</b><em>100% this month</em></div>
+              <div class="kpi"><small>Waste spend this month</small><b>$6,214</b><em>▼ 21% vs last year</em></div>
+              <div class="kpi"><small>Invoice lines vetted</small><b>412</b><em>100% checked</em></div>
               <div class="kpi"><small>Kept off your bills</small><b>$1,180</b><em>2 charges disputed</em></div>
-              <div class="kpi"><small>Next market review</small><b>14 Jan</b><em>every quarter</em></div>
+              <div class="kpi"><small>Open requests</small><b>1</b><em>Supplier on the way</em></div>
+            </div>
+            <div class="u-row">
+              <div class="panel"><h5>Spend by month <span>Before and after Unified</span></h5>
+                <div class="chart"><i style="--h:94%"></i><i style="--h:100%"></i><i style="--h:92%"></i><i style="--h:97%"></i><i class="n" style="--h:78%"></i><i class="n" style="--h:75%"></i><i class="n" style="--h:76%"></i><i class="n" style="--h:72%"></i><i class="n" style="--h:71%"></i><i class="n" style="--h:70%"></i></div>
+                <div class="clab"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span></div>
+              </div>
+              <div class="panel"><h5>Activity <span>Today</span></h5>
+                <div class="feed">
+                  <div><i></i><span><b>Missed lift logged</b><small>Bondi · supplier back by 1pm</small></span></div>
+                  <div><i class="a"></i><span><b>2 charges disputed</b><small>Credit requested from supplier</small></span></div>
+                  <div><i></i><span><b>Cardboard renegotiated</b><small>Market alert · all sites</small></span></div>
+                </div>
+              </div>
             </div>
             <div class="panel"><h5>October supplier invoices <span>Checked against your agreements</span></h5>
               <div class="anim" id="audit">
                 <div class="row" data-s="ok"><div><b>General waste · 3000L front lift</b><small>Surry Hills · 13 lifts</small></div><span class="amt">$1,284.40</span><span class="st q">Queued</span></div>
                 <div class="row" data-s="bad"><div><b>Contamination charge</b><small>Bondi · no photo or weight evidence</small></div><span class="amt">$185.00</span><span class="st q">Queued</span></div>
                 <div class="row" data-s="ok"><div><b>Food organics · 240L</b><small>Surry Hills · 26 lifts</small></div><span class="amt">$338.00</span><span class="st q">Queued</span></div>
-                <div class="row" data-s="bad"><div><b>Lift billed, not collected</b><small>Richmond · 14 Oct</small></div><span class="amt">$96.20</span><span class="st q">Queued</span></div>
               </div>
             </div>
           </div>
-        </div>
+        </div></div></div>
+        <div class="base"></div>
       </div>
-      <div class="node n1"></div><div class="node n2"></div><div class="node n3"></div>
+      <div class="ph">
+        <div class="bez"><div class="scr" data-fit="330"><div class="mui">
+          <div class="m-bar"><span>9:41</span><span><i></i></span></div>
+          <div class="m-head"><svg role="img" aria-label="Unified Waste Solutions" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510.5 174.0"><g transform="translate(-16.5 -4.5) scale(1.5)"><defs><clipPath id="uws0qc"><polygon points="0,0 0,150 96.94,147.28 60,100 47.69,84.24 47.69,0"/></clipPath><mask id="uws0qm" maskUnits="userSpaceOnUse" x="-20" y="-20" width="160" height="170"><rect x="-20" y="-20" width="160" height="170" fill="#fff"/><line x1="50.15" y1="87.39" x2="69.85" y2="112.61" stroke="#000" stroke-width="3.2"/></mask></defs><g mask="url(#uws0qm)"><path d="M30 40V70A30 30 0 0 0 90 70V22" fill="none" stroke="#2FB67C" stroke-width="22" stroke-linecap="round"/><g clip-path="url(#uws0qc)"><path d="M30 40V70A30 30 0 0 0 90 70V22" fill="none" stroke="#0F4A3B" stroke-width="22" stroke-linecap="round"/></g></g></g><path fill="#0B2E26" transform="translate(163.3 106.16204052091472)" d="M36.2 1.2L36.2 1.2Q27.4 1.2 20.5 -2.5Q13.6 -6.2 9.65 -12.65Q5.7 -19.1 5.7 -27.3L5.7 -27.3L5.7 -74.5L21.2 -74.5L21.2 -28.3Q21.2 -23.9 23.15 -20.35Q25.1 -16.8 28.5 -14.8Q31.9 -12.8 36.2 -12.8L36.2 -12.8Q40.6 -12.8 43.95 -14.8Q47.3 -16.8 49.25 -20.35Q51.2 -23.9 51.2 -28.3L51.2 -28.3L51.2 -74.5L66.7 -74.5L66.7 -27.3Q66.7 -19.1 62.75 -12.65Q58.8 -6.2 51.9 -2.5Q45 1.2 36.2 1.2M90.9 0L75.9 0L75.9 -54.6L89.9 -54.6L89.9 -43.8L89.1 -46.2Q91 -51.1 95.25 -53.45Q99.5 -55.8 105.2 -55.8L105.2 -55.8Q111.4 -55.8 116.05 -53.2Q120.7 -50.6 123.3 -45.95Q125.9 -41.3 125.9 -35.1L125.9 -35.1L125.9 0L110.9 0L110.9 -31.9Q110.9 -35.1 109.65 -37.4Q108.4 -39.7 106.15 -41Q103.9 -42.3 100.9 -42.3L100.9 -42.3Q98 -42.3 95.7 -41Q93.4 -39.7 92.15 -37.4Q90.9 -35.1 90.9 -31.9L90.9 -31.9L90.9 0M148.8 0L133.8 0L133.8 -54.6L148.8 -54.6L148.8 0M148.8 -59.5L133.8 -59.5L133.8 -74.5L148.8 -74.5L148.8 -59.5M179.4 0L164.4 0L164.4 -41.6L155.2 -41.6L155.2 -54.6L164.4 -54.6L164.4 -55.4Q164.4 -61.9 166.95 -66.4Q169.5 -70.9 174.3 -73.3Q179.1 -75.7 185.9 -75.7L185.9 -75.7Q187.2 -75.7 188.7 -75.55Q190.2 -75.4 191.2 -75.2L191.2 -75.2L191.2 -62.4Q190.2 -62.6 189.45 -62.65Q188.7 -62.7 187.9 -62.7L187.9 -62.7Q183.7 -62.7 181.55 -60.85Q179.4 -59 179.4 -55.4L179.4 -55.4L179.4 -54.6L191.1 -54.6L191.1 -41.6L179.4 -41.6L179.4 0M210.8 0L195.8 0L195.8 -54.6L210.8 -54.6L210.8 0M210.8 -59.5L195.8 -59.5L195.8 -74.5L210.8 -74.5L210.8 -59.5M246.1 1.2L246.1 1.2Q237.4 1.2 231 -2.65Q224.6 -6.5 221.1 -13Q217.6 -19.5 217.6 -27.4L217.6 -27.4Q217.6 -35.6 221.25 -42Q224.9 -48.4 231.1 -52.1Q237.3 -55.8 245.1 -55.8L245.1 -55.8Q251.6 -55.8 256.6 -53.75Q261.6 -51.7 265.05 -48Q268.5 -44.3 270.3 -39.45Q272.1 -34.6 272.1 -28.9L272.1 -28.9Q272.1 -27.3 271.95 -25.75Q271.8 -24.2 271.4 -23.1L271.4 -23.1L230.5 -23.1L230.5 -34.1L262.9 -34.1L255.8 -28.9Q256.8 -33.2 255.7 -36.55Q254.6 -39.9 251.85 -41.85Q249.1 -43.8 245.1 -43.8L245.1 -43.8Q241.2 -43.8 238.4 -41.9Q235.6 -40 234.2 -36.3Q232.8 -32.6 233.1 -27.3L233.1 -27.3Q232.7 -22.7 234.2 -19.2Q235.7 -15.7 238.8 -13.75Q241.9 -11.8 246.3 -11.8L246.3 -11.8Q250.3 -11.8 253.15 -13.4Q256 -15 257.6 -17.8L257.6 -17.8L269.6 -12.1Q268 -8.1 264.55 -5.1Q261.1 -2.1 256.4 -0.45Q251.7 1.2 246.1 1.2M304.6 1.2L304.6 1.2Q296.6 1.2 290.3 -2.6Q284 -6.4 280.35 -12.9Q276.7 -19.4 276.7 -27.3L276.7 -27.3Q276.7 -35.3 280.4 -41.75Q284.1 -48.2 290.4 -52Q296.7 -55.8 304.5 -55.8L304.5 -55.8Q310.5 -55.8 315.15 -53.55Q319.8 -51.3 322.5 -47.2L322.5 -47.2L320.2 -44.2L320.2 -75.7L335.2 -75.7L335.2 0L321.2 0L321.2 -10L322.6 -6.9Q319.8 -2.9 315 -0.85Q310.2 1.2 304.6 1.2M306.4 -12.3L306.4 -12.3Q310.5 -12.3 313.6 -14.2Q316.7 -16.1 318.45 -19.5Q320.2 -22.9 320.2 -27.3L320.2 -27.3Q320.2 -31.7 318.45 -35.1Q316.7 -38.5 313.6 -40.4Q310.5 -42.3 306.4 -42.3L306.4 -42.3Q302.3 -42.3 299.05 -40.35Q295.8 -38.4 294 -35.05Q292.2 -31.7 292.2 -27.3L292.2 -27.3Q292.2 -22.9 294 -19.5Q295.8 -16.1 299.05 -14.2Q302.3 -12.3 306.4 -12.3"/><path fill="#0F4A3B" transform="translate(169 143.23525488936713) scale(0.2695386955403348)" d="M37.01 0L22.07 0L2.44 -72.75L16.46 -72.75L25.93 -34.03Q26.9 -29.83 27.76 -25.2Q28.61 -20.56 29.44 -15.87L29.44 -15.87Q29.69 -14.31 29.93 -12.7L29.93 -12.7Q30.22 -14.31 30.52 -15.87L30.52 -15.87Q31.35 -20.56 32.28 -25.2Q33.2 -29.83 34.23 -34.03L34.23 -34.03L44.09 -72.75L57.91 -72.75L67.72 -34.03Q68.8 -29.83 69.7 -25.2Q70.61 -20.56 71.48 -15.87L71.48 -15.87Q71.73 -14.36 72.02 -12.84L72.02 -12.84Q72.27 -14.36 72.56 -15.87L72.56 -15.87Q73.34 -20.56 74.22 -25.2Q75.1 -29.83 76.07 -34.03L76.07 -34.03L85.5 -72.75L99.56 -72.75L79.88 0L64.94 0L54.35 -40.19Q52.88 -45.8 51.81 -52.39L51.81 -52.39Q51.37 -54.83 50.93 -57.42L50.93 -57.42Q50.54 -55.03 50.2 -52.78L50.2 -52.78Q49.22 -46.29 47.61 -40.19L47.61 -40.19L37.01 0M136.7 0L122.44 0L147.83 -72.75L164.39 -72.75L190.36 0L176.06 0L169.9 -18.02L142.66 -18.02L136.7 0M146.13 -28.52L166.29 -28.52L163.12 -37.79Q161.21 -43.65 159.16 -51.07L159.16 -51.07Q157.7 -56.35 155.99 -62.65L155.99 -62.65Q154.38 -56.25 152.96 -50.93L152.96 -50.93Q150.96 -43.46 149.2 -37.79L149.2 -37.79L146.13 -28.52M243.62 1.12L243.62 1.12Q235.17 1.12 228.94 -1.51Q222.72 -4.15 219.2 -9.18Q215.69 -14.21 215.39 -21.39L215.39 -21.39L228.24 -21.39Q228.58 -17.58 230.63 -15.04Q232.68 -12.5 236.05 -11.25Q239.42 -10.01 243.52 -10.01L243.52 -10.01Q247.82 -10.01 251.11 -11.33Q254.41 -12.65 256.26 -15.01Q258.12 -17.38 258.12 -20.51L258.12 -20.51Q258.12 -23.34 256.48 -25.2Q254.85 -27.05 251.89 -28.34Q248.94 -29.64 244.98 -30.62L244.98 -30.62L236.73 -32.76Q227.6 -35.11 222.5 -39.84Q217.4 -44.58 217.4 -52.29L217.4 -52.29Q217.4 -58.74 220.86 -63.57Q224.33 -68.41 230.34 -71.07Q236.34 -73.73 243.96 -73.73L243.96 -73.73Q251.72 -73.73 257.58 -71.04Q263.44 -68.36 266.74 -63.62Q270.03 -58.89 270.18 -52.83L270.18 -52.83L257.53 -52.83Q257.04 -57.52 253.36 -60.08Q249.67 -62.65 243.76 -62.65L243.76 -62.65Q239.66 -62.65 236.71 -61.4Q233.75 -60.16 232.17 -58.01Q230.58 -55.86 230.58 -53.08L230.58 -53.08Q230.58 -50.05 232.46 -48.1Q234.34 -46.14 237.2 -44.97Q240.05 -43.8 242.98 -43.07L242.98 -43.07L249.77 -41.31Q253.82 -40.33 257.63 -38.72Q261.44 -37.11 264.49 -34.64Q267.54 -32.18 269.35 -28.66Q271.16 -25.15 271.16 -20.41L271.16 -20.41Q271.16 -14.01 267.88 -9.16Q264.61 -4.3 258.46 -1.59Q252.31 1.12 243.62 1.12M320.31 -61.77L297.85 -61.77L297.85 -72.75L355.76 -72.75L355.76 -61.77L333.35 -61.77L333.35 0L320.31 0L320.31 -61.77M432.6 0L385.13 0L385.13 -72.75L432.4 -72.75L432.4 -61.77L398.17 -61.77L398.17 -42.14L429.86 -42.14L429.86 -31.3L398.17 -31.3L398.17 -10.99L432.6 -10.99L432.6 0M532.41 1.12L532.41 1.12Q523.97 1.12 517.74 -1.51Q511.52 -4.15 508 -9.18Q504.48 -14.21 504.19 -21.39L504.19 -21.39L517.03 -21.39Q517.38 -17.58 519.43 -15.04Q521.48 -12.5 524.85 -11.25Q528.21 -10.01 532.32 -10.01L532.32 -10.01Q536.61 -10.01 539.91 -11.33Q543.21 -12.65 545.06 -15.01Q546.92 -17.38 546.92 -20.51L546.92 -20.51Q546.92 -23.34 545.28 -25.2Q543.64 -27.05 540.69 -28.34Q537.74 -29.64 533.78 -30.62L533.78 -30.62L525.53 -32.76Q516.4 -35.11 511.3 -39.84Q506.19 -44.58 506.19 -52.29L506.19 -52.29Q506.19 -58.74 509.66 -63.57Q513.13 -68.41 519.13 -71.07Q525.14 -73.73 532.76 -73.73L532.76 -73.73Q540.52 -73.73 546.38 -71.04Q552.24 -68.36 555.53 -63.62Q558.83 -58.89 558.98 -52.83L558.98 -52.83L546.33 -52.83Q545.84 -57.52 542.16 -60.08Q538.47 -62.65 532.56 -62.65L532.56 -62.65Q528.46 -62.65 525.5 -61.4Q522.55 -60.16 520.96 -58.01Q519.38 -55.86 519.38 -53.08L519.38 -53.08Q519.38 -50.05 521.26 -48.1Q523.14 -46.14 525.99 -44.97Q528.85 -43.8 531.78 -43.07L531.78 -43.07L538.57 -41.31Q542.62 -40.33 546.43 -38.72Q550.24 -37.11 553.29 -34.64Q556.34 -32.18 558.15 -28.66Q559.95 -25.15 559.95 -20.41L559.95 -20.41Q559.95 -14.01 556.68 -9.16Q553.41 -4.3 547.26 -1.59Q541.11 1.12 532.41 1.12M621.07 0.98L621.07 0.98Q611.5 0.98 603.93 -3.47Q596.36 -7.91 591.99 -16.26Q587.62 -24.61 587.62 -36.33L587.62 -36.33Q587.62 -48.1 591.99 -56.47Q596.36 -64.84 603.93 -69.29Q611.5 -73.73 621.07 -73.73L621.07 -73.73Q630.59 -73.73 638.13 -69.29Q645.68 -64.84 650.05 -56.47Q654.42 -48.1 654.42 -36.33L654.42 -36.33Q654.42 -24.61 650.05 -16.24Q645.68 -7.86 638.13 -3.44Q630.59 0.98 621.07 0.98M621.07 -10.69L621.07 -10.69Q626.98 -10.69 631.54 -13.65Q636.11 -16.6 638.7 -22.34Q641.28 -28.08 641.28 -36.33L641.28 -36.33Q641.28 -44.68 638.7 -50.42Q636.11 -56.15 631.54 -59.11Q626.98 -62.06 621.07 -62.06L621.07 -62.06Q615.11 -62.06 610.52 -59.08Q605.93 -56.1 603.32 -50.37Q600.71 -44.63 600.71 -36.33L600.71 -36.33Q600.71 -28.08 603.32 -22.36Q605.93 -16.65 610.52 -13.67Q615.11 -10.69 621.07 -10.69M729.94 0L684.77 0L684.77 -72.75L697.81 -72.75L697.81 -10.99L729.94 -10.99L729.94 0M788.81 1.07L788.81 1.07Q779.92 1.07 773.28 -2.27Q766.64 -5.62 762.98 -11.55Q759.31 -17.48 759.31 -25.24L759.31 -25.24L759.31 -72.75L772.35 -72.75L772.35 -26.32Q772.35 -21.78 774.38 -18.21Q776.4 -14.65 780.09 -12.62Q783.78 -10.6 788.81 -10.6L788.81 -10.6Q793.84 -10.6 797.52 -12.62Q801.21 -14.65 803.24 -18.21Q805.26 -21.78 805.26 -26.32L805.26 -26.32L805.26 -72.75L818.3 -72.75L818.3 -25.24Q818.3 -17.48 814.61 -11.55Q810.93 -5.62 804.31 -2.27Q797.69 1.07 788.81 1.07M870.09 -61.77L847.63 -61.77L847.63 -72.75L905.54 -72.75L905.54 -61.77L883.13 -61.77L883.13 0L870.09 0L870.09 -61.77M934.91 -72.75L947.95 -72.75L947.95 0L934.91 0L934.91 -72.75M1011.75 0.98L1011.75 0.98Q1002.18 0.98 994.61 -3.47Q987.04 -7.91 982.67 -16.26Q978.3 -24.61 978.3 -36.33L978.3 -36.33Q978.3 -48.1 982.67 -56.47Q987.04 -64.84 994.61 -69.29Q1002.18 -73.73 1011.75 -73.73L1011.75 -73.73Q1021.27 -73.73 1028.82 -69.29Q1036.36 -64.84 1040.73 -56.47Q1045.1 -48.1 1045.1 -36.33L1045.1 -36.33Q1045.1 -24.61 1040.73 -16.24Q1036.36 -7.86 1028.82 -3.44Q1021.27 0.98 1011.75 0.98M1011.75 -10.69L1011.75 -10.69Q1017.66 -10.69 1022.23 -13.65Q1026.79 -16.6 1029.38 -22.34Q1031.97 -28.08 1031.97 -36.33L1031.97 -36.33Q1031.97 -44.68 1029.38 -50.42Q1026.79 -56.15 1022.23 -59.11Q1017.66 -62.06 1011.75 -62.06L1011.75 -62.06Q1005.79 -62.06 1001.21 -59.08Q996.62 -56.1 994 -50.37Q991.39 -44.63 991.39 -36.33L991.39 -36.33Q991.39 -28.08 994 -22.36Q996.62 -16.65 1001.21 -13.67Q1005.79 -10.69 1011.75 -10.69M1088.74 0L1075.46 0L1075.46 -72.75L1090.2 -72.75L1115.35 -32.67Q1116.91 -30.18 1118.67 -27.03Q1120.43 -23.88 1122.33 -20.02L1122.33 -20.02Q1123.31 -17.97 1124.28 -15.77L1124.28 -15.77Q1124.14 -17.77 1124.04 -19.82L1124.04 -19.82Q1123.75 -24.12 1123.62 -28Q1123.5 -31.88 1123.5 -34.57L1123.5 -34.57L1123.5 -72.75L1136.73 -72.75L1136.73 0L1121.94 0L1099.23 -36.08Q1097.09 -39.55 1095.18 -42.92Q1093.28 -46.29 1091.08 -50.54L1091.08 -50.54Q1089.66 -53.32 1087.81 -56.79L1087.81 -56.79Q1088 -53.66 1088.15 -50.73L1088.15 -50.73Q1088.39 -45.95 1088.57 -42.19Q1088.74 -38.43 1088.74 -36.13L1088.74 -36.13L1088.74 0M1194.92 1.12L1194.92 1.12Q1186.47 1.12 1180.25 -1.51Q1174.02 -4.15 1170.51 -9.18Q1166.99 -14.21 1166.7 -21.39L1166.7 -21.39L1179.54 -21.39Q1179.88 -17.58 1181.93 -15.04Q1183.98 -12.5 1187.35 -11.25Q1190.72 -10.01 1194.82 -10.01L1194.82 -10.01Q1199.12 -10.01 1202.42 -11.33Q1205.71 -12.65 1207.57 -15.01Q1209.42 -17.38 1209.42 -20.51L1209.42 -20.51Q1209.42 -23.34 1207.79 -25.2Q1206.15 -27.05 1203.2 -28.34Q1200.24 -29.64 1196.29 -30.62L1196.29 -30.62L1188.04 -32.76Q1178.9 -35.11 1173.8 -39.84Q1168.7 -44.58 1168.7 -52.29L1168.7 -52.29Q1168.7 -58.74 1172.17 -63.57Q1175.63 -68.41 1181.64 -71.07Q1187.64 -73.73 1195.26 -73.73L1195.26 -73.73Q1203.03 -73.73 1208.88 -71.04Q1214.74 -68.36 1218.04 -63.62Q1221.34 -58.89 1221.48 -52.83L1221.48 -52.83L1208.84 -52.83Q1208.35 -57.52 1204.66 -60.08Q1200.97 -62.65 1195.07 -62.65L1195.07 -62.65Q1190.96 -62.65 1188.01 -61.4Q1185.06 -60.16 1183.47 -58.01Q1181.88 -55.86 1181.88 -53.08L1181.88 -53.08Q1181.88 -50.05 1183.76 -48.1Q1185.64 -46.14 1188.5 -44.97Q1191.36 -43.8 1194.29 -43.07L1194.29 -43.07L1201.07 -41.31Q1205.13 -40.33 1208.93 -38.72Q1212.74 -37.11 1215.79 -34.64Q1218.85 -32.18 1220.65 -28.66Q1222.46 -25.15 1222.46 -20.41L1222.46 -20.41Q1222.46 -14.01 1219.19 -9.16Q1215.92 -4.3 1209.76 -1.59Q1203.61 1.12 1194.92 1.12"/></svg><span class="bell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 16V11a6 6 0 0112 0v5l1.5 2h-15zM10 20a2 2 0 004 0"/></svg></span></div>
+          <div class="m-body">
+            <h6>Your request</h6>
+            <div class="m-card">
+              <div class="t"><b>Missed lift · Bondi</b><span class="st wait">In progress</span></div>
+              <div class="eta"><div><small>Supplier on the way</small>Back today</div><b>12–1pm</b></div>
+              <div class="m-tl">
+                <div><i></i><div><b>Reported with a photo</b><span>You</span></div><span>2:04am</span></div>
+                <div><i></i><div><b>Sent to the supplier</b><span>Unified</span></div><span>2:05am</span></div>
+                <div><i></i><div><b>Return confirmed</b><span>Supplier</span></div><span>9:10am</span></div>
+                <div><i class="p"></i><div><b>Collected</b><span>Expected 12–1pm</span></div><span></span></div>
+              </div>
+            </div>
+            <div class="m-mini"><div><small>Lines vetted</small><b>412</b></div><div><small>Saved this year</small><b>$11,960</b></div></div>
+            <div class="m-btn">Report a problem</div>
+          </div>
+          <div class="m-tabs"><span class="on">Home</span><span>Invoices</span><span>Requests</span><span>Account</span></div>
+        </div></div></div>
+      </div>
+      <div class="node n1"></div><div class="node n2"></div>
     </div>
   </div>
 </section>
 
 <div class="ticker" aria-label="Services">
   <div class="track">
-    <span>Free assessment in seconds</span><span>Every invoice line vetted</span><span>Every contract vetted</span><span>24/7 client portal</span><span>Back to market every quarter</span><span>One all-in price</span><span>No lock-in contracts</span><span>Suppliers across the country</span>
-    <span aria-hidden="true">Free assessment in seconds</span><span aria-hidden="true">Every invoice line vetted</span><span aria-hidden="true">Every contract vetted</span><span aria-hidden="true">24/7 client portal</span><span aria-hidden="true">Back to market every quarter</span><span aria-hidden="true">One all-in price</span><span aria-hidden="true">No lock-in contracts</span><span aria-hidden="true">Suppliers across the country</span>
+    <span>Free assessment in seconds</span><span>Every invoice line vetted</span><span>24/7 client portal</span><span>Automated market analysis</span><span>One all-in price</span><span>No lock-in</span><span>Suppliers across the country</span><span>Every site, one invoice</span>
+    <span aria-hidden="true">Free assessment in seconds</span><span aria-hidden="true">Every invoice line vetted</span><span aria-hidden="true">24/7 client portal</span><span aria-hidden="true">Automated market analysis</span><span aria-hidden="true">One all-in price</span><span aria-hidden="true">No lock-in</span><span aria-hidden="true">Suppliers across the country</span><span aria-hidden="true">Every site, one invoice</span>
   </div>
 </div>
 
@@ -388,13 +514,13 @@ body{background:var(--bg);color:var(--ink)}
     </div>
     <div class="slider" id="slider">
       <div class="slide">
-        <div><span class="n">01 / 05</span><span class="k">Free assessment</span><h3>Your market price in seconds<span class="p">.</span></h3><p>Snap a photo of your bill. See what the market charges for the same service before you’ve put your phone down.</p>
+        <div><span class="n">01 / 04</span><span class="k">Free assessment</span><h3>Your market price in seconds<span class="p">.</span></h3><p>Snap a photo of your bill. See what the market charges for the same service before you’ve put your phone down.</p>
           <ul><li><svg class="tick"><use href="#tk"/></svg>Every service compared, line by line</li><li><svg class="tick"><use href="#tk"/></svg>Hidden fees and surcharges flagged</li></ul></div>
         <div class="vis"><div class="up"><span class="doc"></span><div><b>October invoice.jpg</b><small>Uploaded just now</small></div><span class="secs"><svg class="tick"><use href="#tk"/></svg>4 sec</span></div>
           <div class="res"><div><small>You pay</small><b>$1,240/mo</b></div><div class="good"><small>Market range</small><b>$870–$990</b></div><div class="wide"><small>Potential saving per year</small><b>$3,000–$4,440</b></div></div></div>
       </div>
       <div class="slide">
-        <div><span class="n">02 / 05</span><span class="k">Invoice vetting</span><h3>Every invoice line checked<span class="p">.</span></h3><p>Every charge is matched to your agreement and collection records. Wrong charges are disputed and never reach you.</p>
+        <div><span class="n">02 / 04</span><span class="k">Invoice vetting</span><h3>Every invoice line checked<span class="p">.</span></h3><p>Every charge is matched to your agreed rates and collection records. Wrong charges are disputed and never reach you.</p>
           <ul><li><svg class="tick"><use href="#tk"/></svg>Rates, lifts, levies and fees checked</li><li><svg class="tick"><use href="#tk"/></svg>No extra charge without photo or weighbridge proof</li></ul></div>
         <div class="vis"><div class="vcard">
           <div class="row"><div><b>General waste · 13 lifts</b><small>Rate and lifts match</small></div><span class="amt">$1,284.40</span><span class="st ok">Correct</span></div>
@@ -404,17 +530,7 @@ body{background:var(--bg);color:var(--ink)}
         </div></div>
       </div>
       <div class="slide">
-        <div><span class="n">03 / 05</span><span class="k">Contract vetting</span><h3>Every contract read for you<span class="p">.</span></h3><p>Rollover dates, price-rise clauses, exit fees and notice windows. We find the traps and make sure you’re never caught in one.</p>
-          <ul><li><svg class="tick"><use href="#tk"/></svg>Notice dates tracked and acted on</li><li><svg class="tick"><use href="#tk"/></svg>Switches timed to avoid exit fees</li></ul></div>
-        <div class="vis"><div class="vcard">
-          <div class="row"><div><b>Auto-renews for 36 months</b><small>Notice due by 14 March</small></div><span></span><span class="st wait">Action</span></div>
-          <div class="row"><div><b>Annual price-rise clause</b><small>Up to 7.5% a year</small></div><span></span><span class="st bad">Flagged</span></div>
-          <div class="row"><div><b>Early exit fee</b><small>Avoided with a timed switch</small></div><span></span><span class="st ok">Cleared</span></div>
-          <div class="row"><div><b>Bin removal charge</b><small>Waived on handover</small></div><span></span><span class="st ok">Cleared</span></div>
-        </div></div>
-      </div>
-      <div class="slide">
-        <div><span class="n">04 / 05</span><span class="k">24/7 portal and support</span><h3>A portal that never closes<span class="p">.</span></h3><p>Report a missed bin at 2am, track every request live and see every invoice check, for every site, any time.</p>
+        <div><span class="n">03 / 04</span><span class="k">24/7 portal and support</span><h3>A portal that never closes<span class="p">.</span></h3><p>Report a missed bin at 2am, track every request live and see every invoice check, for every site, any time.</p>
           <ul><li><svg class="tick"><use href="#tk"/></svg>Missed lifts sent to the supplier in minutes</li><li><svg class="tick"><use href="#tk"/></svg>Every request has an owner and a deadline</li></ul></div>
         <div class="vis"><div class="mini-tl">
           <div><span>2:04am</span><i></i><div><b>Missed lift reported</b><small>Bondi · photo attached</small></div></div>
@@ -424,26 +540,25 @@ body{background:var(--bg);color:var(--ink)}
         </div></div>
       </div>
       <div class="slide">
-        <div><span class="n">05 / 05</span><span class="k">Quarterly market review</span><h3>Back to market, every quarter<span class="p">.</span></h3><p>Every 90 days we test your price against our supplier network and move you to a better deal when we find one.</p>
-          <ul><li><svg class="tick"><use href="#tk"/></svg>Like-for-like quotes from suppliers across the country</li><li><svg class="tick"><use href="#tk"/></svg>Nothing changes without your OK</li></ul></div>
+        <div><span class="n">04 / 04</span><span class="k">Automated market analysis</span><h3>Always benchmarked<span class="p">.</span> Only moved when it counts<span class="p">.</span></h3><p>Our system tracks every price you pay against the market, all the time. If you drift above it, we renegotiate with your current supplier first and only switch when it clearly pays.</p>
+          <ul><li><svg class="tick"><use href="#tk"/></svg>Live price benchmarking for every service</li><li><svg class="tick"><use href="#tk"/></svg>Stable suppliers, no constant chopping and changing</li></ul></div>
         <div class="vis"><div class="bars">
+          <div class="br"><span>Market low</span><i style="--w:80%"></i><b>$46.70</b></div>
+          <div class="br"><span>Market average</span><i style="--w:89%"></i><b>$52.10</b></div>
           <div class="br you"><span>Your price</span><i style="--w:100%"></i><b>$58.40</b></div>
-          <div class="br"><span>Supplier A</span><i style="--w:94%"></i><b>$54.90</b></div>
-          <div class="br best"><span>Supplier B</span><i style="--w:79%"></i><b>$46.10</b></div>
-          <div class="br"><span>Supplier C</span><i style="--w:97%"></i><b>$56.70</b></div>
-        </div><div class="res"><div class="wide"><small>Cardboard re-priced, all sites</small><b>$3,830 / yr</b></div></div></div>
-      </div>
+          <div class="br best"><span>After renegotiation</span><i style="--w:86%"></i><b>$50.20</b></div>
+        </div><div class="res"><div class="wide"><small>Price alert · cardboard · same supplier</small><b>$2,950 / yr</b></div></div></div>
     </div>
     <div class="dots" id="dots"></div>
   </div>
 </section>
 
-<section style="padding-bottom:110px" id="why">
+<section style="padding-bottom:120px" id="why">
   <div class="wrap">
     <div class="band dark">
       <div class="glow"></div>
       <span class="eyebrow">Why Unified</span>
-      <p class="say" id="say" style="margin-top:18px">A broker sells you a contract and moves on. <em class="hl">We manage your waste, every day you’re with us.</em></p>
+      <p class="say" id="say" style="margin-top:18px">A broker sells you a deal and moves on. <em class="hl">We manage your waste, every day you’re with us.</em></p>
       <div class="three">
         <div><b>One all-in price</b><span>Levy included. No fuel, admin or account fees on top.</span></div>
         <div><b>No lock-in</b><span>30 days’ notice and no exit fee. We keep you by doing the job well.</span></div>
@@ -473,7 +588,7 @@ body{background:var(--bg);color:var(--ink)}
           <label class="consent"><input type="checkbox" id="ok" required>I agree to Unified Waste Solutions using these details to prepare my assessment and contact me about it.</label>
           <button class="btn btn-ink" type="submit">Show my market price <svg class="ar"><use href="#ar"/></svg></button>
         </div>
-        <div class="thanks"><div class="ok"><svg viewBox="0 0 16 16"><use href="#tk"/></svg></div><h3>Preview only</h3><p>This is a design concept, so nothing was sent. On the live site, this sends the request to the Unified team.</p></div>
+        <div class="thanks"><div class="ok"><svg viewBox="0 0 16 16"><use href="#tk"/></svg></div><h3>Preview only</h3><p>This is a design concept, so nothing was sent. On the live site, this goes straight to the Unified team.</p></div>
       </form>
     </div>
   </div>
@@ -484,21 +599,73 @@ body{background:var(--bg);color:var(--ink)}
   <div class="wrap">
     <div class="foot">
       <a href="#top" class="logo" aria-label="Unified Waste Solutions"><svg role="img" aria-label="Unified Waste Solutions" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510.5 174.0"><g transform="translate(-16.5 -4.5) scale(1.5)"><defs><clipPath id="uws0fc"><polygon points="0,0 0,150 96.94,147.28 60,100 47.69,84.24 47.69,0"/></clipPath><mask id="uws0fm" maskUnits="userSpaceOnUse" x="-20" y="-20" width="160" height="170"><rect x="-20" y="-20" width="160" height="170" fill="#fff"/><line x1="50.15" y1="87.39" x2="69.85" y2="112.61" stroke="#000" stroke-width="3.2"/></mask></defs><g mask="url(#uws0fm)"><path d="M30 40V70A30 30 0 0 0 90 70V22" fill="none" stroke="#2FB67C" stroke-width="22" stroke-linecap="round"/><g clip-path="url(#uws0fc)"><path d="M30 40V70A30 30 0 0 0 90 70V22" fill="none" stroke="#0F4A3B" stroke-width="22" stroke-linecap="round"/></g></g></g><path fill="#0B2E26" transform="translate(163.3 106.16204052091472)" d="M36.2 1.2L36.2 1.2Q27.4 1.2 20.5 -2.5Q13.6 -6.2 9.65 -12.65Q5.7 -19.1 5.7 -27.3L5.7 -27.3L5.7 -74.5L21.2 -74.5L21.2 -28.3Q21.2 -23.9 23.15 -20.35Q25.1 -16.8 28.5 -14.8Q31.9 -12.8 36.2 -12.8L36.2 -12.8Q40.6 -12.8 43.95 -14.8Q47.3 -16.8 49.25 -20.35Q51.2 -23.9 51.2 -28.3L51.2 -28.3L51.2 -74.5L66.7 -74.5L66.7 -27.3Q66.7 -19.1 62.75 -12.65Q58.8 -6.2 51.9 -2.5Q45 1.2 36.2 1.2M90.9 0L75.9 0L75.9 -54.6L89.9 -54.6L89.9 -43.8L89.1 -46.2Q91 -51.1 95.25 -53.45Q99.5 -55.8 105.2 -55.8L105.2 -55.8Q111.4 -55.8 116.05 -53.2Q120.7 -50.6 123.3 -45.95Q125.9 -41.3 125.9 -35.1L125.9 -35.1L125.9 0L110.9 0L110.9 -31.9Q110.9 -35.1 109.65 -37.4Q108.4 -39.7 106.15 -41Q103.9 -42.3 100.9 -42.3L100.9 -42.3Q98 -42.3 95.7 -41Q93.4 -39.7 92.15 -37.4Q90.9 -35.1 90.9 -31.9L90.9 -31.9L90.9 0M148.8 0L133.8 0L133.8 -54.6L148.8 -54.6L148.8 0M148.8 -59.5L133.8 -59.5L133.8 -74.5L148.8 -74.5L148.8 -59.5M179.4 0L164.4 0L164.4 -41.6L155.2 -41.6L155.2 -54.6L164.4 -54.6L164.4 -55.4Q164.4 -61.9 166.95 -66.4Q169.5 -70.9 174.3 -73.3Q179.1 -75.7 185.9 -75.7L185.9 -75.7Q187.2 -75.7 188.7 -75.55Q190.2 -75.4 191.2 -75.2L191.2 -75.2L191.2 -62.4Q190.2 -62.6 189.45 -62.65Q188.7 -62.7 187.9 -62.7L187.9 -62.7Q183.7 -62.7 181.55 -60.85Q179.4 -59 179.4 -55.4L179.4 -55.4L179.4 -54.6L191.1 -54.6L191.1 -41.6L179.4 -41.6L179.4 0M210.8 0L195.8 0L195.8 -54.6L210.8 -54.6L210.8 0M210.8 -59.5L195.8 -59.5L195.8 -74.5L210.8 -74.5L210.8 -59.5M246.1 1.2L246.1 1.2Q237.4 1.2 231 -2.65Q224.6 -6.5 221.1 -13Q217.6 -19.5 217.6 -27.4L217.6 -27.4Q217.6 -35.6 221.25 -42Q224.9 -48.4 231.1 -52.1Q237.3 -55.8 245.1 -55.8L245.1 -55.8Q251.6 -55.8 256.6 -53.75Q261.6 -51.7 265.05 -48Q268.5 -44.3 270.3 -39.45Q272.1 -34.6 272.1 -28.9L272.1 -28.9Q272.1 -27.3 271.95 -25.75Q271.8 -24.2 271.4 -23.1L271.4 -23.1L230.5 -23.1L230.5 -34.1L262.9 -34.1L255.8 -28.9Q256.8 -33.2 255.7 -36.55Q254.6 -39.9 251.85 -41.85Q249.1 -43.8 245.1 -43.8L245.1 -43.8Q241.2 -43.8 238.4 -41.9Q235.6 -40 234.2 -36.3Q232.8 -32.6 233.1 -27.3L233.1 -27.3Q232.7 -22.7 234.2 -19.2Q235.7 -15.7 238.8 -13.75Q241.9 -11.8 246.3 -11.8L246.3 -11.8Q250.3 -11.8 253.15 -13.4Q256 -15 257.6 -17.8L257.6 -17.8L269.6 -12.1Q268 -8.1 264.55 -5.1Q261.1 -2.1 256.4 -0.45Q251.7 1.2 246.1 1.2M304.6 1.2L304.6 1.2Q296.6 1.2 290.3 -2.6Q284 -6.4 280.35 -12.9Q276.7 -19.4 276.7 -27.3L276.7 -27.3Q276.7 -35.3 280.4 -41.75Q284.1 -48.2 290.4 -52Q296.7 -55.8 304.5 -55.8L304.5 -55.8Q310.5 -55.8 315.15 -53.55Q319.8 -51.3 322.5 -47.2L322.5 -47.2L320.2 -44.2L320.2 -75.7L335.2 -75.7L335.2 0L321.2 0L321.2 -10L322.6 -6.9Q319.8 -2.9 315 -0.85Q310.2 1.2 304.6 1.2M306.4 -12.3L306.4 -12.3Q310.5 -12.3 313.6 -14.2Q316.7 -16.1 318.45 -19.5Q320.2 -22.9 320.2 -27.3L320.2 -27.3Q320.2 -31.7 318.45 -35.1Q316.7 -38.5 313.6 -40.4Q310.5 -42.3 306.4 -42.3L306.4 -42.3Q302.3 -42.3 299.05 -40.35Q295.8 -38.4 294 -35.05Q292.2 -31.7 292.2 -27.3L292.2 -27.3Q292.2 -22.9 294 -19.5Q295.8 -16.1 299.05 -14.2Q302.3 -12.3 306.4 -12.3"/><path fill="#0F4A3B" transform="translate(169 143.23525488936713) scale(0.2695386955403348)" d="M37.01 0L22.07 0L2.44 -72.75L16.46 -72.75L25.93 -34.03Q26.9 -29.83 27.76 -25.2Q28.61 -20.56 29.44 -15.87L29.44 -15.87Q29.69 -14.31 29.93 -12.7L29.93 -12.7Q30.22 -14.31 30.52 -15.87L30.52 -15.87Q31.35 -20.56 32.28 -25.2Q33.2 -29.83 34.23 -34.03L34.23 -34.03L44.09 -72.75L57.91 -72.75L67.72 -34.03Q68.8 -29.83 69.7 -25.2Q70.61 -20.56 71.48 -15.87L71.48 -15.87Q71.73 -14.36 72.02 -12.84L72.02 -12.84Q72.27 -14.36 72.56 -15.87L72.56 -15.87Q73.34 -20.56 74.22 -25.2Q75.1 -29.83 76.07 -34.03L76.07 -34.03L85.5 -72.75L99.56 -72.75L79.88 0L64.94 0L54.35 -40.19Q52.88 -45.8 51.81 -52.39L51.81 -52.39Q51.37 -54.83 50.93 -57.42L50.93 -57.42Q50.54 -55.03 50.2 -52.78L50.2 -52.78Q49.22 -46.29 47.61 -40.19L47.61 -40.19L37.01 0M136.7 0L122.44 0L147.83 -72.75L164.39 -72.75L190.36 0L176.06 0L169.9 -18.02L142.66 -18.02L136.7 0M146.13 -28.52L166.29 -28.52L163.12 -37.79Q161.21 -43.65 159.16 -51.07L159.16 -51.07Q157.7 -56.35 155.99 -62.65L155.99 -62.65Q154.38 -56.25 152.96 -50.93L152.96 -50.93Q150.96 -43.46 149.2 -37.79L149.2 -37.79L146.13 -28.52M243.62 1.12L243.62 1.12Q235.17 1.12 228.94 -1.51Q222.72 -4.15 219.2 -9.18Q215.69 -14.21 215.39 -21.39L215.39 -21.39L228.24 -21.39Q228.58 -17.58 230.63 -15.04Q232.68 -12.5 236.05 -11.25Q239.42 -10.01 243.52 -10.01L243.52 -10.01Q247.82 -10.01 251.11 -11.33Q254.41 -12.65 256.26 -15.01Q258.12 -17.38 258.12 -20.51L258.12 -20.51Q258.12 -23.34 256.48 -25.2Q254.85 -27.05 251.89 -28.34Q248.94 -29.64 244.98 -30.62L244.98 -30.62L236.73 -32.76Q227.6 -35.11 222.5 -39.84Q217.4 -44.58 217.4 -52.29L217.4 -52.29Q217.4 -58.74 220.86 -63.57Q224.33 -68.41 230.34 -71.07Q236.34 -73.73 243.96 -73.73L243.96 -73.73Q251.72 -73.73 257.58 -71.04Q263.44 -68.36 266.74 -63.62Q270.03 -58.89 270.18 -52.83L270.18 -52.83L257.53 -52.83Q257.04 -57.52 253.36 -60.08Q249.67 -62.65 243.76 -62.65L243.76 -62.65Q239.66 -62.65 236.71 -61.4Q233.75 -60.16 232.17 -58.01Q230.58 -55.86 230.58 -53.08L230.58 -53.08Q230.58 -50.05 232.46 -48.1Q234.34 -46.14 237.2 -44.97Q240.05 -43.8 242.98 -43.07L242.98 -43.07L249.77 -41.31Q253.82 -40.33 257.63 -38.72Q261.44 -37.11 264.49 -34.64Q267.54 -32.18 269.35 -28.66Q271.16 -25.15 271.16 -20.41L271.16 -20.41Q271.16 -14.01 267.88 -9.16Q264.61 -4.3 258.46 -1.59Q252.31 1.12 243.62 1.12M320.31 -61.77L297.85 -61.77L297.85 -72.75L355.76 -72.75L355.76 -61.77L333.35 -61.77L333.35 0L320.31 0L320.31 -61.77M432.6 0L385.13 0L385.13 -72.75L432.4 -72.75L432.4 -61.77L398.17 -61.77L398.17 -42.14L429.86 -42.14L429.86 -31.3L398.17 -31.3L398.17 -10.99L432.6 -10.99L432.6 0M532.41 1.12L532.41 1.12Q523.97 1.12 517.74 -1.51Q511.52 -4.15 508 -9.18Q504.48 -14.21 504.19 -21.39L504.19 -21.39L517.03 -21.39Q517.38 -17.58 519.43 -15.04Q521.48 -12.5 524.85 -11.25Q528.21 -10.01 532.32 -10.01L532.32 -10.01Q536.61 -10.01 539.91 -11.33Q543.21 -12.65 545.06 -15.01Q546.92 -17.38 546.92 -20.51L546.92 -20.51Q546.92 -23.34 545.28 -25.2Q543.64 -27.05 540.69 -28.34Q537.74 -29.64 533.78 -30.62L533.78 -30.62L525.53 -32.76Q516.4 -35.11 511.3 -39.84Q506.19 -44.58 506.19 -52.29L506.19 -52.29Q506.19 -58.74 509.66 -63.57Q513.13 -68.41 519.13 -71.07Q525.14 -73.73 532.76 -73.73L532.76 -73.73Q540.52 -73.73 546.38 -71.04Q552.24 -68.36 555.53 -63.62Q558.83 -58.89 558.98 -52.83L558.98 -52.83L546.33 -52.83Q545.84 -57.52 542.16 -60.08Q538.47 -62.65 532.56 -62.65L532.56 -62.65Q528.46 -62.65 525.5 -61.4Q522.55 -60.16 520.96 -58.01Q519.38 -55.86 519.38 -53.08L519.38 -53.08Q519.38 -50.05 521.26 -48.1Q523.14 -46.14 525.99 -44.97Q528.85 -43.8 531.78 -43.07L531.78 -43.07L538.57 -41.31Q542.62 -40.33 546.43 -38.72Q550.24 -37.11 553.29 -34.64Q556.34 -32.18 558.15 -28.66Q559.95 -25.15 559.95 -20.41L559.95 -20.41Q559.95 -14.01 556.68 -9.16Q553.41 -4.3 547.26 -1.59Q541.11 1.12 532.41 1.12M621.07 0.98L621.07 0.98Q611.5 0.98 603.93 -3.47Q596.36 -7.91 591.99 -16.26Q587.62 -24.61 587.62 -36.33L587.62 -36.33Q587.62 -48.1 591.99 -56.47Q596.36 -64.84 603.93 -69.29Q611.5 -73.73 621.07 -73.73L621.07 -73.73Q630.59 -73.73 638.13 -69.29Q645.68 -64.84 650.05 -56.47Q654.42 -48.1 654.42 -36.33L654.42 -36.33Q654.42 -24.61 650.05 -16.24Q645.68 -7.86 638.13 -3.44Q630.59 0.98 621.07 0.98M621.07 -10.69L621.07 -10.69Q626.98 -10.69 631.54 -13.65Q636.11 -16.6 638.7 -22.34Q641.28 -28.08 641.28 -36.33L641.28 -36.33Q641.28 -44.68 638.7 -50.42Q636.11 -56.15 631.54 -59.11Q626.98 -62.06 621.07 -62.06L621.07 -62.06Q615.11 -62.06 610.52 -59.08Q605.93 -56.1 603.32 -50.37Q600.71 -44.63 600.71 -36.33L600.71 -36.33Q600.71 -28.08 603.32 -22.36Q605.93 -16.65 610.52 -13.67Q615.11 -10.69 621.07 -10.69M729.94 0L684.77 0L684.77 -72.75L697.81 -72.75L697.81 -10.99L729.94 -10.99L729.94 0M788.81 1.07L788.81 1.07Q779.92 1.07 773.28 -2.27Q766.64 -5.62 762.98 -11.55Q759.31 -17.48 759.31 -25.24L759.31 -25.24L759.31 -72.75L772.35 -72.75L772.35 -26.32Q772.35 -21.78 774.38 -18.21Q776.4 -14.65 780.09 -12.62Q783.78 -10.6 788.81 -10.6L788.81 -10.6Q793.84 -10.6 797.52 -12.62Q801.21 -14.65 803.24 -18.21Q805.26 -21.78 805.26 -26.32L805.26 -26.32L805.26 -72.75L818.3 -72.75L818.3 -25.24Q818.3 -17.48 814.61 -11.55Q810.93 -5.62 804.31 -2.27Q797.69 1.07 788.81 1.07M870.09 -61.77L847.63 -61.77L847.63 -72.75L905.54 -72.75L905.54 -61.77L883.13 -61.77L883.13 0L870.09 0L870.09 -61.77M934.91 -72.75L947.95 -72.75L947.95 0L934.91 0L934.91 -72.75M1011.75 0.98L1011.75 0.98Q1002.18 0.98 994.61 -3.47Q987.04 -7.91 982.67 -16.26Q978.3 -24.61 978.3 -36.33L978.3 -36.33Q978.3 -48.1 982.67 -56.47Q987.04 -64.84 994.61 -69.29Q1002.18 -73.73 1011.75 -73.73L1011.75 -73.73Q1021.27 -73.73 1028.82 -69.29Q1036.36 -64.84 1040.73 -56.47Q1045.1 -48.1 1045.1 -36.33L1045.1 -36.33Q1045.1 -24.61 1040.73 -16.24Q1036.36 -7.86 1028.82 -3.44Q1021.27 0.98 1011.75 0.98M1011.75 -10.69L1011.75 -10.69Q1017.66 -10.69 1022.23 -13.65Q1026.79 -16.6 1029.38 -22.34Q1031.97 -28.08 1031.97 -36.33L1031.97 -36.33Q1031.97 -44.68 1029.38 -50.42Q1026.79 -56.15 1022.23 -59.11Q1017.66 -62.06 1011.75 -62.06L1011.75 -62.06Q1005.79 -62.06 1001.21 -59.08Q996.62 -56.1 994 -50.37Q991.39 -44.63 991.39 -36.33L991.39 -36.33Q991.39 -28.08 994 -22.36Q996.62 -16.65 1001.21 -13.67Q1005.79 -10.69 1011.75 -10.69M1088.74 0L1075.46 0L1075.46 -72.75L1090.2 -72.75L1115.35 -32.67Q1116.91 -30.18 1118.67 -27.03Q1120.43 -23.88 1122.33 -20.02L1122.33 -20.02Q1123.31 -17.97 1124.28 -15.77L1124.28 -15.77Q1124.14 -17.77 1124.04 -19.82L1124.04 -19.82Q1123.75 -24.12 1123.62 -28Q1123.5 -31.88 1123.5 -34.57L1123.5 -34.57L1123.5 -72.75L1136.73 -72.75L1136.73 0L1121.94 0L1099.23 -36.08Q1097.09 -39.55 1095.18 -42.92Q1093.28 -46.29 1091.08 -50.54L1091.08 -50.54Q1089.66 -53.32 1087.81 -56.79L1087.81 -56.79Q1088 -53.66 1088.15 -50.73L1088.15 -50.73Q1088.39 -45.95 1088.57 -42.19Q1088.74 -38.43 1088.74 -36.13L1088.74 -36.13L1088.74 0M1194.92 1.12L1194.92 1.12Q1186.47 1.12 1180.25 -1.51Q1174.02 -4.15 1170.51 -9.18Q1166.99 -14.21 1166.7 -21.39L1166.7 -21.39L1179.54 -21.39Q1179.88 -17.58 1181.93 -15.04Q1183.98 -12.5 1187.35 -11.25Q1190.72 -10.01 1194.82 -10.01L1194.82 -10.01Q1199.12 -10.01 1202.42 -11.33Q1205.71 -12.65 1207.57 -15.01Q1209.42 -17.38 1209.42 -20.51L1209.42 -20.51Q1209.42 -23.34 1207.79 -25.2Q1206.15 -27.05 1203.2 -28.34Q1200.24 -29.64 1196.29 -30.62L1196.29 -30.62L1188.04 -32.76Q1178.9 -35.11 1173.8 -39.84Q1168.7 -44.58 1168.7 -52.29L1168.7 -52.29Q1168.7 -58.74 1172.17 -63.57Q1175.63 -68.41 1181.64 -71.07Q1187.64 -73.73 1195.26 -73.73L1195.26 -73.73Q1203.03 -73.73 1208.88 -71.04Q1214.74 -68.36 1218.04 -63.62Q1221.34 -58.89 1221.48 -52.83L1221.48 -52.83L1208.84 -52.83Q1208.35 -57.52 1204.66 -60.08Q1200.97 -62.65 1195.07 -62.65L1195.07 -62.65Q1190.96 -62.65 1188.01 -61.4Q1185.06 -60.16 1183.47 -58.01Q1181.88 -55.86 1181.88 -53.08L1181.88 -53.08Q1181.88 -50.05 1183.76 -48.1Q1185.64 -46.14 1188.5 -44.97Q1191.36 -43.8 1194.29 -43.07L1194.29 -43.07L1201.07 -41.31Q1205.13 -40.33 1208.93 -38.72Q1212.74 -37.11 1215.79 -34.64Q1218.85 -32.18 1220.65 -28.66Q1222.46 -25.15 1222.46 -20.41L1222.46 -20.41Q1222.46 -14.01 1219.19 -9.16Q1215.92 -4.3 1209.76 -1.59Q1203.61 1.12 1194.92 1.12"/></svg></a>
-      <ul><li><a href="#what">What we do</a></li><li><a href="#why">Why Unified</a></li><li><a href="#">Client login</a></li><li><a href="#">Privacy</a></li><li>1300 000 000</li></ul>
+      <ul><li><a href="#what">What we do</a></li><li><a href="#why">Why Unified</a></li><li><a href="#">Client login</a></li><li><a href="#" data-open="contact">Contact us</a></li><li><a href="#">Privacy</a></li><li>1300 000 000</li></ul>
     </div>
     <div class="legal"><span>© 2026 Unified Waste Solutions Pty Ltd · ABN 00 000 000 000</span><span>Your ally in waste</span></div>
   </div>
 </footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Get in touch" hidden>
+  <div class="mbox">
+    <button class="mclose" type="button" aria-label="Close" data-close><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg></button>
+    <div class="mtabs" role="tablist"><button type="button" data-tab="assess" class="on">Free assessment</button><button type="button" data-tab="contact">Contact us</button></div>
+    <form id="fAssess" onsubmit="return send(event)">
+      <div class="fb">
+        <h3>See your market price</h3>
+        <p class="fs">Upload one recent invoice. Results in seconds.</p>
+        <div class="fields">
+          <div class="full"><label class="drop" for="mInv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M7 9l5-5 5 5M4 20h16"/></svg></span><span><b id="mInvName">Upload your latest invoice</b><small>Photo or PDF</small></span><input id="mInv" type="file" accept="image/*,.pdf" onchange="document.getElementById('mInvName').textContent=this.files[0]?this.files[0].name:'Upload your latest invoice'"></label></div>
+          <div><label for="mEm">Work email</label><input id="mEm" type="email" required autocomplete="email"></div>
+          <div><label for="mPh">Phone <small>optional</small></label><input id="mPh" type="tel" autocomplete="tel"></div>
+        </div>
+        <label class="consent"><input type="checkbox" id="mOk" required>I agree to Unified Waste Solutions using these details to prepare my assessment and contact me about it.</label>
+        <button class="btn btn-ink" type="submit">Show my market price <svg class="ar"><use href="#ar"/></svg></button>
+      </div>
+      <div class="thanks"><div class="ok"><svg viewBox="0 0 16 16"><use href="#tk"/></svg></div><h3>Preview only</h3><p>This is a design concept, so nothing was sent. On the live site, this goes straight to the Unified team.</p></div>
+    </form>
+    <form id="fContact" onsubmit="return send(event)" hidden>
+      <div class="fb">
+        <h3>Talk to our team</h3>
+        <p class="fs">We reply the same business day.</p>
+        <div class="fields">
+          <div><label for="cNm">Your name</label><input id="cNm" type="text" required autocomplete="name"></div>
+          <div><label for="cBiz">Business <small>optional</small></label><input id="cBiz" type="text" autocomplete="organization"></div>
+          <div><label for="cEm">Email</label><input id="cEm" type="email" required autocomplete="email"></div>
+          <div><label for="cPh">Phone</label><input id="cPh" type="tel" autocomplete="tel"></div>
+          <div class="full"><label for="cWhy">How can we help?</label><select id="cWhy"><option>I want to review my waste costs</option><option>I’m an existing client and need help</option><option>I have several sites</option><option>Supplier or partnership enquiry</option><option>Something else</option></select></div>
+          <div class="full"><label for="cMsg">Message</label><textarea id="cMsg" placeholder="Tell us a little about your business and what you need."></textarea></div>
+        </div>
+        <label class="consent"><input type="checkbox" id="cOk" required>I agree to Unified Waste Solutions using these details to respond to my enquiry.</label>
+        <button class="btn btn-ink" type="submit">Send message <svg class="ar"><use href="#ar"/></svg></button>
+        <div class="direct"><span>Call <b>1300 000 000</b></span><span>Email <b>hello@unifiedwaste.com.au</b></span></div>
+      </div>
+      <div class="thanks"><div class="ok"><svg viewBox="0 0 16 16"><use href="#tk"/></svg></div><h3>Preview only</h3><p>This is a design concept, so nothing was sent. On the live site, this goes straight to the Unified team.</p></div>
+    </form>
+  </div>
+</div>
 
 <div class="pal" id="pal" role="group" aria-label="Colour option"><span>Colour option</span><b class="nm" id="palName">Green</b></div>
 
 <script>
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const nav=document.getElementById('nav');
-function send(e){e.preventDefault();document.getElementById('form').classList.add('sent');return false}
+function send(e){e.preventDefault();e.target.classList.add('sent');return false}
+
+/* scale the portal screenshots to their device frames */
+(function(){const fits=[...document.querySelectorAll('[data-fit]')];const ro=new ResizeObserver(es=>es.forEach(e=>{const el=e.target;el.firstElementChild.style.transform='scale('+(el.clientWidth/+el.dataset.fit)+')'}));fits.forEach(f=>ro.observe(f));})();
+
+/* pop-up: free assessment and contact */
+(function(){const m=document.getElementById('modal'),tabs=[...m.querySelectorAll('[data-tab]')],forms={assess:document.getElementById('fAssess'),contact:document.getElementById('fContact')};let last=null;
+function tab(t){tabs.forEach(b=>b.classList.toggle('on',b.dataset.tab===t));Object.entries(forms).forEach(([k,f])=>f.hidden=k!==t)}
+function open(t){last=document.activeElement;tab(t);m.hidden=false;document.body.style.overflow='hidden';requestAnimationFrame(()=>m.classList.add('open'));setTimeout(()=>{const f=forms[t].querySelector('input:not([type=file]):not([type=checkbox]),textarea');f&&f.focus()},250)}
+function close(){m.classList.remove('open');document.body.style.overflow='';setTimeout(()=>{m.hidden=true;Object.values(forms).forEach(f=>f.classList.remove('sent'))},250);last&&last.focus&&last.focus()}
+document.querySelectorAll('[data-open]').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();open(el.dataset.open)}));
+tabs.forEach(b=>b.addEventListener('click',()=>tab(b.dataset.tab)));
+m.addEventListener('click',e=>{if(e.target===m||e.target.closest('[data-close]'))close()});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&!m.hidden)close()});})();
 
 /* colour options */
-const PALS=[['evergreen','Green',['#0F4A3B','#2FB67C']],['navy','Navy',['#1E3A66','#3B82F6']]];
+const PALS=[['evergreen','Green',['#0F4A3B','#2FB67C']],['greengold','Green & gold',['#0F4A3B','#C9A43A']],['sage','Sage & sand',['#2C5A4E','#F1D9A7']],['navy','Navy',['#1E3A66','#3B82F6']],['ocean','Ocean',['#0E4A63','#22A6C9']],['copper','Graphite',['#3A3D45','#D8783F']],['gold','Charcoal & gold',['#363636','#C9A43A']],['coral','Midnight & coral',['#2B3550','#FF7A59']],['orange','Orange & black',['#101010','#FF6B1A']]];
 const pal=document.getElementById('pal'),pn=document.getElementById('palName');
 PALS.forEach(([id,name,c])=>{const b=document.createElement('button');b.style.setProperty('--c1',c[0]);b.style.setProperty('--c2',c[1]);b.setAttribute('aria-label',name);b.dataset.id=id;b.onclick=()=>{setPal(id);history.replaceState(null,'','#'+id)};pal.insertBefore(b,pn)});
 function setPal(id){if(!PALS.some(p=>p[0]===id))return false;document.documentElement.dataset.pal=id;pn.textContent=PALS.find(p=>p[0]===id)[1];[...pal.querySelectorAll('button')].forEach(b=>b.classList.toggle('on',b.dataset.id===id));return true}
@@ -508,21 +675,21 @@ setPal(location.hash.slice(1))||setPal('evergreen');addEventListener('hashchange
 (function(){const s=[...document.querySelectorAll('#rot span')];let i=0;if(reduce)return;
 setInterval(()=>{const cur=s[i];cur.classList.remove('on');cur.classList.add('out');i=(i+1)%s.length;const nx=s[i];nx.classList.remove('out');void nx.offsetWidth;nx.classList.add('on');setTimeout(()=>cur.classList.remove('out'),700)},2600);})();
 
-/* hero audit animation */
+/* invoice check animation on the laptop */
 (function(){const rows=[...document.querySelectorAll('#audit .row')];
 function run(){rows.forEach(r=>{r.classList.remove('done');const s=r.querySelector('.st');s.className='st q';s.textContent='Queued'});
  rows.forEach((r,i)=>setTimeout(()=>{const s=r.querySelector('.st');s.className='st wait';s.textContent='Checking'},300+i*700));
  rows.forEach((r,i)=>setTimeout(()=>{r.classList.add('done');const s=r.querySelector('.st');const bad=r.dataset.s==='bad';s.className='st '+(bad?'bad':'ok');s.textContent=bad?'Disputed':'Correct'},750+i*700));}
-run();setInterval(run,8000);})();
+run();setInterval(run,7000);})();
 
-/* notifications popping in around the portal */
-(function(){const I={doc:'M7 3h7l5 5v13H7zM14 3v5h5M10 13h6M10 17h4',shield:'M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z',chart:'M4 19V5M4 19h16M8 15l3-4 3 2 5-6',bolt:'M13 3L5 13.5h6L10 21l8-10.5h-6z',loop:'M4 12a8 8 0 0114-5.3M20 12a8 8 0 01-14 5.3M18 3v4h-4M6 21v-4h4',clock:'M12 21a9 9 0 100-18 9 9 0 000 18zM12 7v5l3 2'};
-const POOL=[['doc','Invoice vetted','14 lines, 2 disputed','AUTO'],['shield','Contract flagged','Auto-renews 14 March','ALERT'],['bolt','Missed lift logged','Supplier back by 1pm','24/7'],['chart','Market review done','Cardboard 21% cheaper','Q4'],['doc','Charge disputed','$185 kept off your bill','AUTO'],['clock','Assessment ready','4 seconds','FREE'],['loop','Bin right-sized','1100L to 660L from 1 Dec','SAVE'],['shield','Exit fee avoided','Switch timed for 14 March','WIN']];
+/* notifications popping in around the devices */
+(function(){const I={doc:'M7 3h7l5 5v13H7zM14 3v5h5M10 13h6M10 17h4',chart:'M4 19V5M4 19h16M8 15l3-4 3 2 5-6',bolt:'M13 3L5 13.5h6L10 21l8-10.5h-6z',loop:'M4 12a8 8 0 0114-5.3M20 12a8 8 0 01-14 5.3M18 3v4h-4M6 21v-4h4',clock:'M12 21a9 9 0 100-18 9 9 0 000 18zM12 7v5l3 2',shield:'M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z'};
+const POOL=[['doc','Invoice vetted','14 lines, 2 disputed','AUTO'],['bolt','Missed lift logged','Supplier back by 1pm','24/7'],['chart','Price alert','Cardboard above market','LIVE'],['doc','Charge disputed','$185 kept off your bill','AUTO'],['clock','Assessment ready','In 4 seconds','FREE'],['loop','Bin right-sized','1100L to 660L from 1 Dec','SAVE'],['shield','Overweight charge blocked','No weighbridge docket','AUTO'],['chart','Renegotiated','Same supplier, 18% less','SAVE']];
 const nodes=[...document.querySelectorAll('.node')];let k=0;
 function fill(n,d){n.innerHTML=`<span class="ic"><svg viewBox="0 0 24 24"><path d="${I[d[0]]}" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>${d[1]}</b><span>${d[2]}</span></div><em>${d[3]}</em>`}
-nodes.forEach((n,i)=>{fill(n,POOL[i]);setTimeout(()=>n.classList.add('show'),900+i*450)});k=nodes.length;
+nodes.forEach((n,i)=>{fill(n,POOL[i]);setTimeout(()=>n.classList.add('show'),1200+i*700)});k=nodes.length;
 if(reduce)return;let slot=0;
-setInterval(()=>{const n=nodes[slot%nodes.length];slot++;n.classList.remove('show');n.classList.add('out');setTimeout(()=>{fill(n,POOL[k%POOL.length]);k++;n.classList.remove('out');void n.offsetWidth;n.classList.add('show')},450)},2400);})();
+setInterval(()=>{const n=nodes[slot%nodes.length];slot++;n.classList.remove('show');n.classList.add('out');setTimeout(()=>{fill(n,POOL[k%POOL.length]);k++;n.classList.remove('out');void n.offsetWidth;n.classList.add('show')},450)},3600);})();
 
 /* feature slider */
 (function(){const sl=document.getElementById('slider'),slides=[...sl.children],dots=document.getElementById('dots');const DUR=6000;let idx=0,timer,paused=false;
@@ -534,13 +701,13 @@ function start(){clearInterval(timer);if(reduce||paused)return;timer=setInterval
 function stop(){paused=true;clearInterval(timer);dots.classList.add('paused')}
 document.getElementById('next').onclick=()=>{go(idx+1);stop()};document.getElementById('prev').onclick=()=>{go(idx-1);stop()};
 sl.addEventListener('pointerdown',stop,{passive:true});sl.addEventListener('wheel',e=>{if(Math.abs(e.deltaX)>Math.abs(e.deltaY))stop()},{passive:true});
-let t;sl.addEventListener('scroll',()=>{clearTimeout(t);t=setTimeout(()=>{const i=Math.round(sl.scrollLeft/(slides[0].offsetWidth+20));if(i!==idx)mark(i)},90)},{passive:true});
+let t;sl.addEventListener('scroll',()=>{clearTimeout(t);t=setTimeout(()=>{const i=Math.round(sl.scrollLeft/(slides[0].offsetWidth+24));if(i!==idx)mark(i)},90)},{passive:true});
 mark(0);new IntersectionObserver(es=>{if(es[0].isIntersecting)start();else clearInterval(timer)},{threshold:.4}).observe(sl);})();
 
 /* statement lights up word by word as you scroll */
 (function(){const st=document.getElementById('say'),wds=[];
 (function split(node,hl){[...node.childNodes].forEach(n=>{if(n.nodeType===3){const f=document.createDocumentFragment();n.textContent.split(/(\s+)/).forEach(t=>{if(!t)return;if(/^\s+$/.test(t)){f.appendChild(document.createTextNode(t));return}const s=document.createElement('span');s.className='wd'+(hl?' hl':'');s.textContent=t;wds.push(s);f.appendChild(s)});n.replaceWith(f)}else if(n.nodeType===1){n.style.fontStyle='normal';split(n,hl||n.classList.contains('hl'))}})})(st,false);
-function words(){if(reduce){wds.forEach(w=>w.classList.add('on'));return}const r=st.getBoundingClientRect();const p=Math.min(1,Math.max(0,(innerHeight*.85-r.top)/(r.height+innerHeight*.3)));const n=Math.round(p*wds.length);wds.forEach((w,i)=>w.classList.toggle('on',i<n))}
+function words(){if(reduce){wds.forEach(w=>w.classList.add('on'));return}const r=st.getBoundingClientRect();const p=Math.min(1,Math.max(0,(innerHeight*.9-r.top)/(r.height*.9)));const n=Math.round(p*wds.length);wds.forEach((w,i)=>w.classList.toggle('on',i<n))}
 const onScroll=()=>{nav.classList.toggle('solid',scrollY>30);words()};addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',onScroll);onScroll();})();
 </script>
 </body>
