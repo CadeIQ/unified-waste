@@ -566,6 +566,43 @@ footer.night .ll{display:flex;gap:24px;flex-wrap:wrap}
   footer.night .fgrid{gap:32px 20px;padding-bottom:40px}
 }
 
+/* ===== phone/tablet feature cards ===== */
+.f-mdots{display:none}
+@media (max-width:1000px){.nav .tel{margin-left:auto!important}.nav .contact{margin-left:0!important}}
+@media (max-width:1000px){
+  .feat{display:block}
+  .f-stage{display:none}
+  .f-list{position:relative;flex-direction:row;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:40px;gap:16px;margin:0 -40px;padding:4px 40px 10px;scrollbar-width:none}
+  .f-list::-webkit-scrollbar{display:none}
+  .f-item,.f-item:last-child{flex:0 0 62%;scroll-snap-align:start;display:flex;flex-direction:column;background:#fff;border:0;border-radius:26px;padding:26px 24px 0;overflow:hidden;box-shadow:0 0 0 1px rgba(16,16,16,.05),0 30px 60px -40px rgba(16,16,16,.35);transition:opacity .4s}
+  .f-item:not(.on){opacity:.55}
+  .f-bar{top:0;left:0;right:0;height:3px}
+  .f-t{color:var(--ink)!important;font-size:24px}
+  .f-k{color:var(--txt)!important}
+  .f-body{grid-template-rows:1fr!important;opacity:1!important}
+  .f-body p{font-size:15.5px;padding-top:10px}
+  .f-body ul{display:none}
+  .f-item .f-vis{grid-area:auto;opacity:1!important;transform:none!important;pointer-events:auto;margin:22px -24px 0;flex:1 0 380px;height:auto;padding:24px;background:radial-gradient(70% 60% at 50% 70%,rgba(255,107,26,.14),transparent 70%),linear-gradient(180deg,#F8F6F2,#EFECE5)}
+  .f-item .f-vis .stage{padding:0;min-height:0}
+  .f-item .f-vis .stage .phone{width:168px}
+  .f-item .f-vis .stage .laptop{width:100%}
+  .f-item .f-vis.on .phone,.f-item .f-vis.on .laptop{animation:none}
+  .f-item .f-vis .tl-card{display:grid;margin:0;width:100%;background:#fff;box-shadow:0 20px 40px -24px rgba(16,16,16,.3)}
+  .f-item .f-vis .stage.no-m{display:none}
+  .f-mdots{display:flex;justify-content:center;gap:6px;margin-top:20px}
+  .f-mdots i{width:6px;height:6px;border-radius:99px;background:#D3CFC6;transition:width .3s,background .3s}
+  .f-mdots i.on{width:22px;background:var(--ink)}
+}
+@media (min-width:641px) and (max-width:1000px){.f-item .f-vis .tl-card{display:none}.f-item .f-vis .stage.no-m{display:flex}}
+@media (max-width:640px){
+  .f-list{margin:0 -16px;padding:4px 16px 10px;scroll-padding-left:16px;gap:12px}
+  .f-item,.f-item:last-child{flex-basis:86%;padding:22px 20px 0;border-radius:24px}
+  .f-t{font-size:21px}
+  .f-body p{font-size:14.5px}
+  .f-item .f-vis{margin:18px -20px 0;flex:1 0 330px;height:auto;padding:20px}
+  .f-item .f-vis .stage .phone{width:150px}
+}
+
 /* artifact edition */
 body{background:var(--bg);color:var(--ink)}
 :root{color-scheme:light}
@@ -730,6 +767,7 @@ body{background:var(--bg);color:var(--ink)}
         <div class="f-body"><div><p>We track every price you pay against the market, all the time. If you drift above it, we renegotiate with your current supplier first and only switch when it clearly pays.</p><ul><li><svg class="tick"><use href="#tk"/></svg>Live price benchmarking for every service</li><li><svg class="tick"><use href="#tk"/></svg>Stable suppliers, no constant chopping and changing</li></ul></div></div>
       </div>
     </div>
+    <div class="f-mdots" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
     <div class="f-stage" id="fstage">
       <div class="f-vis on" role="tabpanel" id="fp0" aria-labelledby="ft0"><div class="stage"><div class="phone"><div class="pbez"><div class="pscr" data-fit="330"><div class="mui">
           <div class="m-bar"><span>9:41</span><span><i></i></span></div>
@@ -953,15 +991,22 @@ function run(){rows.forEach(r=>{r.classList.remove('done');const s=r.querySelect
  rows.forEach((r,i)=>setTimeout(()=>{r.classList.add('done');const s=r.querySelector('.st');const bad=r.dataset.s==='bad';s.className='st '+(bad?'bad':'ok');s.textContent=bad?'Disputed':'Correct'},750+i*700));}
 run();setInterval(run,7000);})();
 
-/* features: list + crossfading stage, auto-advances, pauses on interaction */
-(function(){const feat=document.getElementById('feat'),items=[...feat.querySelectorAll('.f-item')],vis=[...feat.querySelectorAll('.f-vis')],dots=[...feat.querySelectorAll('.f-dots i')],stage=document.getElementById('fstage');const DUR=6500;let idx=0,timer=null,resume=null,hover=false,visible=false;
+/* features: desktop = list + crossfading stage; phone/tablet = swipeable cards (text, then product) */
+(function(){const feat=document.getElementById('feat'),list=feat.querySelector('.f-list'),items=[...feat.querySelectorAll('.f-item')],vis=[...feat.querySelectorAll('.f-vis')],dots=[...feat.querySelectorAll('.f-dots i,.f-mdots i')],stage=document.getElementById('fstage'),cap=document.getElementById('fcap');const DUR=6500,n=items.length;let idx=0,timer=null,resume=null,hover=false,visible=false,auto=false;
+const mq=matchMedia('(max-width:1000px)');
 feat.style.setProperty('--dur',DUR+'ms');if(reduce)feat.classList.add('static');
-function set(i){idx=(i+items.length)%items.length;items.forEach((it,j)=>{const on=j===idx;it.classList.remove('on');it.querySelector('.f-head').setAttribute('aria-selected',on);if(on){void it.offsetWidth;it.classList.add('on')}});vis.forEach((v,j)=>v.classList.toggle('on',j===idx));dots.forEach((d,j)=>d.classList.toggle('on',j===idx));const cap=document.getElementById('fcap');if(cap)cap.textContent=items[idx].querySelector('.f-k').textContent}
-function tick(){clearTimeout(timer);if(reduce||hover||!visible)return;timer=setTimeout(()=>{set(idx+1);tick()},DUR)}
-function pause(ms){clearTimeout(timer);clearTimeout(resume);feat.classList.add('paused');resume=setTimeout(()=>{feat.classList.remove('paused');set(idx);tick()},ms)}
-items.forEach((it,i)=>it.querySelector('.f-head').addEventListener('click',()=>{set(i);pause(10000)}));
-feat.querySelector('.f-list').addEventListener('keydown',e=>{if(e.key!=='ArrowDown'&&e.key!=='ArrowUp')return;e.preventDefault();set(idx+(e.key==='ArrowDown'?1:-1));items[idx].querySelector('.f-head').focus();pause(10000)});
-if(matchMedia('(hover:hover)').matches){feat.addEventListener('mouseenter',()=>{hover=true;clearTimeout(timer);feat.classList.add('paused')});feat.addEventListener('mouseleave',()=>{hover=false;feat.classList.remove('paused');set(idx);tick()})}
+function layout(){if(mq.matches){items.forEach((it,i)=>{if(vis[i].parentElement!==it)it.appendChild(vis[i])})}else{vis.forEach(v=>{if(v.parentElement!==stage)stage.insertBefore(v,cap)})}}
+layout();mq.addEventListener('change',()=>{layout();set(idx,true)});
+function cardLeft(i){return items[i].offsetLeft-parseFloat(getComputedStyle(list).paddingLeft)}
+function set(i,scroll){idx=(i+n)%n;items.forEach((it,j)=>{const on=j===idx;it.classList.remove('on');it.querySelector('.f-head').setAttribute('aria-selected',on);if(on){void it.offsetWidth;it.classList.add('on')}});vis.forEach((v,j)=>v.classList.toggle('on',j===idx));dots.forEach((d,j)=>d.classList.toggle('on',j%n===idx));if(cap)cap.textContent=items[idx].querySelector('.f-k').textContent;
+ if(scroll&&mq.matches){auto=true;list.scrollTo({left:cardLeft(idx),behavior:reduce?'auto':'smooth'});setTimeout(()=>auto=false,700)}}
+function tick(){clearTimeout(timer);if(reduce||hover||!visible)return;timer=setTimeout(()=>{set(idx+1,true);tick()},DUR)}
+function pause(ms){clearTimeout(timer);clearTimeout(resume);feat.classList.add('paused');resume=setTimeout(()=>{feat.classList.remove('paused');set(idx,true);tick()},ms)}
+items.forEach((it,i)=>it.querySelector('.f-head').addEventListener('click',()=>{set(i,true);pause(10000)}));
+list.addEventListener('keydown',e=>{if(!['ArrowDown','ArrowUp','ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();set(idx+((e.key==='ArrowDown'||e.key==='ArrowRight')?1:-1),true);items[idx].querySelector('.f-head').focus();pause(10000)});
+if(matchMedia('(hover:hover)').matches){feat.addEventListener('mouseenter',()=>{if(mq.matches)return;hover=true;clearTimeout(timer);feat.classList.add('paused')});feat.addEventListener('mouseleave',()=>{if(mq.matches)return;hover=false;feat.classList.remove('paused');set(idx);tick()})}
+list.addEventListener('touchstart',()=>pause(10000),{passive:true});
+let st;list.addEventListener('scroll',()=>{if(!mq.matches||auto)return;clearTimeout(st);st=setTimeout(()=>{let best=0,d=1e9;items.forEach((it,i)=>{const dd=Math.abs(cardLeft(i)-list.scrollLeft);if(dd<d){d=dd;best=i}});if(best!==idx){set(best,false);pause(10000)}},90)},{passive:true});
 let x0=null;stage.addEventListener('touchstart',e=>{x0=e.touches[0].clientX},{passive:true});stage.addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;x0=null;if(Math.abs(dx)>40){set(idx+(dx<0?1:-1));pause(10000)}},{passive:true});
 set(0);new IntersectionObserver(es=>{visible=es[0].isIntersecting;if(visible){set(idx);tick()}else clearTimeout(timer)},{threshold:.4}).observe(feat);})();
 
