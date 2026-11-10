@@ -614,6 +614,30 @@ footer.night .ll{display:flex;gap:24px;flex-wrap:wrap}
 @media (max-width:1000px){.ind-row{grid-template-columns:1fr;gap:24px}}
 @media (max-width:640px){.ind.slim{padding:0 0 80px}.ind-chips{gap:8px}.ind-chips span{font-size:13.5px;padding:9px 14px}.ind-chips .all{font-size:12px}}
 
+/* ===== sharpness + backgrounds pass ===== */
+.hero .gridbg{display:none}
+.hero .flow{position:absolute;inset:0;width:100%;height:100%;z-index:-2;opacity:.5;mask-image:radial-gradient(ellipse 75% 70% at 65% 60%,#000 25%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 75% 70% at 65% 60%,#000 25%,transparent 75%);animation:flowdrift 22s ease-in-out infinite alternate}
+@keyframes flowdrift{to{transform:translate3d(-40px,18px,0)}}
+/* devices: no 3D tilt, no filters (both soften text) */
+.devices{perspective:none}
+.devices .laptop,.devices .phone,.devices:hover .laptop,.devices:hover .phone{transform:none!important}
+.laptop,.phone,.devices .laptop,.devices .phone{filter:none!important}
+.laptop .lbez{box-shadow:0 0 0 1px rgba(0,0,0,.4),0 40px 80px -34px rgba(16,16,16,.45)}
+.phone .pbez{box-shadow:0 0 0 1px rgba(0,0,0,.4),0 34px 70px -26px rgba(16,16,16,.5)}
+.devices .laptop .lbez{box-shadow:inset 0 0 0 1px rgba(255,255,255,.12),0 60px 120px -40px rgba(0,0,0,.9)}
+.devices .phone .pbez{box-shadow:inset 0 0 0 1px rgba(255,255,255,.16),0 50px 100px -30px rgba(0,0,0,.9)}
+.f-vis.on .phone,.f-vis.on .laptop{animation:none!important}
+.f-vis{transform:translateY(14px)}
+/* carousel: shadowed shots, no white box, no grid */
+.f-stage{background:transparent!important;box-shadow:none!important;overflow:visible;padding:20px 0}
+.f-stage::before{background:radial-gradient(52% 46% at 50% 58%,rgba(255,107,26,.20),transparent 72%)!important;background-size:auto!important}
+.f-vis .stage .laptop{width:100%}
+.f-vis .stage .phone{width:280px}
+@media (max-width:1000px){
+  .f-item .f-vis{background:radial-gradient(60% 55% at 50% 62%,rgba(255,107,26,.16),transparent 72%)!important}
+}
+@media (max-width:640px){.hero .flow{opacity:.4;mask-image:radial-gradient(ellipse 120% 60% at 60% 70%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 120% 60% at 60% 70%,#000 20%,transparent 75%)}}
+
 /* artifact edition */
 body{background:var(--bg);color:var(--ink)}
 :root{color-scheme:light}
@@ -663,7 +687,7 @@ body{background:var(--bg);color:var(--ink)}
 
 <main id="top">
 <section class="hero">
-  <div class="gridbg"></div><div class="beam"></div><div class="aurora"></div><div class="orb o1"></div><div class="orb o2"></div><div class="grain"></div><div class="spot" id="spot"></div><div class="horizon"></div>
+  <div class="beam"></div><svg class="flow" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="flg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF6B1A" stop-opacity="0"/><stop offset=".45" stop-color="#FF7A2E" stop-opacity=".85"/><stop offset=".8" stop-color="#FFB36B" stop-opacity=".5"/><stop offset="1" stop-color="#FFB36B" stop-opacity="0"/></linearGradient></defs><g fill="none" stroke="url(#flg)" stroke-width="1.1"><path d="M-120 560 C 260 380, 760 820, 1560 260"/><path d="M-120 586 C 260 398, 760 806, 1560 294"/><path d="M-120 612 C 260 416, 760 792, 1560 328"/><path d="M-120 638 C 260 434, 760 778, 1560 362"/><path d="M-120 664 C 260 452, 760 764, 1560 396"/><path d="M-120 690 C 260 470, 760 750, 1560 430"/><path d="M-120 716 C 260 488, 760 736, 1560 464"/><path d="M-120 742 C 260 506, 760 722, 1560 498"/><path d="M-120 768 C 260 524, 760 708, 1560 532"/><path d="M-120 794 C 260 542, 760 694, 1560 566"/><path d="M-120 820 C 260 560, 760 680, 1560 600"/><path d="M-120 846 C 260 578, 760 666, 1560 634"/></g></svg><div class="aurora"></div><div class="orb o1"></div><div class="orb o2"></div><div class="grain"></div><div class="spot" id="spot"></div><div class="horizon"></div>
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <span class="eyebrow fade" style="animation-delay:.05s"><span>Commercial waste management<span class="aw">· Australia-wide</span></span></span>
@@ -968,7 +992,12 @@ const ioR=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.tar
 document.querySelectorAll('.rv').forEach(el=>ioR.observe(el));
 
 /* scale every device screen to its frame */
-(function(){const ro=new ResizeObserver(es=>es.forEach(e=>{const el=e.target;el.firstElementChild.style.transform='scale('+(el.clientWidth/+el.dataset.fit)+')'}));document.querySelectorAll('[data-fit]').forEach(f=>ro.observe(f));})();
+(function(){const z=window.CSS&&CSS.supports&&CSS.supports('zoom','1');const ro=new ResizeObserver(es=>es.forEach(e=>{const el=e.target,c=el.firstElementChild,k=el.clientWidth/+el.dataset.fit;if(!k)return;if(z){c.style.transform='none';c.style.zoom=k}else{c.style.transform='scale('+k+')'}}));document.querySelectorAll('[data-fit]').forEach(f=>ro.observe(f));})();
+
+/* headline: size so the longest rotating phrase always fits its column */
+(function(){const rot=document.getElementById('rot');if(!rot)return;const h1=rot.closest('h1');
+function fit(){h1.style.fontSize='';const fs=parseFloat(getComputedStyle(h1).fontSize),avail=h1.clientWidth;let max=0;rot.querySelectorAll('span').forEach(sp=>{max=Math.max(max,sp.scrollWidth)});if(max>avail)h1.style.fontSize=Math.floor(fs*avail/max*0.97)+'px'}
+fit();(document.fonts&&document.fonts.ready||Promise.resolve()).then(fit);let t;addEventListener('resize',()=>{clearTimeout(t);t=setTimeout(fit,120)});})();
 
 /* pop-up */
 (function(){const m=document.getElementById('modal'),tabs=[...m.querySelectorAll('[data-tab]')],forms={assess:document.getElementById('fAssess'),contact:document.getElementById('fContact')};let last=null;
