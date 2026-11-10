@@ -13,13 +13,13 @@
 <style>
 /* Layout: dark hero (rotating promise + live portal with popping notifications), service ticker, feature slider, statement band, form. */
 :root{
-  --ink:#0B1B33;--a:#1E3A66;--b:#3B82F6;--txt:#2563EB;--cta:#FFC857;--cta-h:#FFD47A;--glow:59,130,246;
-  --bg:#F5F7FA;--bg2:#ECF0F5;--line:#E1E6ED;--muted:#5B6778;--soft:#8A94A3;
+  --ink:#0B2E26;--a:#0F4A3B;--b:#2FB67C;--txt:#1C8A5A;--cta:#C8F169;--cta-h:#D6F88A;--glow:47,182,124;
+  --bg:#F7F6F2;--bg2:#EFEDE6;--line:#E4E1D8;--muted:#5E6D67;--soft:#8A9792;
   --ok:#1C8A5A;--ok-bg:#E6F5ED;--bad:#C2412D;--bad-bg:#FBEAE6;--wait:#8F6420;--wait-bg:#F5EFE2;
   --r:20px;--max:1160px;--ease:cubic-bezier(.2,.8,.2,1);
   --sh:0 1px 2px rgba(10,20,30,.05),0 24px 50px -24px rgba(10,20,30,.32);
 }
-:root[data-pal="evergreen"]{--ink:#0B2E26;--a:#0F4A3B;--b:#2FB67C;--txt:#1C8A5A;--cta:#C8F169;--cta-h:#D6F88A;--glow:47,182,124;--bg:#F7F6F2;--bg2:#EFEDE6;--line:#E4E1D8;--muted:#5E6D67;--soft:#8A9792}
+:root[data-pal="navy"]{--ink:#0B1B33;--a:#1E3A66;--b:#3B82F6;--txt:#2563EB;--cta:#FFC857;--cta-h:#FFD47A;--glow:59,130,246;--bg:#F5F7FA;--bg2:#ECF0F5;--line:#E1E6ED;--muted:#5B6778;--soft:#8A94A3}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16.5px;-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background .4s}
@@ -490,7 +490,7 @@ body{background:var(--bg);color:var(--ink)}
   </div>
 </footer>
 
-<div class="pal" id="pal" role="group" aria-label="Colour option"><span>Colour option</span><b class="nm" id="palName">Navy</b></div>
+<div class="pal" id="pal" role="group" aria-label="Colour option"><span>Colour option</span><b class="nm" id="palName">Green</b></div>
 
 <script>
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -498,11 +498,11 @@ const nav=document.getElementById('nav');
 function send(e){e.preventDefault();document.getElementById('form').classList.add('sent');return false}
 
 /* colour options */
-const PALS=[['navy','Navy',['#1E3A66','#3B82F6']],['evergreen','Green',['#0F4A3B','#2FB67C']]];
+const PALS=[['evergreen','Green',['#0F4A3B','#2FB67C']],['navy','Navy',['#1E3A66','#3B82F6']]];
 const pal=document.getElementById('pal'),pn=document.getElementById('palName');
 PALS.forEach(([id,name,c])=>{const b=document.createElement('button');b.style.setProperty('--c1',c[0]);b.style.setProperty('--c2',c[1]);b.setAttribute('aria-label',name);b.dataset.id=id;b.onclick=()=>{setPal(id);history.replaceState(null,'','#'+id)};pal.insertBefore(b,pn)});
 function setPal(id){if(!PALS.some(p=>p[0]===id))return false;document.documentElement.dataset.pal=id;pn.textContent=PALS.find(p=>p[0]===id)[1];[...pal.querySelectorAll('button')].forEach(b=>b.classList.toggle('on',b.dataset.id===id));return true}
-setPal(location.hash.slice(1))||setPal('navy');addEventListener('hashchange',()=>setPal(location.hash.slice(1)));
+setPal(location.hash.slice(1))||setPal('evergreen');addEventListener('hashchange',()=>setPal(location.hash.slice(1)));
 
 /* rotating promise */
 (function(){const s=[...document.querySelectorAll('#rot span')];let i=0;if(reduce)return;
